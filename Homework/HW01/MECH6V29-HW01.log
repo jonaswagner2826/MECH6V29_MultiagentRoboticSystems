@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.9.1)  10 FEB 2022 22:46
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.9.1)  11 FEB 2022 05:16
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -708,22 +708,22 @@ Overfull \hbox (36.09001pt too wide) detected at line 9
  []
 
 
-Overfull \hbox (36.09001pt too wide) detected at line 10
+Overfull \hbox (36.09001pt too wide) detected at line 12
 \OT1/cmr/bx/n/10 Problem 5 
  []
 
 
-Overfull \hbox (36.09001pt too wide) detected at line 11
+Overfull \hbox (36.09001pt too wide) detected at line 15
 \OT1/cmr/bx/n/10 Problem 6 
  []
 
 
-Overfull \hbox (36.09001pt too wide) detected at line 12
+Overfull \hbox (36.09001pt too wide) detected at line 16
 \OT1/cmr/bx/n/10 Problem 7 
  []
 
 
-Overfull \hbox (36.09001pt too wide) detected at line 13
+Overfull \hbox (36.09001pt too wide) detected at line 17
 \OT1/cmr/bx/n/10 Problem 8 
  []
 
@@ -738,45 +738,42 @@ Overfull \hbox (26.07553pt too wide) in paragraph at lines 145--146
  [][] 
  []
 
-[2] [3]
+[2] [3] [4]
 \matrixtoks=\toks46
- [4]
-Overfull \hbox (20.74278pt too wide) in paragraph at lines 234--235
+
+Overfull \hbox (20.74278pt too wide) in paragraph at lines 235--236
 \OT1/cmr/m/it/10 For the case with weighted graph $\OML/cmm/m/it/10 G\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 V; E; W\OT1/cmr/m/n/10 )$ \OT1/cmr/m/it/10 with di-ag-o-nal weight ma-trix $\OML/cmm/m/it/10 W \OT1/cmr/m/n/10 = [\OML/cmm/m/it/10 w[]\OT1/cmr/m/n/10 ]$\OT1/cmr/m/it/10 , $[]$
  []
 
-[5] [6]
-<figs/pblm5.png, id=136, 405.515pt x 389.95688pt>
+[5] [6] [7] [8]
+<figs/pblm5.png, id=170, 405.515pt x 389.95688pt>
 File: figs/pblm5.png Graphic file (type png)
 <use figs/pblm5.png>
-Package pdftex.def Info: figs/pblm5.png  used on input line 358.
+Package pdftex.def Info: figs/pblm5.png  used on input line 372.
 (pdftex.def)             Requested size: 93.94957pt x 90.34271pt.
-<figs/pblm6.png, id=138, 493.845pt x 166.12062pt>
+ [9 <./figs/pblm5.png>]
+<figs/pblm6.png, id=184, 493.845pt x 166.12062pt>
 File: figs/pblm6.png Graphic file (type png)
 <use figs/pblm6.png>
-Package pdftex.def Info: figs/pblm6.png  used on input line 389.
+Package pdftex.def Info: figs/pblm6.png  used on input line 422.
 (pdftex.def)             Requested size: 328.82707pt x 110.61076pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[7 <./figs/pblm5.png>] [8 <./figs/pblm6.png>] (./MECH6V29-HW01.bbl) [9] (./MECH6V29-HW01.aux)
+ [10 <./figs/pblm6.png>] [11] [12] (./MECH6V29-HW01.bbl) [13] (./MECH6V29-HW01.aux)
 Package rerunfilecheck Info: File `MECH6V29-HW01.out' has not changed.
-(rerunfilecheck)             Checksum: CE7B22F776CB89D12CCCB6602290C834;1060.
+(rerunfilecheck)             Checksum: C762B314C2940D7B32F1AFA5D4A5D8FF;1492.
  ) 
 Here is how much of TeX's memory you used:
- 25711 strings out of 478599
- 473310 string characters out of 5858102
- 815095 words of memory out of 5000000
- 43096 multiletter control sequences out of 15000+600000
+ 25736 strings out of 478599
+ 473694 string characters out of 5858102
+ 813331 words of memory out of 5000000
+ 43109 multiletter control sequences out of 15000+600000
  414786 words of font info for 69 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  84i,18n,83p,660b,762s stack positions out of 5000i,500n,10000p,200000b,80000s
-<c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbsy10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmbsy7.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on MECH6V29-HW01.pdf (9 pages, 245548 bytes).
+<c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbsy10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmbsy7.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on MECH6V29-HW01.pdf (13 pages, 260677 bytes).
 PDF statistics:
- 247 PDF objects out of 1000 (max. 8388607)
- 194 compressed objects within 2 object streams
- 45 named destinations out of 1000 (max. 500000)
- 127 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 301 PDF objects out of 1000 (max. 8388607)
+ 240 compressed objects within 3 object streams
+ 57 named destinations out of 1000 (max. 500000)
+ 159 words of extra memory for PDF output out of 10000 (max. 10000000)
 

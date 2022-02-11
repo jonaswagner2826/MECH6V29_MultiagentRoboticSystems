@@ -170,7 +170,7 @@ In class we saw that an undirected graph G is connected if and only if its Lapla
 Using a similar argument as the one in class, show that the number of connected components (i.e. connected subgraphs that are disconnected from each other) is equal to the number of zero eigenvalues of the Laplacian.
 
 \subsection{Fundamental Graph Theory Definitions}
-\begin{definition}
+\begin{definition} \label{def:graph_def}
 	\underline{\emph{Graph}} $G(V,E)$ is constructed with \underline{\emph{vertex set}} \[
 		V = \qty{v_1,v_2,\dots,v_n}
 	\] of $n$ discrete vertices and \emph{\underline{edge set}} \[
@@ -178,10 +178,10 @@ Using a similar argument as the one in class, show that the number of connected 
 	\] consisting of $m$ edges $e_{k=(i,j)} = (v_i,v_j) \forall_{k=1,\dots,m}$ connecting vertices $v_i$ and $v_j$.
 \end{definition}
 
-\begin{definition}
+\begin{definition} \label{def:graph_properties}
 	Let graph $G(V,E)$ with $V = \qty{v_1,\dots,v_n}$ and $E \subseteq V \cross V$.
 	\begin{enumerate}
-		\item $G(V,E)$ is considered \underline{\emph{Undirected}} if\[
+		\item $G(V,E)$ is considered \underline{\emph{undirected}} if\[
 			(v_i,v_j) \in E \iff (v_j,v_i) \in E
 		\] otherwise, $G(V,E)$ is considered \emph{directed}.
 		\item An undirected graph $G(V,E)$ is considered \underline{\emph{connected}} if there exists a path between any two vertices.
@@ -190,7 +190,8 @@ Using a similar argument as the one in class, show that the number of connected 
 	\end{enumerate}
 \end{definition}
 
-\begin{definition}
+\newpage
+\begin{definition} \label{def:graph_matrices}
 	Let graph $G(V,E)$ with $V = \qty{v_1,\dots,v_n}$ and $E \subseteq V \cross V$.
 	\begin{enumerate}
 		\item The \underline{\emph{degree matrix}} $\Delta \in \R^{n\cross n}$ is a diagonal matrix defined as \[
@@ -226,9 +227,9 @@ Using a similar argument as the one in class, show that the number of connected 
 	\end{enumerate}
 \end{definition}
 
-\begin{definition}
+\begin{definition} \label{def:consensus_dynamics}
 	Let undirected and unweighted graph $G(V,E)$ with $V = \qty{v_1,\dots,v_n}$ and $E \subseteq V \cross V$.
-	The \emph{\underline{consensus}} dynamics of network $G(V,E)$ is defined by\[
+	The \emph{\underline{consensus dynamics}} of network $G(V,E)$ is defined by\[
 		\forall_{i=1,\dots,n} \ \dot{x}_i = \sum_{j\in \mathcal{N}_i} (x_j - x_i)
 		\iff \dot{x} = -L x
 	\] For the case with weighted graph $G(V,E,W)$ with diagonal weight matrix $W = [w_{ij}]$, 
@@ -240,13 +241,8 @@ Using a similar argument as the one in class, show that the number of connected 
 	\]
 \end{definition}
 
+\newpage
 \subsection{Preliminary Theorems}
-\begin{theorem}
-	Let $L = L^T \succeq 0 \in R^{n\cross n}$ be the Laplacian matrix of undirected graph $G(V,E)$ with eigenvalues \[
-		0 \leq \lambda_1 \leq \lambda_2 \leq \cdots \leq \lambda_n
-	\]
-\end{theorem}
-
 \begin{theorem}\label{thm:L_eig_1_eq_zero}
 	Let $G(V,E)$ be an undirected graph.
 	The Laplacian matrix $L\in\R^{n \cross n}$ of $G(V,E)$, is symmetric $(L=L^T)$ and positive semi-definite $(L\succeq 0)$.
@@ -286,12 +282,13 @@ Using a similar argument as the one in class, show that the number of connected 
 					0\\	0\\	\ddots\\ 0
 				] = \mathbf{0}
 		\end{align*}
-		This implies that $\text{span}\qty{1} \subseteq \null(L)$.
+		This implies that $\text{span}\qty{1} \subseteq \text{null}\qty(L)$.
 	\end{proof}
 \end{theorem}
 
+\newpage
 \subsection{Solution}
-\begin{theorem}
+\begin{theorem}\label{thm:k_subgraphs_eq_k_zero_eig}
 	Let $G(V,E)$ be an undirected graph.
 	The Laplacian matrix $L\in\R^{n \cross n}$ of $G(V,E)$, is symmetric $(L=L^T)$ and positive semi-definite $(L\succeq 0)$.
 	Let the eigenvalues of $L$ be\[
@@ -326,7 +323,6 @@ Using a similar argument as the one in class, show that the number of connected 
 % Problem 4 -------------------------------------------------
 \newpage
 \section{}
-% \textbf{Problem:}
 Let the subspace $S$ be\[
 	S = \text{span}\qty{\mathbf{1}}^{\perp}
 \], i.e.,\[
@@ -334,23 +330,41 @@ Let the subspace $S$ be\[
 \]
 Show that $S$ is $L$-invariant, i.e. $LS \subseteq S$ (i.e. $L x \in S, \forall_{x\in S}$), where $L$ is the Laplacian of an undirected, connected graph.
 
+\subsection{Definitions}
+\begin{definition} \label{def:invariant_subspace}
+	A subspace $S$ is considered \emph{\underline{invariant}} to matrix $M$ (denoted as $M$-invariant) if\[
+		\forall_{x \in S} \ L x \in S
+	\]
+\end{definition}
 
-
-
-
-
-
-
-
-
-
-
+\subsection{Solution}
+\begin{theorem}\label{thm:pblm4}
+	Let subspace $S \subseteq \R^{n}$ be defined as $S = \textnormal{span}\qty{\mathbf{1}}^{\perp}$, (i.e)\[
+		x\in S \iff x^T \mathbf{1} = 0
+	\] For any $L \in \R^{n\cross n}$ be the Laplacian matrix of an undirected and connected graph, $G(V,E)$, the subspace $S$ is $L$-invariant.
+	\begin{proof}
+		By Definition \ref{def:invariant_subspace}, $S$ is said to be $L$-invariant if \[
+			\forall_{x\in S} \
+			 L x \in S
+		\] which is equivalent to saying \[
+			\forall_{x\in S} \implies (L x)^T \mathbf{1} = 0
+		\]
+		\begin{align*}
+			(Lx)^T \mathbf{1} = 0\\
+			x^T L^T \mathbf{1} = 0\\
+			\intertext{Since $L$ undirected, $L$ is symetric $L=L^T$,}
+			x^T L \mathbf{1} = 0\\
+			\intertext{From Theorem \ref{thm:L_eig_1_eq_zero} we have that $\mathbf{1} \in \text{null}\qty(L)$,}
+			x^T (0) = 0
+		\end{align*}
+		Therefore, $\forall_{x\in S} \implies (L x)^T \mathbf{1} = 0$ which by definition proves $S$ is $L$-invariant.
+	\end{proof}
+\end{theorem}
 
 
 % Problem 5 -------------------------------------------------
-% \newpage
+\newpage
 \section{}
-% \textbf{Problem:}
 $K_{1,6}$ is a star graph with one central node and six leaf nodes as shown in \figurename\ref{fig:pblm5}
 
 \begin{figure}[h]
@@ -362,19 +376,38 @@ $K_{1,6}$ is a star graph with one central node and six leaf nodes as shown in \
 
 Your task is to show that $K_{1,6}$ can never be an induced subgraph of a $\Delta$-disk proximity graph.
 
+\subsection{Definitions:}
+\begin{definition}\label{def:induced_subgraph}
+	Let $G(V,E)$ with $V = \qty{v_1,v_2,\dots,v_n}$ 
+	and $E = \qty{e_1, \dots, e_m} \subseteq V \cross V$ 
+	with $e_k = e_{ij} = (v_i, v_j)$.
+	An \emph{\underline{induced subgraph}} of $G(V,E)$ is any $G(V',E')$ with $V'\subset V$ and $E' = [e_{ij}] \ \forall_{v_i, v_j \in V'}$
+\end{definition}
 
+\begin{definition}\label{def:Delta-disk_graph}
+	Let $V = \qty{v_1,v_2,\dots,v_n}$ be vertices.
+	\emph{\underline{$\Delta$-Disk Graphs}} are constructed for a particular $\Delta$ such that \[
+		(v_i,v_j) \in E \iff \norm{v_i,v_j} \leq \Delta
+	\]
+\end{definition}
 
-
-
-
-
-
-
+\subsection{Solution:}
+\begin{theorem}
+	Let $G(V,E)$ be a $\Delta$-Disk Graph for an arbitrary $\Delta$.
+	The star graph $K_{1,6} = G(V_{k16},E_{k16})$ can never be an induced sub graph of $G(V,E)$.
+	\begin{proof}
+		By Definition \ref{def:Delta-disk_graph}, \[
+			E = [e_{ij}] \st e_{ij} = (v_i,v_j) \iff \norm{v_i,v_j} \leq \Delta
+		\] Similarly, by Definition \ref{def:induced_subgraph}, an induced subgraph of $G(V,E)$ for vertex set $V' \subset V$ is defined by $G(V',E')$ where $E' = [e_{ij}] \ \forall_{v_i, v_j \in V'}$.
+		The associated induced subgraph of $G(V,E)$ for $V' = V_{k16}$ has edges $E' = [e_{ij}] \ st e_{ij} = (v_i,v_j) \iff \norm{v_i,v_j} \leq \Delta$.
+		It is clear that for the vertices in $K_{1,6}$, the edges included in $E_{k16}$ is a strict subset of of those within an induced subgraph of those same vertices.
+		More simplistically, the edges connecting neighboring leaf nodes that satisfy $\norm{v_i,v_j} \leq \Delta$ would be required for it to be an induced subgraph of a $\Delta$-Disk graph.
+	\end{proof}
+\end{theorem}
 
 % Problem 6 -------------------------------------------------
-% \newpage
+\newpage
 \section{}
-% \textbf{Problem:}
 If $l_{i,j}$ is the shortest path distance (number of edges one needs to follow) between vertices $v_i$ and $v_j$, 
 the diameter of the graph is defined as\[
 	\diam(G) = \max_{v_i,v_j \in V} l_{i,j}
@@ -401,9 +434,8 @@ the diameter of the graph is defined as\[
 
 
 % Problem 7 -------------------------------------------------
-% \newpage
+\newpage
 \section{}
-% \textbf{Problem:}
 Following are some undirected networks on four nodes with the same initial positions.
 In which of these networks, nodes converge fastest under the distributed consensus dynamics? 
 Explain your answer.
@@ -421,9 +453,8 @@ Explain your answer.
 
 
 % Problem 8 -------------------------------------------------
-% \newpage
+\newpage
 \section{}
-% \textbf{Problem:}
 What is the necessary and sufficient condition for the consensus to happen in the case of static directed networks? 
 Derive this condition.
 
