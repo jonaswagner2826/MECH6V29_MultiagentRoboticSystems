@@ -21,6 +21,10 @@
 \providecommand{\BIBdecl}{\relax}
 \BIBdecl
 
+\bibitem{MECH6v29_lectures}
+W.~Abbas, ``Lecture notes of special topic course: Multi-agent robotic
+  systems,'' 2022.
+
 \bibitem{marsden2013eigenvalues}
 A.~Marsden, ``Eigenvalues of the laplacian and their relationship to the
   connectedness of a graph,'' \emph{University of Chicago, REU}, 2013.

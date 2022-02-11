@@ -53,8 +53,8 @@
 
 
 % Multiagent Robotic Systems Commands
-\newcommand{\diam}{\text{diam}}
-\newcommand{\radius}{\text{radius}}
+\newcommand{\diam}{\textnormal{diam}}
+\newcommand{\radius}{\textnormal{radius}}
 
 
 
@@ -169,7 +169,7 @@ Fundamentally, Swarm Robotics aims to control multi-agent systems with local rul
 In class we saw that an undirected graph G is connected if and only if its Laplacian’s second smallest eigenvalue, $\lambda_2$ is non-zero. 
 Using a similar argument as the one in class, show that the number of connected components (i.e. connected subgraphs that are disconnected from each other) is equal to the number of zero eigenvalues of the Laplacian.
 
-\subsection{Fundamental Graph Theory Definitions}
+\subsection{Definitions}
 \begin{definition} \label{def:graph_def}
 	\underline{\emph{Graph}} $G(V,E)$ is constructed with \underline{\emph{vertex set}} \[
 		V = \qty{v_1,v_2,\dots,v_n}
@@ -424,14 +424,49 @@ the diameter of the graph is defined as\[
 	\label{fig:pblm6}
 \end{figure}
 
+\subsection{Definitions:}
+\begin{definition}\label{def:path_diam_radius_etc}
+	Let $G(V,E)$ be a undirected graph with $V = \qty{v_1,v_2,\dots,v_n}$ 
+	and $E = \qty{e_1, \dots, e_m} \subseteq V \cross V$ 
+	with $e_k = e_{ij} = (v_i, v_j)$.
+	\begin{enumerate}
+		\item A \emph{\underline{path}} between two vertices $v_i$ and $v_j$ is a sequence of edges $[e_{i, *}, \dots, e_{*, j}]$ that joins a sequence of vertices $[v_i, \dots, v_j]$.
+		\item A \emph{\underline{path length}} is the number of edges in the path. 
+		\item The \emph{\underline{shortest path length}} $l_{i,j}$ is the minimum length of all paths between vertices $v_i$ and $v_j$. 
+		This quantity is also known as the \emph{\underline{distance}} between $v_i$ and $v_j$, $\text{dist}\qty(v_i,v_j)$.
+		\item The \emph{\underline{diameter}} of graph $G(V,E)$ is the maximum distance between any two vertices in the graph. 
+		(i.e.)\[
+			\diam(G(V,E)) := \max_{v_i,v_j \in V} l_{i,j}
+		\]
+		\item The \emph{\underline{eccentricity}} of vertex $v_i$, $l_{i}^{*}$, is the largest distance from $v_i$ to any other vertex in the graph. 
+		(i.e)\[
+			l_{i}^{*} := \max_{v_j \in V} l_{i,j}
+		\]
+		\item The \emph{\underline{radius}} of graph $G(V,E)$ is the minimum eccentricity of the vertices of the graph.
+		(i.e)\[
+			\radius(G(V,E)) := \min_{v_i \in V} l_{i}^{*} = \min_{v_i \in V} \max_{v_j \in V} l_{i,j}
+		\]
+	\end{enumerate}
+\end{definition}
 
-
-
-
-
-
-
-
+\subsection{Solution}
+\begin{enumerate}
+	\item $G_1$
+	\begin{enumerate}
+		\item $\diam(G_1) = 3$
+		\item $\radius(G_1) = 3$
+	\end{enumerate}
+	\item $G_2$
+	\begin{enumerate}
+		\item $\diam(G_2) = 4$
+		\item $\radius(G_2) = 2$
+	\end{enumerate}
+	\item $G_3$
+	\begin{enumerate}
+		\item $\diam(G_3) = 2$
+		\item $\radius(G_3) = 2$
+	\end{enumerate}
+\end{enumerate}
 
 % Problem 7 -------------------------------------------------
 \newpage
@@ -440,51 +475,161 @@ Following are some undirected networks on four nodes with the same initial posit
 In which of these networks, nodes converge fastest under the distributed consensus dynamics? 
 Explain your answer.
 
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.7\textwidth]{figs/pblm7.png}
+	\caption{Four node undirected networks}
+	\label{fig:pblm7}
+\end{figure}
 
+\subsection{Network Modeling}
+Let vertices $V = \qty{v_1, v_2, v_3, v_4}$ represent each of the 4 nodes in the undirected networks shown in \figurename \ \ref{fig:pblm7}.
+Take vertices $v_1, v_2, v_3,$ and $v_4$ as top-left, top-right, bottom-left, and bottom-right respectively.
 
+The edge sets for each network, $\qty{E_a, E_b, E_c, E_d}$, are as follows:
+\begin{enumerate}
+	\item $E_a = \qty{(v_1,v_2), (v_1, v_3), (v_2,v_4), (v_3,v_4)}$
+	\item $E_b = \qty{(v_1,v_2), (v_1, v_3), (v_1,v_4), (v_2,v_3), (v_2,v_4), (v_3,v_4)}$
+	\item $E_c = \qty{(v_1, v_3), (v_2,v_4), (v_3,v_4)}$
+	\item $E_d = \qty{(v_1,v_2), (v_3,v_4)}$
+\end{enumerate}
 
+The Degree $\Delta$, Adjacency $A$, and Laplacian $L$ matrices for each network are laid out in \tablename \ref{tbl:pblm7_matrices}
+\begin{table}
+	\caption{Network Matrix Representations}
+	\[\begin{array}{|c|c|c|c|}
+		\hline
+			&\Delta &A &L\\
+		\hline&&&\\
+		G_a	
+			&\mqty[\dmat{2,2,2,2}]	
+			&\mqty[
+				0	&1	&1	&0\\
+				1	&0	&0	&1\\
+				1	&0	&0	&1\\
+				0	&1	&1	&0
+			]
+			&\mqty[
+				2	&-1	&-1	&0\\
+				-1	&2	&0	&-1\\
+				-1	&0	&2	&-1\\
+				0	&-1	&-1	&2
+			]\\
+		&&&\\\hline&&&\\
+		G_b	
+			&\mqty[\dmat{3,3,3,3}]	
+			&\mqty[
+				0	&1	&1	&1\\
+				1	&0	&1	&1\\
+				1	&1	&0	&1\\
+				1	&1	&1	&0
+			]
+			&\mqty[
+				3	&-1	&-1	&-1\\
+				-1	&3	&-1	&-1\\
+				-1	&-1	&3	&-1\\
+				-1	&-1	&-1	&3
+			]\\
+		&&&\\\hline&&&\\
+		G_c
+			&\mqty[\dmat{1,1,2,2}]
+			&\mqty[
+				0	&0	&1	&0\\
+				0	&0	&0	&1\\
+				1	&0	&0	&1\\
+				0	&1	&1	&0
+			]
+			&\mqty[
+				1	&0	&-1	&0\\
+				0	&1	&0	&-1\\
+				-1	&0	&2	&-1\\
+				0	&-1	&-1	&2
+			]\\
+		&&&\\\hline&&&\\	
+		G_d
+			&\mqty[\dmat{1,1,1,1}]
+			&\mqty[
+				0	&1	&0	&0\\
+				1	&0	&0	&0\\
+				0	&0	&0	&1\\
+				0	&0	&1	&0
+			]
+			&\mqty[
+				1	&-1	&0	&0\\
+				-1	&1	&0	&0\\
+				0	&0	&1	&-1\\
+				0	&0	&-1	&1
+			]\\
+		&&&\\\hline
+	\end{array}\]
+	\label{tbl:pblm7_matrices}
+\end{table}
 
+\subsection{Consensus Dynamics}
+From the unweighted consensus dynamics definition in Definition \ref{def:consensus_dynamics}, we have that the continuous time consensus dynamics are governed by the negative Laplacian matrix, $\dot{x} = - L x$.
+The eigenvalues of $L$, \[
+	\Lambda(L) = \qty{\lambda_1, \lambda_2, \lambda_3, \lambda_4} 
+	\st 0 = \lambda_1 \leq \lambda_2 \leq \lambda_3, \leq \lambda_4
+\] tell us a lot about the consensus dynamics.
+It is known, from Theorem \ \ref{thm:L_eig_1_eq_zero}, that $\lambda_1 = 0$ and this confirms that $\dim(\textnormal{null}\qty(L)) \geq 1$ and that a stead-state consensus is possible.
+Further, $\lambda_2$ provides us with a lot of information about how quickly the network will (or will not) converge to a single point.
+If $\lambda_2 = 0$, this indicates that the network in not connected and therefore will not converge to a single point due to consensus.
+For $\lambda_2 > 0$, the response associated with the slowest mode will converge along the associated eigenvector direction decaying at $e^{-\lambda_2 t}$; 
+therefore, as $\lambda_2$ increases the faster the network converges.
+Further, this mode will converge to within 2\% of the final location at $t = 4 \lambda_t$.
 
+\newpage
+\subsection{Solution}
+\textbf{Simple answer:} 
+(b) converges fastest, followed by (a), then (c), while (d) converges to two different locations.
 
-
-
-
-
-
+\textbf{Justified answer:} 
+$\lambda_2$ for each of the networks was calculated as:
+\begin{enumerate}
+	\item $\lambda_{2}^{(a)} = 2$
+	\item $\lambda_{2}^{(b)} = 4$
+	\item $\lambda_{2}^{(c)} = 0.585$
+	\item $\lambda_{2}^{(d)} = 0$
+\end{enumerate}
+Clearly, \[
+	\lambda_{2}^{(d)} = 0 < \lambda_{2}^{(c)} < \lambda{2}^{(a)} < \lambda_{2}^{(b)}
+\] 
+$\lambda_{2}^{(d)} = 0$ demonstrates that network (d) is not connected and therefore does not converge.
+Additionally, this demonstrates that the fastest to slowest convergence is (b), (a), then (c).
 
 % Problem 8 -------------------------------------------------
-\newpage
+% \newpage
 \section{}
 What is the necessary and sufficient condition for the consensus to happen in the case of static directed networks? 
 Derive this condition.
 
+\subsection{Solution}
+This question isn't very specific about what types of conditions are being referred to, so one of the many equivalent conditions that are both necessary and sufficient is that the the positive semi-definite, yet not generally symmetric, directed Laplacian matrix \[
+	L = \Delta^{in} - A^{in}
+\] that describes the dynamics of the directed network in consensus as\[
+	\dot{x} = - L x
+\]\textbf{ has only one zero-valued eigenvalue, $\lambda_1 = 0$, that is associated with eigenvector $\mathbf{1}$}.
+This also is equivalent to saying that the null-space of $L$ is strictly defined as:\[
+	\textnormal{null}\qty(L) = \textnormal{span}\qty{\mathbf{1}}
+\] The proof of these conditions is simple:
 
+Consensus occurs when\[
+	\lim_{t \to \infty} x = x_f \st x_f \in \textnormal{span}\qty{\mathbf{1}}
+\] which is equivalent to saying \[
+	\textnormal{null}\qty(L) = \textnormal{span}\qty{\mathbf{1}} 
+	\land L \succeq 0
+\]
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+As a linear system $\dot{x} = -L x$ only requires the given $L \succeq 0$ to be considered marginally stable; however explicitly specifying that the associated eigenvector with $\lambda_1 = 0$ is $\mathbf{1}$ is also necessary to ensure that all final states are equivalent.
 
 \newpage
 \appendix
-% \section{MATLAB Code:}\label{apx:matlab}
-% All code I write in this course can be found on my GitHub repository:\\
-% \href{https://github.com/jonaswagner2826/MECH6313}{https://github.com/jonaswagner2826/MECH6313}
-
+\section{MATLAB Code:}\label{apx:matlab}
+All code I write in this course can be found on my GitHub repository:\\
+\href{https://github.com/jonaswagner2826/MECH6V29_MultiagentRoboticSystems}{https://github.com/jonaswagner2826/MECH6V29\_MultiagentRoboticSystems}
 
 \bibliographystyle{ieeetran}
 \bibliography{refs.bib}
 \cite{*}
-
 
 \end{document}

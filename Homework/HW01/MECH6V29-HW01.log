@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.9.1)  11 FEB 2022 05:16
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.9.1)  11 FEB 2022 08:39
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -718,12 +718,12 @@ Overfull \hbox (36.09001pt too wide) detected at line 15
  []
 
 
-Overfull \hbox (36.09001pt too wide) detected at line 16
+Overfull \hbox (36.09001pt too wide) detected at line 18
 \OT1/cmr/bx/n/10 Problem 7 
  []
 
 
-Overfull \hbox (36.09001pt too wide) detected at line 17
+Overfull \hbox (36.09001pt too wide) detected at line 22
 \OT1/cmr/bx/n/10 Problem 8 
  []
 
@@ -746,34 +746,44 @@ Overfull \hbox (20.74278pt too wide) in paragraph at lines 235--236
  []
 
 [5] [6] [7] [8]
-<figs/pblm5.png, id=170, 405.515pt x 389.95688pt>
+<figs/pblm5.png, id=205, 405.515pt x 389.95688pt>
 File: figs/pblm5.png Graphic file (type png)
 <use figs/pblm5.png>
 Package pdftex.def Info: figs/pblm5.png  used on input line 372.
 (pdftex.def)             Requested size: 93.94957pt x 90.34271pt.
  [9 <./figs/pblm5.png>]
-<figs/pblm6.png, id=184, 493.845pt x 166.12062pt>
+<figs/pblm6.png, id=219, 493.845pt x 166.12062pt>
 File: figs/pblm6.png Graphic file (type png)
 <use figs/pblm6.png>
 Package pdftex.def Info: figs/pblm6.png  used on input line 422.
 (pdftex.def)             Requested size: 328.82707pt x 110.61076pt.
- [10 <./figs/pblm6.png>] [11] [12] (./MECH6V29-HW01.bbl) [13] (./MECH6V29-HW01.aux)
+ [10 <./figs/pblm6.png>] [11]
+<figs/pblm7.png, id=246, 626.84187pt x 160.09813pt>
+File: figs/pblm7.png Graphic file (type png)
+<use figs/pblm7.png>
+Package pdftex.def Info: figs/pblm7.png  used on input line 480.
+(pdftex.def)             Requested size: 328.82707pt x 83.9868pt.
+\matrixtoks=\toks47
+\matrixtoks=\toks48
+\matrixtoks=\toks49
+\matrixtoks=\toks50
+ [12 <./figs/pblm7.png>] [13] [14] (./MECH6V29-HW01.bbl) [15] (./MECH6V29-HW01.aux)
 Package rerunfilecheck Info: File `MECH6V29-HW01.out' has not changed.
-(rerunfilecheck)             Checksum: C762B314C2940D7B32F1AFA5D4A5D8FF;1492.
+(rerunfilecheck)             Checksum: AE7FD8C3325B6F16E386047CDA1CC0A6;2170.
  ) 
 Here is how much of TeX's memory you used:
- 25736 strings out of 478599
- 473694 string characters out of 5858102
- 813331 words of memory out of 5000000
- 43109 multiletter control sequences out of 15000+600000
+ 25792 strings out of 478599
+ 474350 string characters out of 5858102
+ 832548 words of memory out of 5000000
+ 43128 multiletter control sequences out of 15000+600000
  414786 words of font info for 69 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 84i,18n,83p,660b,762s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 84i,23n,83p,660b,762s stack positions out of 5000i,500n,10000p,200000b,80000s
 <c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbsy10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmbsy7.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on MECH6V29-HW01.pdf (13 pages, 260677 bytes).
+Output written on MECH6V29-HW01.pdf (15 pages, 290406 bytes).
 PDF statistics:
- 301 PDF objects out of 1000 (max. 8388607)
- 240 compressed objects within 3 object streams
- 57 named destinations out of 1000 (max. 500000)
- 159 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 386 PDF objects out of 1000 (max. 8388607)
+ 320 compressed objects within 4 object streams
+ 93 named destinations out of 1000 (max. 500000)
+ 220 words of extra memory for PDF output out of 10000 (max. 10000000)
 
