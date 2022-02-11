@@ -1,9 +1,18 @@
 # Fdb version 3
-["pdflatex"] 1644499078 "c:/Users/Jonas/OneDrive - The University of Texas at Dallas/2022_Spring/MECH6V29_MultiagentRoboticSystems/Homework/HW01/MECH6V29-HW01.tex" "MECH6V29-HW01.pdf" "MECH6V29-HW01" 1644499083
-  "MECH6V29-HW01.aux" 1644499082 2176 92906c5d4c1700c64ed383efb7cf5697 "pdflatex"
-  "MECH6V29-HW01.out" 1644499082 280 11946eaf4084c4f8f9af8030357aec78 "pdflatex"
-  "MECH6V29-HW01.tex" 1644499072 12615 ca56beb2a4498c107788373c6a05e609 ""
-  "c:/Users/Jonas/OneDrive - The University of Texas at Dallas/2022_Spring/MECH6V29_MultiagentRoboticSystems/Homework/HW01/MECH6V29-HW01.tex" 1644499072 12615 ca56beb2a4498c107788373c6a05e609 ""
+["bibtex MECH6V29-HW01"] 1644554719 "MECH6V29-HW01.aux" "MECH6V29-HW01.bbl" "MECH6V29-HW01" 1644554806
+  "MECH6V29-HW01.aux" 1644554787 2942 94bdb0b5f6c3884a5f4cbeecbbaf860c "pdflatex"
+  "c:/texlive/2021/texmf-dist/bibtex/bst/ieeetran/IEEEtran.bst" 1630537240 57748 7c8250ecf02814ce6ddc0cdbb63df1dd ""
+  "refs.bib" 1644554804 214 1e2fe1dd7f502068489178ef9e2d422a ""
+  (generated)
+  "MECH6V29-HW01.bbl"
+  "MECH6V29-HW01.blg"
+["pdflatex"] 1644554783 "c:/Users/Jonas/OneDrive - The University of Texas at Dallas/2022_Spring/MECH6V29_MultiagentRoboticSystems/Homework/HW01/MECH6V29-HW01.tex" "MECH6V29-HW01.pdf" "MECH6V29-HW01" 1644554806
+  "MECH6V29-HW01.aux" 1644554787 2942 94bdb0b5f6c3884a5f4cbeecbbaf860c "pdflatex"
+  "MECH6V29-HW01.bbl" 1644554719 1056 527d240663524b8ca0b2aa0a3ac9c619 "bibtex MECH6V29-HW01"
+  "MECH6V29-HW01.out" 1644554787 1060 ce7b22f776cb89d12cccb6602290c834 "pdflatex"
+  "MECH6V29-HW01.tex" 1644554801 16638 a0a0891c35310369c1c6b4c06504a5cf ""
+  "MECH6V29-HW01.toc" 1644554787 931 75bc80ea8800f9205710ea4b0392ea69 "pdflatex"
+  "c:/Users/Jonas/OneDrive - The University of Texas at Dallas/2022_Spring/MECH6V29_MultiagentRoboticSystems/Homework/HW01/MECH6V29-HW01.tex" 1644554801 16638 a0a0891c35310369c1c6b4c06504a5cf ""
   "c:/texlive/2021/texmf-dist/fonts/map/fontname/texfonts.map" 1630536755 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "c:/texlive/2021/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy5.tfm" 1630534826 1120 1e8878807317373affa7f7bba4cf2f6a ""
   "c:/texlive/2021/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy7.tfm" 1630534826 1120 7f9f170e8aa57527ad6c49feafd45d54 ""
@@ -46,6 +55,7 @@
   "c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb" 1630534826 35752 024fb6c41858982481f6968b5fc26508 ""
   "c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb" 1630534826 32722 d7379af29a190c3f453aba36302ff5a9 ""
   "c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb" 1630534826 32362 bc3f3eec7ab7d65fe700963d4017d32c ""
+  "c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb" 1630534826 31809 8670ca339bf94e56da1fc21c80635e2a ""
   "c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb" 1630534826 32762 7fee39e011c23b3589931effd97b9702 ""
   "c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb" 1630534826 32726 39f0f9e62e84beb801509898a605dbd5 ""
   "c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1630534826 32569 5e5ddc8df908dea60932f3c484a54c0d ""
@@ -208,7 +218,8 @@
   "figs/pblm5.png" 1644481454 17654 a3fd718942c9f72e7573b92383ee3f04 ""
   "figs/pblm6.png" 1644481326 23265 367f86dec2b418bd4e35e0369ea95863 ""
   (generated)
-  "MECH6V29-HW01.aux"
-  "MECH6V29-HW01.pdf"
-  "MECH6V29-HW01.log"
   "MECH6V29-HW01.out"
+  "MECH6V29-HW01.aux"
+  "MECH6V29-HW01.log"
+  "MECH6V29-HW01.toc"
+  "MECH6V29-HW01.pdf"

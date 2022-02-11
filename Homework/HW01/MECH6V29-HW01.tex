@@ -9,7 +9,6 @@
 \usepackage{hyperref}
 \usepackage{empheq}
 
-
 % MATLAB Formatting Code
 \usepackage[numbered,framed]{matlab-prettifier}
 \lstset{style=Matlab-editor,columns=fullflexible}
@@ -69,12 +68,12 @@
 
 \maketitle
 
-% \tableofcontents
+\tableofcontents
 
 %----------------------------------------------------------------------------
 
 % Problem 1 -------------------------------------------------
-% \newpage
+\newpage
 \section{}
 % \textbf{Problem:} 
 State a summary of first five lectures, preferably by creating a concept map diagram (flow diagram). 
@@ -82,7 +81,7 @@ The whole purpose is to make sure that we are clear about the bigger picture,
 and reiterate why are we doing and discussing the specific topics in the class. 
 Do not merely write the topics, instead create connections between topics to clarify the flow of information.
 
-\subsection*{Big Picture Chart}
+\subsection{Big Picture Chart}
 \begin{figure}[h]
 	\centering
 	\begin{tikzpicture}[
@@ -107,7 +106,7 @@ Do not merely write the topics, instead create connections between topics to cla
 		\draw[-] (network_model.south)	.. controls +(down:7mm) and +(right:7mm) ..	(consensus.east);
 
 		%Applications
-		\node[extra]	(app_2)		[above=of applications]	{"Smart" Grids};
+		\node[extra]	(app_2)		[above=of applications]	{``Smart'' Grids};
 		\node[extra]	(app_1)		[left=of app_2]			{Groups of UAVs};
 		\node[extra]	(app_3)		[right=of app_2]		{Comm Networks};
 		\draw[-]	(applications.north) -- (app_1.south);
@@ -151,12 +150,12 @@ Do not merely write the topics, instead create connections between topics to cla
 % Problem 2 -------------------------------------------------
 \newpage
 \section{}
-Go to the following youtube link, and watch a TED talk by Dr. Magnus Egerstedt titled “Swarm robotics – From local rules to global behaviors”.
+Go to the following youtube link, and watch a TED talk by Dr. Magnus Egerstedt titled {``Swarm robotics – From local rules to global behaviors''}.
 \href{https://www.youtube.com/watch?v=ULKyXnQ9xWA}{https://www.youtube.com/watch?v=ULKyXnQ9xWA}
 Then, write down a one paragraph summary, just highlighting the main point or the ‘take-away’ message of the talk. 
 Be brief and to the point.
 
-\subsection*{Video Summary}
+\subsection{Video Summary}
 The TED talk by Dr. Magnus Egerstedt title "Swarm Robotics – From local rules to global behaviors" was an introduction to the control of swarm robotic systems and how the field has evolved in the last 10 years.
 Swarm robotics algorithms must consist of simple, local, and scalable rules that are safe and reactive for individual agents and result in a predictable emergence.
 Much of this is done based on how animals operate within nature and are then particular rules are proven using math.
@@ -165,11 +164,12 @@ Fundamentally, Swarm Robotics aims to control multi-agent systems with local rul
 
 
 % Problem 3 -------------------------------------------------
-% \newpage
+\newpage
 \section{}
 In class we saw that an undirected graph G is connected if and only if its Laplacian’s second smallest eigenvalue, $\lambda_2$ is non-zero. 
 Using a similar argument as the one in class, show that the number of connected components (i.e. connected subgraphs that are disconnected from each other) is equal to the number of zero eigenvalues of the Laplacian.
 
+\subsection{Fundamental Graph Theory Definitions}
 \begin{definition}
 	\underline{\emph{Graph}} $G(V,E)$ is constructed with \underline{\emph{vertex set}} \[
 		V = \qty{v_1,v_2,\dots,v_n}
@@ -190,7 +190,6 @@ Using a similar argument as the one in class, show that the number of connected 
 	\end{enumerate}
 \end{definition}
 
-\newpage
 \begin{definition}
 	Let graph $G(V,E)$ with $V = \qty{v_1,\dots,v_n}$ and $E \subseteq V \cross V$.
 	\begin{enumerate}
@@ -198,7 +197,7 @@ Using a similar argument as the one in class, show that the number of connected 
 			\Delta := \mqty[\dmat{\deg(v_1), \deg(v_2), \ddots, \deg(v_n)}]
 		\]
 		\item The \emph{\underline{adjacency matrix}} $A \in \R^{n\cross n}$ is a symmetric matrix $(A = A^T)$ defined s.t. \[
-			A = [A_{ij}] \st A_{ij} \begin{cases}
+			A = [a_{ij}] \st a_{ij} \begin{cases}
 				1 &(v_i,v_j) \in V\\
 				0 &(v_i,v_j) \notin V
 			\end{cases}
@@ -210,35 +209,122 @@ Using a similar argument as the one in class, show that the number of connected 
 				0	&\text{otherwise}
 			\end{cases}
 		\]
-		\item The \emph{\underline{Laplacian matrix}} $L \in \R^{n \cross n}$ is a symetric $(L = L^T)$ and strictly semi-positive definite $(L \succeq 0)$ is defined as\[
+		\item The \emph{\underline{Laplacian matrix}} $L \in \R^{n \cross n}$ is a symmetric $(L = L^T)$ and strictly semi-positive definite $(L \succeq 0)$ is defined as\[
 			L := \Delta - A = D D^T
+		\]and\[
+			L = \mqty[
+				\deg(v_1)	&-a_{12}	&-a_{13}	&\cdots	&-a_{1n}\\
+				-a_{21}		&\deg(v_2)	&-a_{23}	&\cdots	&-a_{2n}\\
+				\vdots		&\vdots		&\vdots		&\ddots	&\vdots\\
+				-a_{n1}		&-a_{n2}	&-a_{n3}	&\cdots	&\deg(v_n)
+			]
 		\]
-		\item For a weighted graph $G(V,E,W)$, $W\in \R^{m\cross m}$ is a diagonal matrix containing the weight of each edge along the diagonal.
+		\item For a weighted graph $G(V,E,W)$, the diagonal weighted matrix $W\in \R^{m\cross m}$ is defined as\[
+			W = [w_{ij}] \forall_{ij \in E}
+		\]
+		were $w_{ij}$ are the corresponding weights for $e_{ij} = (v_i,v_j)$.
 	\end{enumerate}
 \end{definition}
 
+\begin{definition}
+	Let undirected and unweighted graph $G(V,E)$ with $V = \qty{v_1,\dots,v_n}$ and $E \subseteq V \cross V$.
+	The \emph{\underline{consensus}} dynamics of network $G(V,E)$ is defined by\[
+		\forall_{i=1,\dots,n} \ \dot{x}_i = \sum_{j\in \mathcal{N}_i} (x_j - x_i)
+		\iff \dot{x} = -L x
+	\] For the case with weighted graph $G(V,E,W)$ with diagonal weight matrix $W = [w_{ij}]$, 
+	\emph{\underline{weighted consensus dynamics}} are given as\[
+		\dot{x}_i = \sum_{j\in\mathcal{N}_i} w_{ij} (x_j - x_i) 
+		\implies \dot{x} = - L_{w} x
+	\]where weighted Laplacian matrix $L_{w}$ is defined as\[
+		L_{w} = D W D^T
+	\]
+\end{definition}
+
+\subsection{Preliminary Theorems}
 \begin{theorem}
 	Let $L = L^T \succeq 0 \in R^{n\cross n}$ be the Laplacian matrix of undirected graph $G(V,E)$ with eigenvalues \[
 		0 \leq \lambda_1 \leq \lambda_2 \leq \cdots \leq \lambda_n
 	\]
 \end{theorem}
 
-
-\subsection*{Solution}
-\begin{theorem}
-	For undirected graph $G(V,E)$, the number of connected subgraphs is the same as the number of zero eigenvalues of the Laplacian matrix.
+\begin{theorem}\label{thm:L_eig_1_eq_zero}
+	Let $G(V,E)$ be an undirected graph.
+	The Laplacian matrix $L\in\R^{n \cross n}$ of $G(V,E)$, is symmetric $(L=L^T)$ and positive semi-definite $(L\succeq 0)$.
+	Let the eigenvalues of $L$ be\[
+		0 \leq \lambda_1 \leq \lambda_2 \leq \cdots \leq \lambda_n
+	\] In this undirected case, $L$ will always have eigenvalue $\lambda_1 = 0$ with the corresponding eigenvector of $v_1 = \mathbf{1} = \mqty[1 &1 &\cdots &1]^T$.
 	\begin{proof}
-		
+		$\lambda_1 = 0$ and $v_1 = \mathbf{1}$ implies\[
+			L \mathbf{1} = \lambda_1 \mathbf{1} = 0
+		\]Thus
+		\begin{align*}
+			L \mathbf{1} 
+				&= \mqty[
+					\deg(v_1)	&-a_{12}	&-a_{13}	&\cdots	&-a_{1n}\\
+					-a_{21}		&\deg(v_2)	&-a_{23}	&\cdots	&-a_{2n}\\
+					\vdots		&\vdots		&\vdots		&\ddots	&\vdots\\
+					-a_{n1}		&-a_{n2}	&-a_{n3}	&\cdots	&\deg(v_n)
+				] \mqty[
+					1  \\1	\\\vdots	\\1
+				] = \mqty[
+					\deg(v_1) - \sum_{i\neq 1} a_{1i}\\
+					\deg(v_2) - \sum_{i\neq 2} a_{2i}\\
+					\vdots\\
+					\deg(v_n) - \sum_{i\neq n} a_{ni}\\
+				]\\
+				&= \mqty[
+					\deg(v_1) - \sum_{i\in\mathcal{N}_1} a_{1i}\\
+					\deg(v_2) - \sum_{i\in\mathcal{N}_2} a_{2i}\\
+					\vdots\\
+					\deg(v_n) - \sum_{i\in\mathcal{N}_n} a_{ni}\\
+				] = \mqty[
+					\deg(v_1) - \deg(v_1)\\
+					\deg(v_2) - \deg(v_2)\\
+					\vdots\\
+					\deg(v_n) - \deg(v_n)\\
+				] = \mqty[
+					0\\	0\\	\ddots\\ 0
+				] = \mathbf{0}
+		\end{align*}
+		This implies that $\text{span}\qty{1} \subseteq \null(L)$.
 	\end{proof}
 \end{theorem}
 
-
-
-
-
+\subsection{Solution}
+\begin{theorem}
+	Let $G(V,E)$ be an undirected graph.
+	The Laplacian matrix $L\in\R^{n \cross n}$ of $G(V,E)$, is symmetric $(L=L^T)$ and positive semi-definite $(L\succeq 0)$.
+	Let the eigenvalues of $L$ be\[
+		0 \leq \lambda_1 \leq \lambda_2 \leq \cdots \leq \lambda_n
+	\]
+	Undirected graph $G(V,E)$ will have $k$ connected subgraphs iff $L$ has $k$ zero-valued eigenvalues.
+	(i.e) \[
+		G(V,E) \text{ contains $k$ connected subgraphs}  
+		\iff m_1(\Lambda(L), \lambda_1 = 0) = k
+	\]
+	\begin{proof}
+		The number of block diagonal matrices in the Jordan form of $A$ is equivalent to the number of connected subgraphs, $k$.
+		Similarly, if $A$ can be in $k$ blocks then $L$ will also have $k$ blocks.
+		In other words,\[
+			G(V,E) \text{ contains $k$ connected subgraphs}  
+			\iff A \equiv \text{diag}[A_1, A_2, \dots, A_k]
+			\iff L \equiv \text{diag}[L_1, L_2, \dots, L_k]
+		\] From Theorem \ \ref{thm:L_eig_1_eq_zero}, \[
+			\forall_{i=1,\dots,k} \ \Lambda(L_{i}) \ni \lambda_{i,1} = 0
+		\] It is also known that the eigenvalues for a block diagonal matrix is composed of all the eigenvalues from the block matrices. 
+		(i.e.) \[
+			\Lambda(L) = \bigcup_{i=1,\dots,k} \Lambda(L_{i})
+		\] with  multiplicities of each similar eigenvalue being summed.
+		Since each block, representing a subgraph, has a single zero eigenvalue the multiplicity of $\lambda_1 = 0 \in \Lambda(L)$ is equal to $\sum_{i=1}^{k} 1 = k$. 
+		Therefore, \[
+			G(V,E) = [G_{i=1,\dots,k}], G_{i} \ \text{connected} 
+			\iff m_1(\Lambda(L), \lambda_1 = 0) = k
+		\]
+	\end{proof}
+\end{theorem}
 
 % Problem 4 -------------------------------------------------
-% \newpage
+\newpage
 \section{}
 % \textbf{Problem:}
 Let the subspace $S$ be\[
@@ -358,11 +444,16 @@ Derive this condition.
 
 
 
-% \newpage
-% \appendix
+\newpage
+\appendix
 % \section{MATLAB Code:}\label{apx:matlab}
 % All code I write in this course can be found on my GitHub repository:\\
 % \href{https://github.com/jonaswagner2826/MECH6313}{https://github.com/jonaswagner2826/MECH6313}
+
+
+\bibliographystyle{ieeetran}
+\bibliography{refs.bib}
+\cite{*}
 
 
 \end{document}

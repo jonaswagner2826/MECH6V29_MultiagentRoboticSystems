@@ -1,0 +1,311 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+]{article}
+\usepackage{amsmath,amssymb}
+\usepackage{lmodern}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\hypersetup{
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+\urlstyle{same} % disable monospaced font for URLs
+\usepackage{longtable,booktabs,array}
+\usepackage{calc} % for calculating minipage widths
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
+\usepackage{graphicx}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+\ifLuaTeX
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+
+\author{}
+\date{}
+
+\begin{document}
+
+\begin{quote}
+\textbf{Assignment 1}\\
+\textbf{(SYSM 6v80.001 / MECH 6v29.001 -- Multiagent Robotic Systems)}
+
+• The submission deadline is \textbf{10 February 2022 (Friday)} 5:00 PM
+(CT).
+
+• Please either upload your solution (in the form of a pdf file) at the
+elearning web page, or give a hard copy to the instructor (preferred
+option).
+
+• Each problem has \textbf{10 points}.
+\end{quote}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 0\tabcolsep) * \real{1.00}}@{}}
+\toprule
+\endhead
+\begin{minipage}[t]{\linewidth}\raggedright
+\begin{quote}
+\textbf{Problem 1}
+\end{quote}
+\end{minipage} \\
+\bottomrule
+\end{longtable}
+
+State a summary of first \textbf{five} lectures, preferably by creating
+a concept map diagram (flow diagram). The whole purpose is to make sure
+that we are clear about the \emph{\textbf{bigger picture}}, and
+reiterate why are we doing and discussing the specific topics in the
+class. Do not merely write the topics, instead create connections
+between topics to clarify the flow of information.
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 0\tabcolsep) * \real{1.00}}@{}}
+\toprule
+\endhead
+\begin{minipage}[t]{\linewidth}\raggedright
+\begin{quote}
+\textbf{Problem 2}
+\end{quote}
+\end{minipage} \\
+\bottomrule
+\end{longtable}
+
+Go to the following youtube link, and watch a TED talk by Dr. Magnus
+Egerstedt titled \emph{\textbf{``Swarm robotics -- From local rules to
+global behaviors''}}.
+
+https://www.youtube.com/watch?v=ULKyXnQ9xWA\\
+Then, write down a one paragraph summary, just highlighting the main
+point or the`take-away' message of the talk. Be brief and to the point.
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 0\tabcolsep) * \real{1.00}}@{}}
+\toprule
+\endhead
+\begin{minipage}[t]{\linewidth}\raggedright
+\begin{quote}
+\textbf{Problem 3}
+\end{quote}
+\end{minipage} \\
+\bottomrule
+\end{longtable}
+
+In class we saw that an undirected graph \emph{G} is connected if and
+only if its Laplacian's second smallest eigen value, \emph{λ}2 is
+non-zero. Using a similar argument as the one in class, show that the
+number of connected components (i.e. connected subgraphs that are
+disconnected from each other) is equal to the number of zero eigen
+values of the Laplacian.
+
+1
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 0\tabcolsep) * \real{1.00}}@{}}
+\toprule
+\begin{minipage}[b]{\linewidth}\raggedright
+\begin{quote}
+\textbf{Problem 4}
+\end{quote}
+\end{minipage} \\
+\midrule
+\endhead
+\vtop{\hbox{\strut Let the subspace \emph{S} be}\hbox{\strut \emph{S} =
+span\emph{\{}\textbf{1}\emph{\}⊥,}}\hbox{\strut i.e.,}\hbox{\strut \emph{x~∈
+S~⇔ xT}\textbf{1} = 0}\hbox{\strut Show that \emph{S} is
+\emph{L−}invariant, i.e., \emph{LS~⊆ S} (i.e., \emph{Lx~∈ S,~∀ x~∈ S}),
+where \emph{L} is the Laplacian of an undirected, connected graph.}} \\
+\begin{minipage}[t]{\linewidth}\raggedright
+\begin{quote}
+\textbf{Problem 5}
+\end{quote}
+\end{minipage} \\
+\bottomrule
+\end{longtable}
+
+\emph{K}1\emph{,}6 is a star graph with one central node and six leaf
+nodes as shown in Fig. 1.
+
+\includegraphics[width=1.05556in,height=1.04167in]{vertopal_ff5faacd685f4acaad88c4c3d00b8ae4/media/image1.png}
+
+Figure 1: Star graph, \emph{K}1\emph{,}6.
+
+Your task is to show that \emph{K}1\emph{,}6 can never be an induced
+subgraph of a ∆-disk proximity graph.
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 0\tabcolsep) * \real{1.00}}@{}}
+\toprule
+\endhead
+\begin{minipage}[t]{\linewidth}\raggedright
+\begin{quote}
+\textbf{Problem 6}
+\end{quote}
+\end{minipage} \\
+\bottomrule
+\end{longtable}
+
+If \emph{li,j} is the shortest path distance (number of edges one needs
+to follow) between vertices \emph{vi} and \emph{vj}, the diameter of the
+graph is defined as
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.50}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.50}}@{}}
+\toprule
+diam(\emph{G}) = & \begin{minipage}[b]{\linewidth}\raggedright
+\begin{quote}
+\emph{vi,vj∈Vli,j}max
+\end{quote}
+\end{minipage} \\
+\midrule
+\endhead
+Similarly, if we let \emph{l∗i}(known as the eccentricity of vertex
+\emph{vi}) be the longest distance to any vertex from the vertex
+\emph{vi}, i.e., & \\
+\emph{l∗i}= max \emph{vj∈Vli,j} & \\
+\bottomrule
+\end{longtable}
+
+then the radius of a graph is defined as
+
+\begin{longtable}[]{@{}l@{}}
+\toprule
+radius(\emph{G}) = min \emph{vi∈Vl∗} \\
+\midrule
+\endhead
+Find the radius and diameter of the following graphs. \\
+\bottomrule
+\end{longtable}
+
+2
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.33}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.33}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.33}}@{}}
+\toprule
+\includegraphics[width=0.98611in,height=1.04167in]{vertopal_ff5faacd685f4acaad88c4c3d00b8ae4/media/image2.png}
+&
+\includegraphics[width=0.98611in,height=1.04167in]{vertopal_ff5faacd685f4acaad88c4c3d00b8ae4/media/image3.png}
+& \begin{minipage}[b]{\linewidth}\raggedright
+\begin{quote}
+\includegraphics[width=1in,height=1.04167in]{vertopal_ff5faacd685f4acaad88c4c3d00b8ae4/media/image4.png}
+\end{quote}
+\end{minipage} \\
+\midrule
+\endhead
+\emph{G}1 & \emph{G}2 & \emph{G}3 \\
+\bottomrule
+\end{longtable}
+
+Figure 2:
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 0\tabcolsep) * \real{1.00}}@{}}
+\toprule
+\endhead
+\begin{minipage}[t]{\linewidth}\raggedright
+\begin{quote}
+\textbf{Problem 7}
+\end{quote}
+\end{minipage} \\
+\bottomrule
+\end{longtable}
+
+Following are some undirected networks on four nodes with the same
+initial positions. In which of these networks, nodes converge fastest
+under the distributed consensus dynamics? Explain your answer.
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.25}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.25}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.25}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.25}}@{}}
+\toprule
+\includegraphics[width=0.98611in,height=0.98611in]{vertopal_ff5faacd685f4acaad88c4c3d00b8ae4/media/image5.png}
+&
+\includegraphics[width=0.97222in,height=0.98611in]{vertopal_ff5faacd685f4acaad88c4c3d00b8ae4/media/image6.png}
+&
+\includegraphics[width=0.98611in,height=0.97222in]{vertopal_ff5faacd685f4acaad88c4c3d00b8ae4/media/image7.png}
+& \begin{minipage}[b]{\linewidth}\raggedright
+\begin{quote}
+\includegraphics[width=0.98611in,height=0.19444in]{vertopal_ff5faacd685f4acaad88c4c3d00b8ae4/media/image8.png}
+\end{quote}
+\end{minipage} \\
+\midrule
+\endhead
+(a) & (b) & (c) & (d) \\
+\bottomrule
+\end{longtable}
+
+Figure 3:
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 0\tabcolsep) * \real{1.00}}@{}}
+\toprule
+\endhead
+\begin{minipage}[t]{\linewidth}\raggedright
+\begin{quote}
+\textbf{Problem 8}
+\end{quote}
+\end{minipage} \\
+\bottomrule
+\end{longtable}
+
+What is the \emph{necessary and sufficient} condition for the consensus
+to happen in the case of static directed networks? Derive this
+condition.
+
+3
+
+\end{document}
