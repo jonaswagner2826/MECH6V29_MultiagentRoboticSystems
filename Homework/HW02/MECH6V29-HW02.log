@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.9.1)  1 MAR 2022 08:30
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.9.1)  1 MAR 2022 16:51
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -708,23 +708,18 @@ Overfull \hbox (36.09001pt too wide) detected at line 7
  []
 
 
-Overfull \hbox (36.09001pt too wide) detected at line 8
+Overfull \hbox (36.09001pt too wide) detected at line 10
 \OT1/cmr/bx/n/10 Problem 5 
  []
 
 
-Overfull \hbox (36.09001pt too wide) detected at line 9
+Overfull \hbox (36.09001pt too wide) detected at line 11
 \OT1/cmr/bx/n/10 Problem 6 
  []
 
 
-Overfull \hbox (36.09001pt too wide) detected at line 10
+Overfull \hbox (36.09001pt too wide) detected at line 15
 \OT1/cmr/bx/n/10 Problem 7 
- []
-
-
-Overfull \hbox (36.09001pt too wide) detected at line 11
-\OT1/cmr/bx/n/10 Problem 8 
  []
 
 )
@@ -741,29 +736,101 @@ Overfull \hbox (20.74278pt too wide) in paragraph at lines 230--231
  []
 
 [4] [5]
-<figs/pblm3.png, id=122, 427.5975pt x 102.3825pt>
+<figs/pblm3.png, id=142, 427.5975pt x 102.3825pt>
 File: figs/pblm3.png Graphic file (type png)
 <use figs/pblm3.png>
 Package pdftex.def Info: figs/pblm3.png  used on input line 304.
 (pdftex.def)             Requested size: 328.82707pt x 78.73322pt.
 \matrixtoks=\toks47
- [6 <./figs/pblm3.png>] [7] [8] [9] [10] [11] (./MECH6V29-HW02.aux)
+ [6 <./figs/pblm3.png>]
+
+Package hyperref Warning: Difference (2) between bookmark levels is greater 
+(hyperref)                than one, level fixed on input line 384.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 384.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 384.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 391.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 391.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 391.
+
+[7] [8]
+File: figs/pblm3.png Graphic file (type png)
+<use figs/pblm3.png>
+Package pdftex.def Info: figs/pblm3.png  used on input line 436.
+(pdftex.def)             Requested size: 140.92793pt x 33.74258pt.
+ [9]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 471.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 471.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 471.
+
+<figs/pblm6a.png, id=177, 377.91188pt x 164.615pt>
+File: figs/pblm6a.png Graphic file (type png)
+<use figs/pblm6a.png>
+Package pdftex.def Info: figs/pblm6a.png  used on input line 474.
+(pdftex.def)             Requested size: 234.8775pt x 102.31142pt.
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 486.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 486.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 486.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 495.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 495.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 495.
+
+[10 <./figs/pblm6a.png>] [11] [12] (./MECH6V29-HW02.aux)
 Package rerunfilecheck Info: File `MECH6V29-HW02.out' has not changed.
-(rerunfilecheck)             Checksum: 20AFE893C8E254A22F88D4BFFBD899C3;636.
+(rerunfilecheck)             Checksum: 24F87DF4DCF60593FA0C51F172DD3736;968.
  ) 
 Here is how much of TeX's memory you used:
- 25664 strings out of 478599
- 472415 string characters out of 5858102
- 820796 words of memory out of 5000000
- 43051 multiletter control sequences out of 15000+600000
- 415145 words of font info for 70 fonts, out of 8000000 for 9000
+ 25697 strings out of 478599
+ 472879 string characters out of 5858102
+ 820867 words of memory out of 5000000
+ 43064 multiletter control sequences out of 15000+600000
+ 415766 words of font info for 72 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 84i,18n,83p,660b,793s stack positions out of 5000i,500n,10000p,200000b,80000s
-<c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbsy10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmbsy7.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on MECH6V29-HW02.pdf (11 pages, 225521 bytes).
+ 84i,19n,83p,660b,793s stack positions out of 5000i,500n,10000p,200000b,80000s
+<c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbsy10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmbsy7.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on MECH6V29-HW02.pdf (12 pages, 310526 bytes).
 PDF statistics:
- 248 PDF objects out of 1000 (max. 8388607)
- 195 compressed objects within 2 object streams
- 46 named destinations out of 1000 (max. 500000)
- 114 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 304 PDF objects out of 1000 (max. 8388607)
+ 243 compressed objects within 3 object streams
+ 63 named destinations out of 1000 (max. 500000)
+ 151 words of extra memory for PDF output out of 10000 (max. 10000000)
 
