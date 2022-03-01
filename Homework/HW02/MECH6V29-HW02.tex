@@ -375,51 +375,82 @@ Also, relate your answers to where the followers end up as $t \to \infty$.
 \end{definition}
 
 \subsection*{Solution:}
+Assuming that the network is unweighted and the single leader is associated with $v_n$,\[
+    \dot{x} = \mqty[
+        -L_f & - l\\
+        0 & 0
+    ]
+\]
+\subsubsection{$l$}
+Since $\deg(v_n) = N-1$, \[
+    \sum_{i=1}^{N-1} l_i = N-1
+\] therefore all elements must be 1 and \[
+    l = \mathbf{1}_{N-1}
+\]
 
+\subsubsection{$L_f \mathbf{1}$}
 
+\begin{align*}
+    L_f \mathbf{1} 
+        &= \mqty[
+            \deg(v_1) & -a_{1,2} &\cdots &-a_{1,n}\\
+            -a_{2,1} &\deg(v_2)  &\cdots &-a_{2,n}\\
+            \vdots &\vdots &\ddots &\vdots\\
+            -a_{n,1} &-a_{n,2} &\cdots &\deg(v_n)
+        ] \mqty[
+            1\\
+            1\\
+            \vdots\\
+            1  
+        ]
+        &= \mqty[
+            \deg(v_1) - \sum_{i \neq 1} a_{1,i}\\
+            \deg(v_2) - \sum_{i \neq 2} a_{2,i}\\
+            \vdots\\
+            \deg(v_n) - \sum_{i \neq n} a_{n,i}\\
+        ]
+    \intertext{Since by definition $\deg(v_i) = \sum{j\neq i} a_{i,j}$,}
+    \Aboxed{
+    L_f \mathbf{1} 
+        &= \mqty[
+            0\\
+            0\\
+            \vdots\\
+            0
+        ] = \mathbf{0}_{N-1}}
+\end{align*}
 
-% Let the subspace $S$ be\[
-% 	S = \text{span}\qty{\mathbf{1}}^{\perp}
-% \], i.e.,\[
-% 	x \in S \iff x^T \mathbf{1} = 0
-% \]
-% Show that $S$ is $L$-invariant, i.e. $LS \subseteq S$ (i.e. $L x \in S, \forall_{x\in S}$), where $L$ is the Laplacian of an undirected, connected graph.
-
-% \subsection{Definitions}
-% \begin{definition} \label{def:invariant_subspace}
-% 	A subspace $S$ is considered \emph{\underline{invariant}} to matrix $M$ (denoted as $M$-invariant) if\[
-% 		\forall_{x \in S} \ L x \in S
-% 	\]
-% \end{definition}
-
-% \subsection{Solution}
-% \begin{theorem}\label{thm:pblm4}
-% 	Let subspace $S \subseteq \R^{n}$ be defined as $S = \textnormal{span}\qty{\mathbf{1}}^{\perp}$, (i.e)\[
-% 		x\in S \iff x^T \mathbf{1} = 0
-% 	\] For any $L \in \R^{n\cross n}$ be the Laplacian matrix of an undirected and connected graph, $G(V,E)$, the subspace $S$ is $L$-invariant.
-% 	\begin{proof}
-% 		By Definition \ref{def:invariant_subspace}, $S$ is said to be $L$-invariant if \[
-% 			\forall_{x\in S} \
-% 			 L x \in S
-% 		\] which is equivalent to saying \[
-% 			\forall_{x\in S} \implies (L x)^T \mathbf{1} = 0
-% 		\]
-% 		\begin{align*}
-% 			(Lx)^T \mathbf{1} = 0\\
-% 			x^T L^T \mathbf{1} = 0\\
-% 			\intertext{Since $L$ undirected, $L$ is symetric $L=L^T$,}
-% 			x^T L \mathbf{1} = 0\\
-% 			\intertext{From Theorem \ref{thm:L_eig_1_eq_zero} we have that $\mathbf{1} \in \text{null}\qty(L)$,}
-% 			x^T (0) = 0
-% 		\end{align*}
-% 		Therefore, $\forall_{x\in S} \implies (L x)^T \mathbf{1} = 0$ which by definition proves $S$ is $L$-invariant.
-% 	\end{proof}
-% \end{theorem}
 
 
 % Problem 5 -------------------------------------------------
 \newpage
 \section{}
+\subsection*{Problem:}
+Consider the (undirected) network in \figurename \ref{fig:pblm5}. 
+At any instance of time, exactly one of the nodes $x$ and $y$ would be included in the network. 
+So, basically, we will get a switched system. 
+Assuming all nodes impliment the consensus dynamics, will they converge at one point (centroid of initial states) asymptotically?
+Explain.
+\begin{figure}[h]
+    \centering
+    % \includegraphics[width=0.3\textwidth]{figs/pblm3.png}
+    \caption{Network for problem 5}
+    \label{fig:pblm5}
+\end{figure}
+
+\subsection*{Preliminaries:}
+Include Theorems related to requirements to switched system stability... 
+
+\subsection*{Solution:}
+Within this switched system shown in \figurename \ref{fig:pblm5}, the exclusion of nodes $x$ and $y$ during any singe time-step causes the system to be disconnectd into 2 connected subgraphs. 
+
+
+
+
+
+
+
+
 % $K_{1,6}$ is a star graph with one central node and six leaf nodes as shown in \figurename\ref{fig:pblm5}
 
 % \begin{figure}[h]
