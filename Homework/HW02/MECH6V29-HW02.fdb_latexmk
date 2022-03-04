@@ -1,10 +1,10 @@
 # Fdb version 3
-["pdflatex"] 1646175111 "c:/Users/Jonas/OneDrive - The University of Texas at Dallas/2022_Spring/MECH6V29_MultiagentRoboticSystems/Homework/HW02/MECH6V29-HW02.tex" "MECH6V29-HW02.pdf" "MECH6V29-HW02" 1646175117
-  "MECH6V29-HW02.aux" 1646175114 3432 fa25c24e1a98abfef661fef9c67549ba "pdflatex"
-  "MECH6V29-HW02.out" 1646175114 968 24f87df4dcf60593fa0c51f172dd3736 "pdflatex"
-  "MECH6V29-HW02.tex" 1646175109 19095 5b891ce81e99f97c4b6910c014d13e3b ""
-  "MECH6V29-HW02.toc" 1646175114 1180 efaddc6fb55cbd14e56019cd5d98a9ae "pdflatex"
-  "c:/Users/Jonas/OneDrive - The University of Texas at Dallas/2022_Spring/MECH6V29_MultiagentRoboticSystems/Homework/HW02/MECH6V29-HW02.tex" 1646175109 19095 5b891ce81e99f97c4b6910c014d13e3b ""
+["pdflatex"] 1646232131 "c:/Users/Jonas/OneDrive - The University of Texas at Dallas/2022_Spring/MECH6V29_MultiagentRoboticSystems/Homework/HW02/MECH6V29-HW02.tex" "MECH6V29-HW02.pdf" "MECH6V29-HW02" 1646232134
+  "MECH6V29-HW02.aux" 1646232134 3432 fa25c24e1a98abfef661fef9c67549ba "pdflatex"
+  "MECH6V29-HW02.out" 1646232134 968 24f87df4dcf60593fa0c51f172dd3736 "pdflatex"
+  "MECH6V29-HW02.tex" 1646232129 19251 be9c614718511571d35fd039fc3fcc46 ""
+  "MECH6V29-HW02.toc" 1646232134 1180 efaddc6fb55cbd14e56019cd5d98a9ae "pdflatex"
+  "c:/Users/Jonas/OneDrive - The University of Texas at Dallas/2022_Spring/MECH6V29_MultiagentRoboticSystems/Homework/HW02/MECH6V29-HW02.tex" 1646232129 19251 be9c614718511571d35fd039fc3fcc46 ""
   "c:/texlive/2021/texmf-dist/fonts/map/fontname/texfonts.map" 1630536755 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "c:/texlive/2021/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy5.tfm" 1630534826 1120 1e8878807317373affa7f7bba4cf2f6a ""
   "c:/texlive/2021/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy7.tfm" 1630534826 1120 7f9f170e8aa57527ad6c49feafd45d54 ""
@@ -214,9 +214,11 @@
   "c:/texlive/2021/texmf.cnf" 1630540902 713 e69b156964470283e0530f5060668171 ""
   "figs/pblm3.png" 1646141769 11582 6f09ddb45c7aeb65904baec837556d63 ""
   "figs/pblm6a.png" 1646173302 56447 9ec0110af5a0e7da6da07c555dd7198b ""
+  "figs/pblm6b.png" 1646173321 60516 f29c19d8d62607414f9b4baf2630e50e ""
+  "figs/pblm6c.png" 1646173341 71082 0289d1ceb2c86bde244c7acc6ff28017 ""
   (generated)
   "MECH6V29-HW02.pdf"
+  "MECH6V29-HW02.aux"
   "MECH6V29-HW02.out"
   "MECH6V29-HW02.toc"
   "MECH6V29-HW02.log"
-  "MECH6V29-HW02.aux"

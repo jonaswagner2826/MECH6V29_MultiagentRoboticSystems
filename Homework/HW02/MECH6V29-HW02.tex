@@ -87,6 +87,7 @@ Do not merely write the topics, instead create connections between topics to cla
     \resizebox*{\textwidth}{!}{\begin{tikzpicture}[
 		empty/.style={coordinate, draw=white!0, fill=white!0, thin, minimum size = 0.1mm},
 		block/.style={rectangle, draw=blue!80, fill=blue!10, very thick, minimum size = 15mm},
+        subblock/.style={diamond, draw=yellow!80, fill=yellow!10, very thick, minimum size = 15mm, aspect=2.5},
 		extra/.style={ellipse, draw=red!80, fill=red!10, thick, minimum size = 10mm},
 		auto,
 		% roundnode/.style={circle, draw=green!60, fill=green!5, very thick, minimum size=7mm},
@@ -94,12 +95,9 @@ Do not merely write the topics, instead create connections between topics to cla
 		]
 		%Main Nodes
 		\node[empty]	(center)								{};
-		\node[block, text width = 30mm]	(consensus)	[above=of center]	{Consensus Problem $\dot{x}=-L x$};
-		\node[block]	(lyap)		[left=of center] 	{Lyapnov Stability};
-		\node[block]	(lead_follow)		[right=of center] 	{Leader-Follower Network};
-        % \node[block]	(applications)		[below=of center]	{Real-world Applications};
-
+		
         %Consensus
+        \node[block, text width = 30mm]	(consensus)	[above=2cm of center]	{Consensus Problem $\dot{x}=-L x$};
         \node[extra]	(con_2)		[above=of consensus]	{Adjacency Matrix: $A$};
         \node[extra]	(con_1)		[left=of con_2]			{Degree Matrix: $\Delta$};
         \node[extra]	(con_3)		[right=of con_2]		{Incidence Matrix: $D$};
@@ -112,7 +110,7 @@ Do not merely write the topics, instead create connections between topics to cla
         \draw[-]	(con_3.north)		--	(con_4.south);
 
         %Directed Consensus
-        \node[block]	(di_con)	[right=of consensus]	{Directed Consensus};
+        \node[subblock]	(di_con)	[right=of consensus]	{Directed Consensus};
         \draw[-]    (consensus.east) -- (di_con.west);
         \node[extra]    (di_con_1)  [right=of di_con]    {Strongly vs Weakly Connected};
         \draw[-]    (di_con.east) -- (di_con_1.west);
@@ -120,30 +118,32 @@ Do not merely write the topics, instead create connections between topics to cla
         \draw[-]    (di_con.east) -- (di_con_2.west);
 
         %Time-Varying Consensus
-        \node[block]	(tv_con)	[left=of consensus]	{Time Varying Consensus};
+        \node[subblock]	(tv_con)	[left=of consensus]	{Time Varying Consensus};
         \draw[-]    (consensus.west) -- (tv_con.east);
         \node[extra]    (tv_con_1) [left=of tv_con] {Switched Networks};
         \draw[-]    (tv_con.west) -- (tv_con_1.east);
         \node[extra, text width = 40mm]    (tv_con_2) [below=of tv_con_1] {Universal vs Existential Stability};
         \draw[-]    (tv_con.west) -- (tv_con_2.east);
+
+        %Lyapnov Stability
+        \node[block]	(lyap)		[left=3cm of center] 	{Lyapnov Stability};
         \draw[-]    (lyap.west) -- (tv_con_2.east);
+        \draw[-]    (lyap.north) -- (consensus.south);
 
         %Leader-Follower System
-        % \node[extra] 
+        \node[block]	(lead_follow)		[right=3cm of center] 	{Leader-Follower Network};
+        \draw[-] (consensus.south) -- (lead_follow.north);
 
-		% %Main Lines
-		% \draw[-] (applications.west) 	.. controls +(left:5mm) and +(up:3mm)  ..	(ctrl_pblms.north); %controls +(up:5mm) and +(left:5mm)
-		% \draw[-] (applications.east) 	.. controls +(right:5mm) and +(up:3mm) .. (network_model.north);
-		% \draw[-] (ctrl_pblms.south) 	.. controls +(down:7mm) and +(left:7mm)  .. (consensus.west);
-		% \draw[-] (network_model.south)	.. controls +(down:7mm) and +(right:7mm) ..	(consensus.east);
-
-		% %Applications
-		% \node[extra]	(app_2)		[below=of applications]	{``Smart'' Grids};
-		% \node[extra]	(app_1)		[left=of app_2]			{Groups of UAVs};
-		% \node[extra]	(app_3)		[right=of app_2]		{Comm Networks};
-		% \draw[-]	(applications.south) -- (app_1.north);
-		% \draw[-]	(applications.south) -- (app_2.north);
-		% \draw[-]	(applications.south) -- (app_3.north);
+		%Applications
+        \node[subblock] (app) [below=2cm of center] {Applications};
+        \draw[-] (lead_follow.south) -- (app.north);
+        \draw[-] (lyap.south) -- (app.north);
+		\node[extra]	(app_2)		[below=of app]	    {Distributed Estimation};
+		\node[extra]	(app_1)		[left=of app_2]		{Flocking};
+		\node[extra]	(app_3)		[right=of app_2]	{Alignment};
+		\draw[-]	(app.south) -- (app_1.north);
+		\draw[-]	(app.south) -- (app_2.north);
+		\draw[-]	(app.south) -- (app_3.north);
 
 		% %Control Problems
 		% \node[extra]	(ctr_2)		[left=of ctrl_pblms]	{Formation};
@@ -160,7 +160,6 @@ Do not merely write the topics, instead create connections between topics to cla
 		% \draw[-]	(network_model.east)	--	(graph_1.west);
 		% \draw[-]	(network_model.east)	--	(graph_2.west);
 		% \draw[-]	(network_model.east)	--	(graph_3.west);
-
 		
 
 	\end{tikzpicture}}
@@ -273,6 +272,11 @@ which results in \[\boxed{
 \subsection{}
 \subsubsection*{Problem:}
 Can you give a graph-theoretic interpretation to your answer in $(A)$?
+
+
+
+
+
 
 \subsubsection*{Solution:}
 A potential graph-theoretical interpretation could be would be a 
@@ -484,7 +488,11 @@ When does it drive the state to \[
 
 
 \subsection{$G_2$}
-
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.5\textwidth]{figs/pblm6b.png}
+    % \caption{$G_1$ for Problem 6}
+\end{figure}
 
 
 
@@ -493,7 +501,11 @@ When does it drive the state to \[
 
 
 \subsection{$G_3$}
-
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.5\textwidth]{figs/pblm6c.png}
+    % \caption{$G_1$ for Problem 6}
+\end{figure}
 
 
 

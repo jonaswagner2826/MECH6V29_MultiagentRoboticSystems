@@ -1028,6 +1028,16 @@ INPUT ./figs/pblm6a.png
 INPUT figs/pblm6a.png
 INPUT ./figs/pblm6a.png
 INPUT ./figs/pblm6a.png
+INPUT ./figs/pblm6b.png
+INPUT ./figs/pblm6b.png
+INPUT figs/pblm6b.png
+INPUT ./figs/pblm6b.png
+INPUT ./figs/pblm6b.png
+INPUT ./figs/pblm6c.png
+INPUT ./figs/pblm6c.png
+INPUT figs/pblm6c.png
+INPUT ./figs/pblm6c.png
+INPUT ./figs/pblm6c.png
 INPUT MECH6V29-HW02.aux
 INPUT ./MECH6V29-HW02.out
 INPUT ./MECH6V29-HW02.out
