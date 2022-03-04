@@ -8,6 +8,7 @@
 \usepackage{graphicx}
 \usepackage{hyperref}
 \usepackage{empheq}
+\usepackage{pdfpages}
 
 % MATLAB Formatting Code
 \usepackage[numbered,framed]{matlab-prettifier}
@@ -144,24 +145,6 @@ Do not merely write the topics, instead create connections between topics to cla
 		\draw[-]	(app.south) -- (app_1.north);
 		\draw[-]	(app.south) -- (app_2.north);
 		\draw[-]	(app.south) -- (app_3.north);
-
-		% %Control Problems
-		% \node[extra]	(ctr_2)		[left=of ctrl_pblms]	{Formation};
-		% \node[extra]	(ctr_1)		[above=of ctr_2]		{Rendezvous};
-		% \node[extra]	(ctr_3)		[below=of ctr_2]		{Flocking};
-		% \draw[-]	(ctrl_pblms.west)	--	(ctr_1.east);
-		% \draw[-]	(ctrl_pblms.west)	--	(ctr_2.east);
-		% \draw[-]	(ctrl_pblms.west)	--	(ctr_3.east);
-
-		% %Network Models
-		% \node[extra]	(graph_2)	[right=of network_model]	{Dynamic vs Static};
-		% \node[extra]	(graph_1)	[above=of graph_2]			{Proximity-Based};
-		% \node[extra]	(graph_3)	[below=of graph_2]			{Directed vs Undirected};
-		% \draw[-]	(network_model.east)	--	(graph_1.west);
-		% \draw[-]	(network_model.east)	--	(graph_2.west);
-		% \draw[-]	(network_model.east)	--	(graph_3.west);
-		
-
 	\end{tikzpicture}}
 	\caption{Diagram of Course Topics (created w/ TikZ)}
 	\label{fig:pblm1}
@@ -235,7 +218,6 @@ If instead\[
 	\]
 \end{definition}
 
-
 \subsubsection*{Solution:}
 From the definition of the Laplacian Matrix (Definition \ref{def:graph_matrices}), we have\[
     L = \Delta - A
@@ -273,22 +255,9 @@ which results in \[\boxed{
 \subsubsection*{Problem:}
 Can you give a graph-theoretic interpretation to your answer in $(A)$?
 
-
-
-
-
-
 \subsubsection*{Solution:}
-A potential graph-theoretical interpretation could be would be a 
-
-
-
-
-
-
-
-
-
+A potential graph-theoretical interpretation could be would be a network with nonlinear consensus dynamics dependent on more then just a single dynamic link. 
+This is particularly interesting when looking at representations of digital logic gates or neuron type "circuitry".
 
 % Problem 3 -------------------------------------------------
 \newpage
@@ -437,19 +406,18 @@ Assuming all nodes impliment the consensus dynamics, will they converge at one p
 Explain.
 \begin{figure}[h]
     \centering
-    \includegraphics[width=0.3\textwidth]{figs/pblm3.png}
+    \includegraphics[width=0.3\textwidth]{figs/pblm5.png}
     \caption{Network for problem 5}
     \label{fig:pblm5}
 \end{figure}
 
-\subsection*{Preliminaries:}
-Include Theorems related to requirements to switched system stability... 
+% \subsection*{Preliminaries:}
+% Include Theorems related to requirements to switched system stability... 
 
 \subsection*{Solution:}
 Within this switched system shown in \figurename \ref{fig:pblm5}, the exclusion of nodes $x$ and $y$ during any singe time-step causes the system to be disconnected into 2 connected subgraphs. 
-
-
-
+It is known that consensus will occur within a time-varying (switched) system if the union of multiple time steps cause the network to be connected; 
+however, this does not immediately prove this network will converge since the problem statement does not state either x or y will be included.
 
 % Problem 6 -------------------------------------------------
 \newpage
@@ -463,15 +431,38 @@ When does it drive the state to \[
 (Explain the reasons for your answers - don't just state the answer.)
 
 \subsection*{Preliminaries:}
+\begin{definition} 
+    Let directed network (di-graph) $G(V,E)$ with $V = \qty{v_1,\dots,v_n}$ and $E \subseteq V \cross V$.
+    \begin{enumerate}
+        \item A directed path ($P : v_i \to v_j$) is a sequence of directed edges constructing a path from $v_i$ to $v_j$.
+        \item 
+    \end{enumerate}
+\end{definition}
 
+\begin{definition}
+    \textbf{Connectivity of Directed Graphs:} 
+    Let directed network (di-graph) $G(V,E)$ with $V = \qty{v_1,\dots,v_n}$ and $E \subseteq V \cross V$.
+    \begin{enumerate}
+        \item Di-graph $G(V,E)$ is \emph{\underline{strongly connected}} there exists a directed path from any node to every other node.
+        \item Di-graph $G(V,E)$ is \emph{\underline{weakly connected}} the corresponding undirected graph is connected.
+        \item Di-graph $G(V,E)$ is contains a \underline{\emph{rooted out-branching}} if \begin{enumerate}
+            \item $G(V,E)$ does not contain a directed cycle
+            \item $\exists_{v_r \in V}$ such that $\forall_{v_i \neq v_r \in V}$ there is a directed path from $v_r$ to $v_i$.
+        \end{enumerate}
+        \item  Di-graph $G(V,E)$ is considered \underline{\emph{balanced}} if $\deg^{in}(v_k) = \deg^{out}(v_k) \forall_{v_k \in V}$.
+    \end{enumerate}
+\end{definition}
 
+\begin{theorem}
+    \textbf{Consensus Requirements:}
+    Let directed network (di-graph) $G(V,E)$ with $V = \qty{v_1,\dots,v_n}$ and $E \subseteq V \cross V$
+    \begin{enumerate}
+        \item 
+        \item Di-graph $G(V,E)$ drives to $x$ to $\frac{1}{N} \vb{1} \vb{1}' x(0)$ iff $L$ is balanced and contains a rooted out-branching.
+    \end{enumerate}
+\end{theorem}
 
-
-
-
-
-
-
+\subsection*{Solution:}
 \subsection{$G_1$}
 \begin{figure}[h]
     \centering
@@ -479,14 +470,48 @@ When does it drive the state to \[
     % \caption{$G_1$ for Problem 6}
 \end{figure}
 
+\[
+    D = \mqty[
+        -1 & 0  & 1  & 0  & 0  & 0  & 0  \\
+        1  & -1 & 0  & 0  & 0  & 0  & 0  \\
+        0  & 1  & -1 & -1 & 0  & 0  & 0  \\
+        0  & 0  & 0  & 1  & 1  & -1 & 0  \\
+        0  & 0  & 0  & 0  & 0  & 1  & 1  \\
+        0  & 0  & 0  & 0  & -1 & 0  & -1
+    ]
+\]\[
+    A = \mqty[
+        0 & 1 & 0 & 0 & 0 \\
+        0 & 0 & 1 & 0 & 0 \\
+        1 & 0 & 0 & 1 & 0 \\
+        0 & 0 & 0 & 0 & 0 \\
+        0 & 0 & 0 & 1 & 0 \\
+        0 & 0 & 0 & 1 & 1
+    ]
+\]\[
+    Delta^{\text{in}} = \mqty[
+        1 & 0 & 0 & 0 & 0 & 0 \\
+        0 & 1 & 0 & 0 & 0 & 0 \\
+        0 & 0 & 2 & 0 & 0 & 0 \\
+        0 & 0 & 0 & 0 & 0 & 0 \\
+        0 & 0 & 0 & 0 & 1 & 0 \\
+        0 & 0 & 0 & 0 & 0 & 2
+    ]
+\]\[
+    L = \mqty[
+        1  & -1 & 0  & 0  & 0  & 0 \\
+        0  & 1  & -1 & 0  & 0  & 0 `\\
+        -1 & 0  & 2  & -1 & 0  & 0 \\
+        0  & 0  & 0  & 0  & 0  & 0 \\
+        0  & 0  & 0  & -1 & 1  & 0 \\
+        0  & 0  & 0  & -1 & -1 & 2
+    ]
+\] \[
+    \text{rank}(L) = 5 = N-1 \implies \text{null}(L) = \text{span}(\vb{1})
+\] This means $G_1$ has rooted out-branching and consensus will occur to $\text{span}(\vb{1})$.
+However, $L$ is not balenced as $\deg^{in}(v_k) \neq \deg^{out}(v_k) \forall_{v_k \in V}$
 
-
-
-
-
-
-
-
+\newpage
 \subsection{$G_2$}
 \begin{figure}[h]
     \centering
@@ -494,12 +519,48 @@ When does it drive the state to \[
     % \caption{$G_1$ for Problem 6}
 \end{figure}
 
+\[
+    D = \mqty[
+        -1 & 0  & 1  & 0  & 0  & 0  & 0  \\
+        1  & -1 & 0  & 0  & 0  & 0  & 0  \\
+        0  & 1  & -1 & -1 & 0  & 0  & 0  \\
+        0  & 0  & 0  & 1  & 1  & -1 & 0  \\
+        0  & 0  & 0  & 0  & 0  & 1  & 1  \\
+        0  & 0  & 0  & 0  & -1 & 0  & -1
+    ]
+\]\[
+    A = \mqty[
+        0 & 1 & 0 & 0 & 0 & 0 \\
+        0 & 0 & 1 & 0 & 0 & 0 \\
+        1 & 0 & 0 & 1 & 0 & 0 \\
+        0 & 0 & 0 & 0 & 1 & 0 \\
+        0 & 0 & 0 & 0 & 0 & 0 \\
+        0 & 0 & 0 & 1 & 1 & 0
+    ]
+\]\[
+    Delta^{\text{in}} = \mqty[
+        1 & 0 & 0 & 0 & 0 & 0 \\
+        0 & 1 & 0 & 0 & 0 & 0 \\
+        0 & 0 & 2 & 0 & 0 & 0 \\
+        0 & 0 & 0 & 1 & 0 & 0 \\
+        0 & 0 & 0 & 0 & 0 & 0 \\
+        0 & 0 & 0 & 0 & 0 & 2
+    ]
+\]\[
+    L = \mqty[
+        1  & -1 & 0  & 0  & 0  & 0 \\
+        0  & 1  & -1 & 0  & 0  & 0 \\
+        -1 & 0  & 2  & -1 & 0  & 0 \\
+        0  & 0  & 0  & 1  & -1 & 0 \\
+        0  & 0  & 0  & 0  & 0  & 0 \\
+        0  & 0  & 0  & -1 & -1 & 2
+    ]
+\] \[
+    \text{rank}(L) = 5 = N-1 \implies \text{null}(L) = \text{span}(\vb{1})
+\] This means $G_1$ has rooted out-branching and consensus will occur to $\text{span}(\vb{1})$.
+However, $L$ is not balenced as $\deg^{in}(v_k) \neq \deg^{out}(v_k) \forall_{v_k \in V}$
 
-
-
-
-
-
+\newpage
 \subsection{$G_3$}
 \begin{figure}[h]
     \centering
@@ -507,7 +568,46 @@ When does it drive the state to \[
     % \caption{$G_1$ for Problem 6}
 \end{figure}
 
-
+\[
+    D = \mqty[
+        -1 & 0  & 1  & 0  & 0  & 0  & 0  & 0  & 0  & 0  \\
+        1  & -1 & 0  & 0  & 0  & 0  & 0  & 1  & -1 & 0  \\
+        0  & 1  & -1 & -1 & 0  & 0  & 0  & 0  & 0  & 1  \\
+        0  & 0  & 0  & 1  & 1  & -1 & 0  & -1 & 0  & 0  \\
+        0  & 0  & 0  & 0  & 0  & 1  & -1 & 0  & 0  & 0  \\
+        0  & 0  & 0  & 0  & -1 & 0  & 1  & 0  & 1  & -1
+    ]
+\]\[
+    A = \mqty[
+        0 & 1 & 0 & 0 & 0 & 0 \\
+        0 & 0 & 1 & 0 & 0 & 1 \\
+        1 & 0 & 0 & 1 & 0 & 0 \\
+        0 & 1 & 0 & 0 & 1 & 0 \\
+        0 & 0 & 0 & 0 & 0 & 1 \\
+        0 & 0 & 1 & 1 & 0 & 0
+    ]
+\]\[
+    Delta^{\text{in}} = \mqty[
+        1 & 0 & 0 & 0 & 0 & 0 \\
+        0 & 2 & 0 & 0 & 0 & 0 \\
+        0 & 0 & 2 & 0 & 0 & 0 \\
+        0 & 0 & 0 & 2 & 0 & 0 \\
+        0 & 0 & 0 & 0 & 1 & 0 \\
+        0 & 0 & 0 & 0 & 0 & 2
+    ]
+\]\[
+    L = \mqty[
+        1  & -1 & 0  & 0  & 0  & 0  \\
+        0  & 2  & -1 & 0  & 0  & -1 \\
+        -1 & 0  & 2  & -1 & 0  & 0  \\
+        0  & -1 & 0  & 2  & -1 & 0  \\
+        0  & 0  & 0  & 0  & 1  & -1 \\
+        0  & 0  & -1 & -1 & 0  & 2
+    ]
+\] \[
+    \text{rank}(L) = 5 = N-1 \implies \text{null}(L) = \text{span}(\vb{1})
+\] This means $G_1$ has rooted out-branching and consensus will occur to $\text{span}(\vb{1})$.
+Additionally, $L$ is balenced as $\deg^{in}(v_k) = \deg^{out}(v_k) \forall_{v_k \in V}$
 
 
 
@@ -518,15 +618,17 @@ When does it drive the state to \[
 \subsection*{Problem:}
 Show that a graph that is weakly connected and balanced is also strongly connected.
 (
-    I do not expect a formal proof.\footnote{
-        Nah...
-    }
-    Just discuss your main argument.\footnote{
-        This sounds more difficult then actually proving it.
-    }
+    I do not expect a formal proof.
+    % \footnote{
+    %     Nah...
+    % }
+    Just discuss your main argument.
+    % \footnote{
+    %     This sounds more difficult then actually proving it.
+    % }
 )
 
-\subsection*{Preliminaries:}
+% \subsection*{Preliminaries:}
 
 
 
@@ -542,7 +644,8 @@ Show that a graph that is weakly connected and balanced is also strongly connect
             \implies G(V,E) \text{Strongly Connected}
     \]
     \begin{proof}
-        
+        Not a formal proof...
+        Essentially the related undirected network being fully connected, as implied by weakly connected, is then connected to the fact that the network is balanced implying in and out degrees are the same with can be used to prove directed paths exist in addition to just undirected connectivity.
     \end{proof}
 \end{theorem}
 
@@ -560,8 +663,11 @@ Show that a graph that is weakly connected and balanced is also strongly connect
 All code I write in this course can be found on my GitHub repository:\\
 \href{https://github.com/jonaswagner2826/MECH6V29_MultiagentRoboticSystems}{https://github.com/jonaswagner2826/MECH6V29\_MultiagentRoboticSystems}
 
-\bibliographystyle{ieeetran}
-% \bibliography{refs.bib}
-\cite{*}
+% \bibliographystyle{ieeetran}
+% % \bibliography{refs.bib}
+% \cite{*}
+
+% \includepdf[pages=-]{MECH6V29_HW02.pdf}
+
 
 \end{document}
