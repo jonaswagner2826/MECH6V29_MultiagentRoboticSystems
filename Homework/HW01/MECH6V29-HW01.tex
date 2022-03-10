@@ -8,6 +8,8 @@
 \usepackage{graphicx}
 \usepackage{hyperref}
 \usepackage{empheq}
+\usepackage{xcolor}
+\usepackage{ulem}
 
 % MATLAB Formatting Code
 \usepackage[numbered,framed]{matlab-prettifier}
@@ -405,6 +407,16 @@ Your task is to show that $K_{1,6}$ can never be an induced subgraph of a $\Delt
 	\end{proof}
 \end{theorem}
 
+\subsection*{\color{red} Corrected Solution:}
+The 'proof' that I used was incomplete. 
+I took the baseline geometric assumption that: clearly they would form equilateral triangles so it would be too close for the $\Delta$ of a disk to be the same in all directions because then it would connect with the others.
+The actual proof relies on proving this with geometry, essentially:
+
+In order for a $K_{1,6}$ to exist, the center node would have to be connected to 6 nodes that are not also connected.
+We look at the angles between such a system and in order for each pair to connect to the center but not each other, the angle between them would have to be greater then $60 \deg$. 
+Since there are 6 of these, the angle between them would add up to more then $360 \deg$ and leading to the contradiction.
+
+
 % Problem 6 -------------------------------------------------
 \newpage
 \section{}
@@ -458,7 +470,7 @@ the diameter of the graph is defined as\[
 	\end{enumerate}
 	\item $G_2$
 	\begin{enumerate}
-		\item $\diam(G_2) = 4$
+		\item $\diam(G_2) = \sout{4}{\color{red} 3}$
 		\item $\radius(G_2) = 2$
 	\end{enumerate}
 	\item $G_3$

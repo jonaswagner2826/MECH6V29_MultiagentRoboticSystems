@@ -12,13 +12,13 @@
 \contentsline {section}{\numberline {Problem 5}}{9}{section.5}%
 \contentsline {subsection}{\numberline {a)}Definitions:}{9}{subsection.5.1}%
 \contentsline {subsection}{\numberline {b)}Solution:}{9}{subsection.5.2}%
-\contentsline {section}{\numberline {Problem 6}}{10}{section.6}%
-\contentsline {subsection}{\numberline {a)}Definitions:}{10}{subsection.6.1}%
-\contentsline {subsection}{\numberline {b)}Solution}{11}{subsection.6.2}%
-\contentsline {section}{\numberline {Problem 7}}{12}{section.7}%
-\contentsline {subsection}{\numberline {a)}Network Modeling}{12}{subsection.7.1}%
-\contentsline {subsection}{\numberline {b)}Consensus Dynamics}{12}{subsection.7.2}%
-\contentsline {subsection}{\numberline {c)}Solution}{14}{subsection.7.3}%
-\contentsline {section}{\numberline {Problem 8}}{14}{section.8}%
-\contentsline {subsection}{\numberline {a)}Solution}{14}{subsection.8.1}%
-\contentsline {section}{\numberline {A}MATLAB Code:}{15}{appendix.A}%
+\contentsline {section}{\numberline {Problem 6}}{11}{section.6}%
+\contentsline {subsection}{\numberline {a)}Definitions:}{11}{subsection.6.1}%
+\contentsline {subsection}{\numberline {b)}Solution}{12}{subsection.6.2}%
+\contentsline {section}{\numberline {Problem 7}}{13}{section.7}%
+\contentsline {subsection}{\numberline {a)}Network Modeling}{13}{subsection.7.1}%
+\contentsline {subsection}{\numberline {b)}Consensus Dynamics}{13}{subsection.7.2}%
+\contentsline {subsection}{\numberline {c)}Solution}{15}{subsection.7.3}%
+\contentsline {section}{\numberline {Problem 8}}{15}{section.8}%
+\contentsline {subsection}{\numberline {a)}Solution}{15}{subsection.8.1}%
+\contentsline {section}{\numberline {A}MATLAB Code:}{16}{appendix.A}%
