@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.9.1)  4 MAR 2022 11:12
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.9.1)  10 MAR 2022 04:26
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -768,93 +768,93 @@ Overfull \hbox (20.74278pt too wide) in paragraph at lines 212--213
 <figs/pblm3.png, id=142, 427.5975pt x 102.3825pt>
 File: figs/pblm3.png Graphic file (type png)
 <use figs/pblm3.png>
-Package pdftex.def Info: figs/pblm3.png  used on input line 277.
+Package pdftex.def Info: figs/pblm3.png  used on input line 282.
 (pdftex.def)             Requested size: 328.82707pt x 78.73322pt.
 \matrixtoks=\toks49
  [6 <./figs/pblm3.png>]
 
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 357.
+(hyperref)                than one, level fixed on input line 362.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 357.
+(hyperref)                removing `math shift' on input line 362.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 357.
+(hyperref)                removing `math shift' on input line 362.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 364.
+(hyperref)                removing `math shift' on input line 369.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 364.
+(hyperref)                removing `subscript' on input line 369.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 364.
+(hyperref)                removing `math shift' on input line 369.
 
 [7] [8]
 <figs/pblm5.png, id=168, 285.065pt x 158.5925pt>
 File: figs/pblm5.png Graphic file (type png)
 <use figs/pblm5.png>
-Package pdftex.def Info: figs/pblm5.png  used on input line 409.
+Package pdftex.def Info: figs/pblm5.png  used on input line 414.
 (pdftex.def)             Requested size: 140.92793pt x 78.40309pt.
  [9 <./figs/pblm5.png>]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 466.
+(hyperref)                removing `math shift' on input line 471.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 466.
+(hyperref)                removing `subscript' on input line 471.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 466.
+(hyperref)                removing `math shift' on input line 471.
 
 <figs/pblm6a.png, id=178, 377.91188pt x 164.615pt>
 File: figs/pblm6a.png Graphic file (type png)
 <use figs/pblm6a.png>
-Package pdftex.def Info: figs/pblm6a.png  used on input line 469.
+Package pdftex.def Info: figs/pblm6a.png  used on input line 474.
 (pdftex.def)             Requested size: 234.8775pt x 102.31142pt.
 [10 <./figs/pblm6a.png>] [11]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 515.
+(hyperref)                removing `math shift' on input line 520.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 515.
+(hyperref)                removing `subscript' on input line 520.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 515.
+(hyperref)                removing `math shift' on input line 520.
 
 <figs/pblm6b.png, id=205, 372.39125pt x 171.64125pt>
 File: figs/pblm6b.png Graphic file (type png)
 <use figs/pblm6b.png>
-Package pdftex.def Info: figs/pblm6b.png  used on input line 518.
+Package pdftex.def Info: figs/pblm6b.png  used on input line 523.
 (pdftex.def)             Requested size: 234.8775pt x 108.26288pt.
 [12 <./figs/pblm6b.png>]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 564.
+(hyperref)                removing `math shift' on input line 569.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 564.
+(hyperref)                removing `subscript' on input line 569.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 564.
+(hyperref)                removing `math shift' on input line 569.
 
 <figs/pblm6c.png, id=211, 373.89688pt x 166.12062pt>
 File: figs/pblm6c.png Graphic file (type png)
 <use figs/pblm6c.png>
-Package pdftex.def Info: figs/pblm6c.png  used on input line 567.
+Package pdftex.def Info: figs/pblm6c.png  used on input line 572.
 (pdftex.def)             Requested size: 234.8775pt x 104.35489pt.
 [13 <./figs/pblm6c.png>] [14] [15] (./MECH6V29-HW02.aux)
 Package rerunfilecheck Info: File `MECH6V29-HW02.out' has not changed.
@@ -863,7 +863,7 @@ Package rerunfilecheck Info: File `MECH6V29-HW02.out' has not changed.
 Here is how much of TeX's memory you used:
  26492 strings out of 478599
  485680 string characters out of 5858102
- 838351 words of memory out of 5000000
+ 838350 words of memory out of 5000000
  43821 multiletter control sequences out of 15000+600000
  415766 words of font info for 72 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191

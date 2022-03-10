@@ -1,10 +1,10 @@
 # Fdb version 3
-["pdflatex"] 1646413947 "c:/Users/Jonas/OneDrive - The University of Texas at Dallas/2022_Spring/MECH6V29_MultiagentRoboticSystems/Homework/HW02/MECH6V29-HW02.tex" "MECH6V29-HW02.pdf" "MECH6V29-HW02" 1646413956
-  "MECH6V29-HW02.aux" 1646413950 3399 7ebccbcffdda9b0ccf6f1c7b09a315d6 "pdflatex"
-  "MECH6V29-HW02.out" 1646413950 968 24f87df4dcf60593fa0c51f172dd3736 "pdflatex"
-  "MECH6V29-HW02.tex" 1646413955 25030 925d6b7989d3f940bea44f74d7ee85c4 ""
-  "MECH6V29-HW02.toc" 1646413950 1180 dcc458976f096795c16c35cbf775d84f "pdflatex"
-  "c:/Users/Jonas/OneDrive - The University of Texas at Dallas/2022_Spring/MECH6V29_MultiagentRoboticSystems/Homework/HW02/MECH6V29-HW02.tex" 1646413955 25030 925d6b7989d3f940bea44f74d7ee85c4 ""
+["pdflatex"] 1646907971 "c:/Users/Jonas/OneDrive - The University of Texas at Dallas/2022_Spring/MECH6V29_MultiagentRoboticSystems/Homework/HW02/MECH6V29-HW02.tex" "MECH6V29-HW02.pdf" "MECH6V29-HW02" 1646907975
+  "MECH6V29-HW02.aux" 1646907975 3399 7ebccbcffdda9b0ccf6f1c7b09a315d6 "pdflatex"
+  "MECH6V29-HW02.out" 1646907975 968 24f87df4dcf60593fa0c51f172dd3736 "pdflatex"
+  "MECH6V29-HW02.tex" 1646907960 25040 7fe782e082265f244224a9e7e35c554b ""
+  "MECH6V29-HW02.toc" 1646907975 1180 dcc458976f096795c16c35cbf775d84f "pdflatex"
+  "c:/Users/Jonas/OneDrive - The University of Texas at Dallas/2022_Spring/MECH6V29_MultiagentRoboticSystems/Homework/HW02/MECH6V29-HW02.tex" 1646907960 25040 7fe782e082265f244224a9e7e35c554b ""
   "c:/texlive/2021/texmf-dist/fonts/map/fontname/texfonts.map" 1630536755 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "c:/texlive/2021/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy5.tfm" 1630534826 1120 1e8878807317373affa7f7bba4cf2f6a ""
   "c:/texlive/2021/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy7.tfm" 1630534826 1120 7f9f170e8aa57527ad6c49feafd45d54 ""
@@ -223,8 +223,8 @@
   "figs/pblm6b.png" 1646173321 60516 f29c19d8d62607414f9b4baf2630e50e ""
   "figs/pblm6c.png" 1646173341 71082 0289d1ceb2c86bde244c7acc6ff28017 ""
   (generated)
-  "MECH6V29-HW02.toc"
-  "MECH6V29-HW02.out"
   "MECH6V29-HW02.pdf"
-  "MECH6V29-HW02.log"
   "MECH6V29-HW02.aux"
+  "MECH6V29-HW02.toc"
+  "MECH6V29-HW02.log"
+  "MECH6V29-HW02.out"
