@@ -614,6 +614,20 @@ INPUT c:/texlive/2021/texmf-dist/tex/latex/pdfpages/pppdftex.def
 INPUT c:/texlive/2021/texmf-dist/tex/latex/pdfpages/pppdftex.def
 INPUT c:/texlive/2021/texmf-dist/tex/latex/pdfpages/pppdftex.def
 INPUT c:/texlive/2021/texmf-dist/tex/latex/pdfpages/pppdftex.def
+INPUT c:/texlive/2021/texmf-dist/tex/latex/xcolor/xcolor.sty
+INPUT c:/texlive/2021/texmf-dist/tex/generic/ulem/ulem.sty
+INPUT c:/texlive/2021/texmf-dist/tex/generic/ulem/ulem.sty
+INPUT c:/texlive/2021/texmf-dist/tex/generic/ulem/ulem.sty
+INPUT c:/texlive/2021/texmf-dist/tex/generic/ulem/ulem.sty
+INPUT c:/texlive/2021/texmf-dist/tex/generic/ulem/ulem.sty
+INPUT c:/texlive/2021/texmf-dist/tex/generic/ulem/ulem.sty
+INPUT c:/texlive/2021/texmf-dist/tex/generic/ulem/ulem.sty
+INPUT c:/texlive/2021/texmf-dist/tex/generic/ulem/ulem.sty
+INPUT c:/texlive/2021/texmf-dist/tex/generic/ulem/ulem.sty
+INPUT c:/texlive/2021/texmf-dist/tex/generic/ulem/ulem.sty
+INPUT c:/texlive/2021/texmf-dist/tex/generic/ulem/ulem.sty
+INPUT c:/texlive/2021/texmf-dist/fonts/map/fontname/texfonts.map
+INPUT c:/texlive/2021/texmf-dist/fonts/tfm/public/latex-fonts/lasy6.tfm
 INPUT c:/texlive/2021/texmf-dist/tex/latex/matlab-prettifier/matlab-prettifier.sty
 INPUT c:/texlive/2021/texmf-dist/tex/latex/matlab-prettifier/matlab-prettifier.sty
 INPUT c:/texlive/2021/texmf-dist/tex/latex/matlab-prettifier/matlab-prettifier.sty
@@ -1022,7 +1036,6 @@ INPUT c:/texlive/2021/texmf-dist/tex/latex/graphics/lscape.sty
 INPUT c:/texlive/2021/texmf-dist/tex/latex/graphics/lscape.sty
 INPUT c:/texlive/2021/texmf-dist/tex/latex/graphics/lscape.sty
 INPUT c:/texlive/2021/texmf-dist/tex/latex/graphics/graphics.sty
-INPUT c:/texlive/2021/texmf-dist/fonts/map/fontname/texfonts.map
 INPUT c:/texlive/2021/texmf-dist/fonts/tfm/public/cm/cmr17.tfm
 INPUT c:/texlive/2021/texmf-dist/fonts/tfm/public/cm/cmr12.tfm
 INPUT c:/texlive/2021/texmf-dist/fonts/tfm/public/cm/cmr8.tfm
@@ -1068,9 +1081,8 @@ INPUT c:/texlive/2021/texmf-dist/fonts/tfm/public/cm/cmbx7.tfm
 INPUT c:/texlive/2021/texmf-dist/fonts/tfm/public/cm/cmbx5.tfm
 OUTPUT MECH6V29-HW02.toc
 INPUT c:/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map
-INPUT c:/texlive/2021/texmf-dist/fonts/tfm/public/cm/cmti10.tfm
-INPUT c:/texlive/2021/texmf-dist/fonts/tfm/public/cm/cmbxti10.tfm
 INPUT c:/texlive/2021/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
+INPUT c:/texlive/2021/texmf-dist/fonts/tfm/public/cm/cmti10.tfm
 INPUT c:/texlive/2021/texmf-dist/fonts/tfm/public/cm/cmmib10.tfm
 INPUT c:/texlive/2021/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmmib7.tfm
 INPUT c:/texlive/2021/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmmib5.tfm
@@ -1089,6 +1101,7 @@ INPUT ./figs/pblm5.png
 INPUT figs/pblm5.png
 INPUT ./figs/pblm5.png
 INPUT ./figs/pblm5.png
+INPUT c:/texlive/2021/texmf-dist/fonts/tfm/public/cm/cmbxti10.tfm
 INPUT c:/texlive/2021/texmf-dist/fonts/tfm/public/cm/cmbx8.tfm
 INPUT c:/texlive/2021/texmf-dist/fonts/tfm/public/cm/cmbx6.tfm
 INPUT ./figs/pblm6a.png

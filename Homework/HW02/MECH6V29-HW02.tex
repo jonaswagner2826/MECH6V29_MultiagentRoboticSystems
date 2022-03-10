@@ -9,6 +9,8 @@
 \usepackage{hyperref}
 \usepackage{empheq}
 \usepackage{pdfpages}
+\usepackage{xcolor}
+\usepackage{ulem}
 
 % MATLAB Formatting Code
 \usepackage[numbered,framed]{matlab-prettifier}
@@ -251,18 +253,32 @@ which results in \[\boxed{
                     - \sum_{j \neq i} \qty(-a_{i,j} (\deg(v_i) + \deg(v_j)) + \sum_{k \neq j} a_{i,k} a_{k,j}) x^{(j)}
 }\]
 
+
+\subsubsection*{\textcolor{red}{Updated Solution:}}
+\[
+    p = L x \iff p_i = \sum_{j \in \mathcal{N}_i} (x_i - x_j)
+\]\[
+    q = L p \iff q_i = \sum_{j \in \mathcal{N}_i} px_i - p_j)
+\]\[
+    \dot{x} = - L^2 x = - q 
+        \iff \dot{x}_i = - \sum_{j \in \mathcal{N}_i} \qty(
+            \sum_{k \in \mathcal{N}_i} (x_i - x_k)
+            - \sum_{l \in \mathcal{N}_j} (x_j - x_l)
+        )
+\]
+
 \subsection{}
 \subsubsection*{Problem:}
 Can you give a graph-theoretic interpretation to your answer in $(A)$?
 
 
-
-
-
-
 \subsubsection*{Solution:}
 A potential graph-theoretical interpretation could be would be a network with nonlinear consensus dynamics dependent on more then just a single dynamic link. 
 This is particularly interesting when looking at representations of digital logic gates or neuron type "circuitry".
+
+\subsubsection*{\textcolor{red}{Updated Solution:}}
+The 'nonlinear consensus dynamics' I refereed to are essentially just that the difference between the neighbors of neighbors are included in consensus as well.
+
 
 % Problem 3 -------------------------------------------------
 \newpage
@@ -381,12 +397,19 @@ Since $\deg(v_n) = N-1$, \[
             \vdots\\
             1  
         ]\\
+    \intertext{\color{red} Need to account for the lack of leader node in $\alpha$ terms...}
         &= \mqty[
             \deg(v_1) - \sum_{i \neq 1} a_{1,i}\\
             \deg(v_2) - \sum_{i \neq 2} a_{2,i}\\
             \vdots\\
             \deg(v_n) - \sum_{i \neq n} a_{n,i}\\
-        ]
+        ] {\color{red} 
+        + \mqty[
+            1\\
+            1\\
+            \vdots\\
+            1  
+        ]}
     \intertext{Since by definition $\deg(v_i) = \sum{j\neq i} a_{i,j}$,}
     \Aboxed{
     L_f \mathbf{1} 
@@ -395,7 +418,15 @@ Since $\deg(v_n) = N-1$, \[
             0\\
             \vdots\\
             0
-        ] = \mathbf{0}_{N-1}}
+        ] {\color{red} 
+        + \mqty[
+            1\\
+            1\\
+            \vdots\\
+            1  
+        ]
+        = \mathbf{1}_{N-1}}
+        }
 \end{align*}
 
 
@@ -418,11 +449,21 @@ Explain.
 
 % \subsection*{Preliminaries:}
 % Include Theorems related to requirements to switched system stability... 
+% 
+% Ideally should put in these theorems....
+% 
+
 
 \subsection*{Solution:}
 Within this switched system shown in \figurename \ref{fig:pblm5}, the exclusion of nodes $x$ and $y$ during any singe time-step causes the system to be disconnected into 2 connected subgraphs. 
 It is known that consensus will occur within a time-varying (switched) system if the union of multiple time steps cause the network to be connected; 
 however, this does not immediately prove this network will converge since the problem statement does not state either x or y will be included.
+
+{\color{red}
+    Actually... since at any time-point the node $x$ or $y$ will be missing, the edge $(x,y)$ will never exist.
+    This means that even in the case that the two sides wil \textbf{never} be connected.
+}
+
 
 % Problem 6 -------------------------------------------------
 \newpage
@@ -494,7 +535,7 @@ When does it drive the state to \[
         0 & 0 & 0 & 1 & 1
     ]
 \]\[
-    Delta^{\text{in}} = \mqty[
+    \Delta^{\text{in}} = \mqty[
         1 & 0 & 0 & 0 & 0 & 0 \\
         0 & 1 & 0 & 0 & 0 & 0 \\
         0 & 0 & 2 & 0 & 0 & 0 \\
@@ -513,15 +554,21 @@ When does it drive the state to \[
     ]
 \] \[
     \text{rank}(L) = 5 = N-1 \implies \text{null}(L) = \text{span}(\vb{1})
-\] This means $G_1$ has rooted out-branching and consensus will occur to $\text{span}(\vb{1})$.
-However, $L$ is not balenced as $\deg^{in}(v_k) \neq \deg^{out}(v_k) \forall_{v_k \in V}$
+\] This means $G_1$ \sout{has rooted out-branching and consensus will occur to $\text{span}(\vb{1})$.
+However, $L$ is not balenced as $\deg^{in}(v_k) \neq \deg^{out}(v_k) \forall_{v_k \in V}$, {\color{red} and so it will not converge to the centroid.}
+}
+
+{\color{red}
+    Looking at the graph it is \textbf{OBVIOUS} that it has a directed cycle (right there on the left) and therefore it does not have rooted out-branching.
+    This means that it will not actually converge.
+}
+
 
 \newpage
 \subsection{$G_2$}
 \begin{figure}[h]
     \centering
     \includegraphics[width=0.5\textwidth]{figs/pblm6b.png}
-    % \caption{$G_1$ for Problem 6}
 \end{figure}
 
 \[
@@ -543,7 +590,7 @@ However, $L$ is not balenced as $\deg^{in}(v_k) \neq \deg^{out}(v_k) \forall_{v_
         0 & 0 & 0 & 1 & 1 & 0
     ]
 \]\[
-    Delta^{\text{in}} = \mqty[
+    \Delta^{\text{in}} = \mqty[
         1 & 0 & 0 & 0 & 0 & 0 \\
         0 & 1 & 0 & 0 & 0 & 0 \\
         0 & 0 & 2 & 0 & 0 & 0 \\
@@ -562,15 +609,14 @@ However, $L$ is not balenced as $\deg^{in}(v_k) \neq \deg^{out}(v_k) \forall_{v_
     ]
 \] \[
     \text{rank}(L) = 5 = N-1 \implies \text{null}(L) = \text{span}(\vb{1})
-\] This means $G_1$ has rooted out-branching and consensus will occur to $\text{span}(\vb{1})$.
-However, $L$ is not balenced as $\deg^{in}(v_k) \neq \deg^{out}(v_k) \forall_{v_k \in V}$
+\] This means $G_2$ has rooted out-branching and consensus will occur to $\text{span}(\vb{1})$.
+However, $L$ is not balenced as $\deg^{in}(v_k) \neq \deg^{out}(v_k) \forall_{v_k \in V}$ {\color{red} and so it will not converge to the centroid.}
 
 \newpage
 \subsection{$G_3$}
 \begin{figure}[h]
     \centering
     \includegraphics[width=0.5\textwidth]{figs/pblm6c.png}
-    % \caption{$G_1$ for Problem 6}
 \end{figure}
 
 \[
@@ -592,7 +638,7 @@ However, $L$ is not balenced as $\deg^{in}(v_k) \neq \deg^{out}(v_k) \forall_{v_
         0 & 0 & 1 & 1 & 0 & 0
     ]
 \]\[
-    Delta^{\text{in}} = \mqty[
+    \Delta^{\text{in}} = \mqty[
         1 & 0 & 0 & 0 & 0 & 0 \\
         0 & 2 & 0 & 0 & 0 & 0 \\
         0 & 0 & 2 & 0 & 0 & 0 \\
@@ -611,8 +657,9 @@ However, $L$ is not balenced as $\deg^{in}(v_k) \neq \deg^{out}(v_k) \forall_{v_
     ]
 \] \[
     \text{rank}(L) = 5 = N-1 \implies \text{null}(L) = \text{span}(\vb{1})
-\] This means $G_1$ has rooted out-branching and consensus will occur to $\text{span}(\vb{1})$.
+\] This means $G_3$ has rooted out-branching and consensus will occur to $\text{span}(\vb{1})$.
 Additionally, $L$ is balenced as $\deg^{in}(v_k) = \deg^{out}(v_k) \forall_{v_k \in V}$
+{\color{red} and so it will therefore converge to the centroid of the initial positions.}
 
 
 
@@ -634,8 +681,12 @@ Show that a graph that is weakly connected and balanced is also strongly connect
 )
 
 % \subsection*{Preliminaries:}
-
-
+% 
+% 
+% 
+% should probably do the theorems in this....
+% 
+% 
 
 
 \subsection*{Solution:}
@@ -656,9 +707,13 @@ Show that a graph that is weakly connected and balanced is also strongly connect
 
 
 
-
-
-
+\subsection*{\color{red} Actual Solution:}
+Steps:
+\begin{enumerate}
+    \item Show that if a graph is balanced then $\forall_{v \in V} \exists$ a directed cycle containing $v$.
+    \item Demonstrate that being weakly connected implies the cycles overlap.
+    \item These cycles then form a path from every node to every other node.
+\end{enumerate}
 
 
 
@@ -673,6 +728,7 @@ All code I write in this course can be found on my GitHub repository:\\
 % \cite{*}
 
 % \includepdf[pages=-]{MECH6V29_HW02.pdf}
+% \includepdf[pages=-, nup = 2x2]{MECH6V29_HW02.pdf}
 
 
 \end{document}
