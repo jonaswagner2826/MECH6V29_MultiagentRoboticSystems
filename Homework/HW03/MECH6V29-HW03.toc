@@ -1,0 +1,4 @@
+\contentsline {section}{\numberline {Problem 1}}{2}{section.1}%
+\contentsline {subsection}{\numberline {a)}Big Picture Chart}{2}{subsection.1.1}%
+\contentsline {section}{\numberline {Problem 2}}{3}{section.2}%
+\contentsline {section}{\numberline {A}MATLAB Code:}{4}{appendix.A}%
