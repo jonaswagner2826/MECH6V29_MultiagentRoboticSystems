@@ -1,4 +1,23 @@
-\contentsline {section}{\numberline {Problem 1}}{2}{section.1}%
-\contentsline {subsection}{\numberline {a)}Big Picture Chart}{2}{subsection.1.1}%
-\contentsline {section}{\numberline {Problem 2}}{3}{section.2}%
-\contentsline {section}{\numberline {A}MATLAB Code:}{4}{appendix.A}%
+\contentsline {subsection}{\numberline {a)}Definitions}{2}{subsection.0.1}%
+\contentsline {section}{\numberline {Problem 1}}{4}{section.1}%
+\contentsline {subsection}{\numberline {a)}Big Picture Chart}{4}{subsection.1.1}%
+\contentsline {section}{\numberline {Problem 2}}{5}{section.2}%
+\contentsline {subsection}{\numberline {a)}$G_1$}{7}{subsection.2.1}%
+\contentsline {subsection}{\numberline {b)}$G_2$}{8}{subsection.2.2}%
+\contentsline {subsection}{\numberline {c)}$G_3$}{9}{subsection.2.3}%
+\contentsline {section}{\numberline {Problem 3}}{10}{section.3}%
+\contentsline {subsection}{\numberline {a)}}{10}{subsection.3.1}%
+\contentsline {subsection}{\numberline {b)}}{11}{subsection.3.2}%
+\contentsline {subsection}{\numberline {c)}}{12}{subsection.3.3}%
+\contentsline {section}{\numberline {Problem 4}}{13}{section.4}%
+\contentsline {section}{\numberline {Problem 5}}{15}{section.5}%
+\contentsline {subsection}{\numberline {a)}}{15}{subsection.5.1}%
+\contentsline {subsection}{\numberline {b)}}{15}{subsection.5.2}%
+\contentsline {section}{\numberline {Problem 6}}{16}{section.6}%
+\contentsline {subsection}{\numberline {a)}Problem}{16}{subsection.6.1}%
+\contentsline {subsubsection}{\numberline {\hskip 1em\relax \hskip 1em\relax i)}}{16}{subsubsection.6.1.1}%
+\contentsline {subsubsection}{\numberline {\hskip 1em\relax \hskip 1em\relax ii)}}{16}{subsubsection.6.1.2}%
+\contentsline {subsection}{\numberline {b)}Network 1 Results}{17}{subsection.6.2}%
+\contentsline {subsection}{\numberline {c)}Network 2 Results}{18}{subsection.6.3}%
+\contentsline {subsection}{\numberline {d)}Network 3 Results}{19}{subsection.6.4}%
+\contentsline {section}{\numberline {A}MATLAB Code:}{20}{appendix.A}%

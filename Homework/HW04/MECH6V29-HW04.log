@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.9.1)  22 MAR 2022 22:32
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.9.1)  5 APR 2022 14:54
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"c:/Users/Jonas/OneDrive - The University of Texas at Dallas/2022_Spring/MECH6V29_MultiagentRoboticSystems/Homework/HW03/MECH6V29-HW03.tex"
-(c:/Users/Jonas/OneDrive - The University of Texas at Dallas/2022_Spring/MECH6V29_MultiagentRoboticSystems/Homework/HW03/MECH6V29-HW03.tex
+**"c:/Users/Jonas/OneDrive - The University of Texas at Dallas/2022_Spring/MECH6V29_MultiagentRoboticSystems/Homework/HW04/MECH6V29-HW04.tex"
+(c:/Users/Jonas/OneDrive - The University of Texas at Dallas/2022_Spring/MECH6V29_MultiagentRoboticSystems/Homework/HW04/MECH6V29-HW04.tex
 LaTeX2e <2021-06-01> patch level 1
 L3 programming layer <2021-08-27> (c:/texlive/2021/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2021/02/12 v1.4n Standard LaTeX document class
@@ -620,8 +620,8 @@ Package: enumitem 2019/06/20 v3.9 Customized lists
 \c@lemma=\count332
 \c@proposition=\count333
 \c@example=\count334
- (./MECH6V29-HW03.aux)
-\openout1 = `MECH6V29-HW03.aux'.
+ (./MECH6V29-HW04.aux)
+\openout1 = `MECH6V29-HW04.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 70.
 LaTeX Font Info:    ... okay on input line 70.
@@ -708,9 +708,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 70.
 LaTeX Info: Redefining \pageref on input line 70.
 LaTeX Info: Redefining \nameref on input line 70.
- (./MECH6V29-HW03.out) (./MECH6V29-HW03.out)
+ (./MECH6V29-HW04.out) (./MECH6V29-HW04.out)
 \@outlinefile=\write4
-\openout4 = `MECH6V29-HW03.out'.
+\openout4 = `MECH6V29-HW04.out'.
 
  (c:/texlive/2021/texmf-dist/tex/latex/pdflscape/pdflscape.sty
 Package: pdflscape 2019/12/05 v0.12 Display of landscape pages in PDF (HO)
@@ -727,7 +727,7 @@ File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 LaTeX Font Info:    Trying to load font information for U+msb on input line 73.
  (c:/texlive/2021/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) (./MECH6V29-HW03.toc
+) (./MECH6V29-HW04.toc
 Overfull \hbox (36.09001pt too wide) detected at line 2
 \OT1/cmr/bx/n/10 Problem 1 
  []
@@ -737,156 +737,31 @@ Overfull \hbox (36.09001pt too wide) detected at line 4
 \OT1/cmr/bx/n/10 Problem 2 
  []
 
-
-Overfull \hbox (36.09001pt too wide) detected at line 8
-\OT1/cmr/bx/n/10 Problem 3 
- []
-
-
-Overfull \hbox (36.09001pt too wide) detected at line 12
-\OT1/cmr/bx/n/10 Problem 4 
- []
-
-
-Overfull \hbox (36.09001pt too wide) detected at line 13
-\OT1/cmr/bx/n/10 Problem 5 
- []
-
-
-Overfull \hbox (36.09001pt too wide) detected at line 16
-\OT1/cmr/bx/n/10 Problem 6 
- []
-
 )
 \tf@toc=\write5
-\openout5 = `MECH6V29-HW03.toc'.
+\openout5 = `MECH6V29-HW04.toc'.
 
  [1
 
 {c:/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 \matrixtoks=\toks49
- [2]
-Overfull \hbox (19.47505pt too wide) in paragraph at lines 142--143
-\OT1/cmr/m/it/10 For the case with weighted graph $\OML/cmm/m/it/10 G\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 V; E; W\OT1/cmr/m/n/10 )$ \OT1/cmr/m/it/10 with di-ag-o-nal weight ma-trix $\OML/cmm/m/it/10 W \OT1/cmr/m/n/10 = [\OML/cmm/m/it/10 w[]\OT1/cmr/m/n/10 ]$\OT1/cmr/m/it/10 , |   []
- []
-
-[3] [4] [5] [6]
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 482.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 482.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 482.
-
-[7]
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 571.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 571.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 571.
-
-[8]
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 667.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 667.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 667.
-
-[9] [10]
-<figs/pblm3b_pblm.png, id=230, 355.82938pt x 161.10187pt>
-File: figs/pblm3b_pblm.png Graphic file (type png)
-<use figs/pblm3b_pblm.png>
-Package pdftex.def Info: figs/pblm3b_pblm.png  used on input line 812.
-(pdftex.def)             Requested size: 234.8775pt x 106.33984pt.
-<figs/pblm3b_1.png, id=232, 204.765pt x 404.00937pt>
-File: figs/pblm3b_1.png Graphic file (type png)
-<use figs/pblm3b_1.png>
-Package pdftex.def Info: figs/pblm3b_1.png  used on input line 822.
-(pdftex.def)             Requested size: 117.43875pt x 231.71793pt.
-<figs/pblm3b_2.png, id=233, 193.22188pt x 415.5525pt>
-File: figs/pblm3b_2.png Graphic file (type png)
-<use figs/pblm3b_2.png>
-Package pdftex.def Info: figs/pblm3b_2.png  used on input line 823.
-(pdftex.def)             Requested size: 117.43875pt x 252.56723pt.
- [11 <./figs/pblm3b_pblm.png> <./figs/pblm3b_1.png> <./figs/pblm3b_2.png>]
-<figs/pblm3c_pblm.png, id=244, 426.09187pt x 179.67125pt>
-File: figs/pblm3c_pblm.png Graphic file (type png)
-<use figs/pblm3c_pblm.png>
-Package pdftex.def Info: figs/pblm3c_pblm.png  used on input line 833.
-(pdftex.def)             Requested size: 234.8775pt x 99.04428pt.
-<figs/pblm3c_1.png, id=245, 110.4125pt x 280.54813pt>
-File: figs/pblm3c_1.png Graphic file (type png)
-<use figs/pblm3c_1.png>
-Package pdftex.def Info: figs/pblm3c_1.png  used on input line 840.
-(pdftex.def)             Requested size: 117.43875pt x 298.41553pt.
-<figs/pblm3c_2.png, id=246, 261.97874pt x 494.34688pt>
-File: figs/pblm3c_2.png Graphic file (type png)
-<use figs/pblm3c_2.png>
-Package pdftex.def Info: figs/pblm3c_2.png  used on input line 841.
-(pdftex.def)             Requested size: 117.43875pt x 221.60167pt.
- [12 <./figs/pblm3c_pblm.png> <./figs/pblm3c_1.png> <./figs/pblm3c_2.png>] [13] [14] [15]
-<figs/pblm6a_code.png, id=287, 313.67188pt x 27.60312pt>
-File: figs/pblm6a_code.png Graphic file (type png)
-<use figs/pblm6a_code.png>
-Package pdftex.def Info: figs/pblm6a_code.png  used on input line 1038.
-(pdftex.def)             Requested size: 313.6711pt x 27.60304pt.
-<figs/pblm6b_code.png, id=288, 234.8775pt x 72.77188pt>
-File: figs/pblm6b_code.png Graphic file (type png)
-<use figs/pblm6b_code.png>
-Package pdftex.def Info: figs/pblm6b_code.png  used on input line 1050.
-(pdftex.def)             Requested size: 187.89914pt x 58.21645pt.
- [16 <./figs/pblm6a_code.png> <./figs/pblm6b_code.png>]
-<figs/pblm6_network1.png, id=296, 429.10312pt x 626.84187pt>
-File: figs/pblm6_network1.png Graphic file (type png)
-<use figs/pblm6_network1.png>
-Package pdftex.def Info: figs/pblm6_network1.png  used on input line 1057.
-(pdftex.def)             Requested size: 333.9461pt x 487.8225pt.
- [17 <./figs/pblm6_network1.png>]
-<figs/pblm6_network2.png, id=302, 421.575pt x 623.83063pt>
-File: figs/pblm6_network2.png Graphic file (type png)
-<use figs/pblm6_network2.png>
-Package pdftex.def Info: figs/pblm6_network2.png  used on input line 1065.
-(pdftex.def)             Requested size: 329.66985pt x 487.8225pt.
- [18 <./figs/pblm6_network2.png>]
-<figs/pblm6_network3.png, id=308, 420.06938pt x 617.80812pt>
-File: figs/pblm6_network3.png Graphic file (type png)
-<use figs/pblm6_network3.png>
-Package pdftex.def Info: figs/pblm6_network3.png  used on input line 1073.
-(pdftex.def)             Requested size: 331.69734pt x 487.8225pt.
- [19 <./figs/pblm6_network3.png>] [20] (./MECH6V29-HW03.aux)
-Package rerunfilecheck Info: File `MECH6V29-HW03.out' has not changed.
-(rerunfilecheck)             Checksum: 42F98B0D4E91E331627723DEB4A9C4D8;1682.
+ [2] [3] [4] [5] [6] [7] (./MECH6V29-HW04.aux)
+Package rerunfilecheck Info: File `MECH6V29-HW04.out' has not changed.
+(rerunfilecheck)             Checksum: F42834995FD4EFD534D6CB556E216ED8;428.
  ) 
 Here is how much of TeX's memory you used:
- 26728 strings out of 478599
- 489631 string characters out of 5858102
- 841067 words of memory out of 5000000
- 44018 multiletter control sequences out of 15000+600000
- 415586 words of font info for 72 fonts, out of 8000000 for 9000
+ 26291 strings out of 478599
+ 481579 string characters out of 5858102
+ 827786 words of memory out of 5000000
+ 43649 multiletter control sequences out of 15000+600000
+ 415251 words of font info for 71 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 84i,18n,83p,660b,785s stack positions out of 5000i,500n,10000p,200000b,80000s
-{c:/texlive/2021/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}<c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbsy10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmbsy7.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on MECH6V29-HW03.pdf (20 pages, 681272 bytes).
+ 84i,18n,83p,660b,539s stack positions out of 5000i,500n,10000p,200000b,80000s
+<c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbsy10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmbsy7.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
+Output written on MECH6V29-HW04.pdf (7 pages, 228369 bytes).
 PDF statistics:
- 441 PDF objects out of 1000 (max. 8388607)
- 347 compressed objects within 4 object streams
- 105 named destinations out of 1000 (max. 500000)
- 252 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 219 PDF objects out of 1000 (max. 8388607)
+ 168 compressed objects within 2 object streams
+ 51 named destinations out of 1000 (max. 500000)
+ 53 words of extra memory for PDF output out of 10000 (max. 10000000)
 
