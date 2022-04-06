@@ -99,9 +99,6 @@
         \forall_{v_i, v_j \in V} (v_i,v_j) \in E \iff \forall_{v_k \in V} v_k \notin D(v_i,v_j)
     \] where $D(a,b)$ is the closed disc with diameter between $(a,b)$.
     In other words, a disk constructed from two adjacent vertices should not contain any other vertices.
-    % \[
-	% 	(v_i,v_j) \in E \iff \norm{v_i,v_j} \leq \Delta
-	% \]
 \end{definition}
 
 \begin{definition} \label{def:graph_properties}
@@ -111,8 +108,9 @@
 			(v_i,v_j) \in E \iff (v_j,v_i) \in E
 		\] otherwise, $G(V,E)$ is considered \emph{directed}.
 		\item An undirected graph $G(V,E)$ is considered \underline{\emph{connected}} if there exists a path between any two vertices.
-		\item A directed graph $G(V,E)$ is considered \underline{\emph{strongly connected}} if there exists a directed path between any two vertices.
-		\item A directed graph $G(V,E)$ is considered \underline{\emph{weakly connected}} if the corresponding undirected graph is connected.
+		\item An undirected graph $G(V,E)$ is considered \underline{\emph{planer}} if the graph can be drawn on a plane without any edges crossing.
+		% \item A directed graph $G(V,E)$ is considered \underline{\emph{strongly connected}} if there exists a directed path between any two vertices.
+		% \item A directed graph $G(V,E)$ is considered \underline{\emph{weakly connected}} if the corresponding undirected graph is connected.
 	\end{enumerate}
 \end{definition}
 
@@ -247,16 +245,6 @@
 
 
 % Include Switched Systems & Lyapnov stability....
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -503,6 +491,17 @@ Update all the graph to this time...
 % Problem 2 -------------------------------------------------
 \newpage
 \section{}
+% Problem
+\subsection*{Problem}
+We studied a way to assign edge directions in a minimally rigid graph to make them constraint consistent, and hence, minimally persistent. 
+Assign orientations to edges in the following graphs to make them persistent. 
+Show all the steps of the Henneberg construction.
+
+
+% Do the figures....
+
+
+
 % Preliminaries
 \subsection*{Preliminaries}
 % Persistance ------------------------
@@ -518,6 +517,10 @@ Update all the graph to this time...
     \end{enumerate}
 \end{definition}
 
+% Solutions
+\subsection*{Solution}
+% G_1 -------------------------------------------------
+\subsection{$G_1$}
 
 
 
@@ -528,6 +531,123 @@ Update all the graph to this time...
 
 
 
+% Problem 3 -------------------------------------------------
+\newpage
+\section{}
+% Preliminaries
+\subsection*{Preliminaries}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+% Problem 4 -------------------------------------------------
+\newpage
+\section{}
+
+See attached MATLAB file.
+
+% Problem 5 -------------------------------------------------
+% \newpage
+\section{}
+% Preliminaries -------------
+\subsection*{Preliminaries}
+
+Refering back to Definitions \ref*{def:graph_properties} and \ref*{def:Gabriel_graph}, we have that \begin{enumerate}
+    \item An undirected graph $G(V,E)$ is considered \underline{\emph{connected}} if there exists a path between any two vertices.
+    \item An undirected graph $G(V,E)$ is considered \underline{\emph{planer}} if the graph can be drawn on a plane without any edges crossing.
+    \item A \emph{\underline{Gabriel Graph}} is defined as $G(V,E)$ in which \[
+        \forall_{v_i, v_j \in V} (v_i,v_j) \in E \iff \forall_{v_k \in V} v_k \notin D(v_i,v_j)
+    \] where $D(a,b)$ is the closed disc with diameter between $(a,b)$.
+    In other words, a disk constructed from two adjacent vertices should not contain any other vertices.
+\end{enumerate}
+
+
+% Part a ---------------------
+\subsection{Show that Gabriel graphs are planar}
+\begin{theorem}
+    All Gabriel graphs are planar. 
+    \begin{proof}
+        Let $G(V,E)$ be a Gabriel graph (in 2-dimensions). 
+        By definition of gabriel graphs, an edge only exists between two vertices if and only if no vertices are closer to the midpoint between those vertices. 
+        i.e.\[
+            \forall_{(v_i, v_j) \in E} 
+            \ d(m_{v_i,v_j}, v_i) = d(m_{v_i,v_j}, v_j) < d(m_{v_i,v_j}, v_k) 
+            \ \forall_{v_k \in V \neq v_i, v_j}
+        \] where $m_{v_i,v_j}$ is the midpoint between $v_i$ and $v_j$ while $d(x,y)$ is the euclidean distance between $x$ and $y$. 
+        Each of these edges can therefore be drawn on the plane without crossing as each edge will be drawn from vertices through the midpoint and since no other vertex is near the midpoint, no other edge could be constructed that would intersect it. 
+    \end{proof}
+\end{theorem}
+
+% Part b ---------------------
+\subsection{Show that Gabriel graphs are connected}
+\begin{theorem}
+    All Gabriel graphs are connected. 
+    \begin{proof}
+        Let $G(V,E)$ be a Gabriel graph (in 2-dimensions). 
+        Consider all vertex pairs $v_i$ and $v_j$. 
+        If there are no vertices within the disk induced by $v_i$ and $v_j$, then $v_i$ and $v_j$ are adjacent and therefore a path exists between them. 
+        If this is not the case, then it must be true that $\exists_{v_{k_1} \neq v_j \in V}$ satisfying this condition for $v_i$. Additionally, it is also true that $\exists_{v_{k_n} \neq v_i \in V}$ satisfying the condition for $v_j$. 
+        If $v_k = v_{k_1} = v_{k_n}$, then there exists a path $[(v_i, v_k), (v_k, v_j)]$ connected $v_i$ and $v_j$.
+        However, if $v_{k_1} \neq v_{k_n}$, we can perform the same test again with $v_{k_n}$ instead. 
+        Since we know that $\exists_{v_{k_{n+1}} \neq v_i \neq v_j \neq v_{k_{1}} \dots \neq v_{n} \in V}$ that satisfies the adjacency condition.
+        Eventually, for a finite (perhaps countable) set of vertices, where a path $[(v_i, v_{k_1}), (v_{k_1}, v_{n+1}), \dots (v_{k_{2}}, v_{j})]$ will be formed for $n < N-2$.
+        Since this is true $\forall_{v_i, v_j \in V}$ the graph is connected.
+    \end{proof}
+\end{theorem}
+
+% Problem 6 -------------------------------------------------
+\newpage
+\section{}
+Graph grammars are a good tool for generating networks with some specific structure.
+Assume that we have a total of $2^n$ nodes for some positive integer n. 
+Consider the following rules:\begin{align*}
+    &R_0 : a \quad a \rightarrow l_1 \_\_ c\\
+    &R_1 : l_i \quad l_i \rightarrow l_{i+1} \_\_ c \quad 1\leq i \leq n-1
+\end{align*}
+
+What structure do we get in the end?
+
+% Preliminaries -----------
+\subsection*{Preliminaries}
+
+
+
+
+% Solution -----------
+\subsection*{Solution}
+
+
+
+
+
+
+
+
+
+
+% Problem 7 -------------------------------------------------
+\newpage
+\section{}
 
 
 
@@ -554,7 +674,7 @@ All code I write in this course can be found on my GitHub repository:\\
 % % \bibliography{refs.bib}
 % \cite{*}
 
-% \includepdf[pages=-]{MECH6V29_HW03.pdf}
+\includepdf[pages=-]{MECH6V29_HW04.pdf}
 % \includepdf[pages=-, nup = 2x2]{MECH6V29_HW03.pdf}
 
 

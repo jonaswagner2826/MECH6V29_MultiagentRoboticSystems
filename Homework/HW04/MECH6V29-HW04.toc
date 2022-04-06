@@ -2,4 +2,12 @@
 \contentsline {section}{\numberline {Problem 1}}{5}{section.1}%
 \contentsline {subsection}{\numberline {a)}Big Picture Chart}{5}{subsection.1.1}%
 \contentsline {section}{\numberline {Problem 2}}{6}{section.2}%
-\contentsline {section}{\numberline {A}MATLAB Code:}{7}{appendix.A}%
+\contentsline {subsection}{\numberline {a)}$G_1$}{6}{subsection.2.1}%
+\contentsline {section}{\numberline {Problem 3}}{7}{section.3}%
+\contentsline {section}{\numberline {Problem 4}}{8}{section.4}%
+\contentsline {section}{\numberline {Problem 5}}{8}{section.5}%
+\contentsline {subsection}{\numberline {a)}Show that Gabriel graphs are planar}{8}{subsection.5.1}%
+\contentsline {subsection}{\numberline {b)}Show that Gabriel graphs are connected}{8}{subsection.5.2}%
+\contentsline {section}{\numberline {Problem 6}}{9}{section.6}%
+\contentsline {section}{\numberline {Problem 7}}{10}{section.7}%
+\contentsline {section}{\numberline {A}MATLAB Code:}{11}{appendix.A}%

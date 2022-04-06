@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.9.1)  5 APR 2022 14:54
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.9.1)  5 APR 2022 20:10
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -737,6 +737,31 @@ Overfull \hbox (36.09001pt too wide) detected at line 4
 \OT1/cmr/bx/n/10 Problem 2 
  []
 
+
+Overfull \hbox (36.09001pt too wide) detected at line 6
+\OT1/cmr/bx/n/10 Problem 3 
+ []
+
+
+Overfull \hbox (36.09001pt too wide) detected at line 7
+\OT1/cmr/bx/n/10 Problem 4 
+ []
+
+
+Overfull \hbox (36.09001pt too wide) detected at line 8
+\OT1/cmr/bx/n/10 Problem 5 
+ []
+
+
+Overfull \hbox (36.09001pt too wide) detected at line 11
+\OT1/cmr/bx/n/10 Problem 6 
+ []
+
+
+Overfull \hbox (36.09001pt too wide) detected at line 12
+\OT1/cmr/bx/n/10 Problem 7 
+ []
+
 )
 \tf@toc=\write5
 \openout5 = `MECH6V29-HW04.toc'.
@@ -745,23 +770,110 @@ Overfull \hbox (36.09001pt too wide) detected at line 4
 
 {c:/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 \matrixtoks=\toks49
- [2] [3] [4] [5] [6] [7] (./MECH6V29-HW04.aux)
+ [2] [3] [4] [5]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 523.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 523.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 523.
+
+[6] [7] [8] [9] [10]
+<MECH6V29_HW04.pdf, id=185, 614.295pt x 794.97pt>
+File: MECH6V29_HW04.pdf Graphic file (type pdf)
+<use MECH6V29_HW04.pdf>
+Package pdftex.def Info: MECH6V29_HW04.pdf  used on input line 677.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: MECH6V29_HW04.pdf Graphic file (type pdf)
+<use MECH6V29_HW04.pdf>
+Package pdftex.def Info: MECH6V29_HW04.pdf  used on input line 677.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+<MECH6V29_HW04.pdf, id=188, page=1, 614.295pt x 794.97pt>
+File: MECH6V29_HW04.pdf Graphic file (type pdf)
+<use MECH6V29_HW04.pdf, page 1>
+Package pdftex.def Info: MECH6V29_HW04.pdf , page1 used on input line 677.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: MECH6V29_HW04.pdf Graphic file (type pdf)
+<use MECH6V29_HW04.pdf, page 1>
+Package pdftex.def Info: MECH6V29_HW04.pdf , page1 used on input line 677.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+ [11]
+File: MECH6V29_HW04.pdf Graphic file (type pdf)
+<use MECH6V29_HW04.pdf, page 1>
+Package pdftex.def Info: MECH6V29_HW04.pdf , page1 used on input line 677.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: MECH6V29_HW04.pdf Graphic file (type pdf)
+<use MECH6V29_HW04.pdf, page 1>
+Package pdftex.def Info: MECH6V29_HW04.pdf , page1 used on input line 677.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: MECH6V29_HW04.pdf Graphic file (type pdf)
+<use MECH6V29_HW04.pdf, page 1>
+Package pdftex.def Info: MECH6V29_HW04.pdf , page1 used on input line 677.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+ [12 <./MECH6V29_HW04.pdf>]
+<MECH6V29_HW04.pdf, id=226, page=2, 614.295pt x 794.97pt>
+File: MECH6V29_HW04.pdf Graphic file (type pdf)
+<use MECH6V29_HW04.pdf, page 2>
+Package pdftex.def Info: MECH6V29_HW04.pdf , page2 used on input line 677.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: MECH6V29_HW04.pdf Graphic file (type pdf)
+<use MECH6V29_HW04.pdf, page 2>
+Package pdftex.def Info: MECH6V29_HW04.pdf , page2 used on input line 677.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: MECH6V29_HW04.pdf Graphic file (type pdf)
+<use MECH6V29_HW04.pdf, page 2>
+Package pdftex.def Info: MECH6V29_HW04.pdf , page2 used on input line 677.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+ [13 <./MECH6V29_HW04.pdf>]
+<MECH6V29_HW04.pdf, id=237, page=3, 614.295pt x 794.97pt>
+File: MECH6V29_HW04.pdf Graphic file (type pdf)
+<use MECH6V29_HW04.pdf, page 3>
+Package pdftex.def Info: MECH6V29_HW04.pdf , page3 used on input line 677.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: MECH6V29_HW04.pdf Graphic file (type pdf)
+<use MECH6V29_HW04.pdf, page 3>
+Package pdftex.def Info: MECH6V29_HW04.pdf , page3 used on input line 677.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: MECH6V29_HW04.pdf Graphic file (type pdf)
+<use MECH6V29_HW04.pdf, page 3>
+Package pdftex.def Info: MECH6V29_HW04.pdf , page3 used on input line 677.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+ [14 <./MECH6V29_HW04.pdf>]
+<MECH6V29_HW04.pdf, id=243, page=4, 614.295pt x 794.97pt>
+File: MECH6V29_HW04.pdf Graphic file (type pdf)
+<use MECH6V29_HW04.pdf, page 4>
+Package pdftex.def Info: MECH6V29_HW04.pdf , page4 used on input line 677.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: MECH6V29_HW04.pdf Graphic file (type pdf)
+<use MECH6V29_HW04.pdf, page 4>
+Package pdftex.def Info: MECH6V29_HW04.pdf , page4 used on input line 677.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: MECH6V29_HW04.pdf Graphic file (type pdf)
+<use MECH6V29_HW04.pdf, page 4>
+Package pdftex.def Info: MECH6V29_HW04.pdf , page4 used on input line 677.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+ [15 <./MECH6V29_HW04.pdf>] (./MECH6V29-HW04.aux)
 Package rerunfilecheck Info: File `MECH6V29-HW04.out' has not changed.
-(rerunfilecheck)             Checksum: F42834995FD4EFD534D6CB556E216ED8;428.
+(rerunfilecheck)             Checksum: CA22D8517C48379BF0AFBE5908B27BFD;1183.
  ) 
 Here is how much of TeX's memory you used:
- 26291 strings out of 478599
- 481579 string characters out of 5858102
- 827786 words of memory out of 5000000
- 43649 multiletter control sequences out of 15000+600000
+ 26347 strings out of 478599
+ 482572 string characters out of 5858102
+ 827796 words of memory out of 5000000
+ 43677 multiletter control sequences out of 15000+600000
  415251 words of font info for 71 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  84i,18n,83p,660b,539s stack positions out of 5000i,500n,10000p,200000b,80000s
-<c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbsy10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmbsy7.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
-Output written on MECH6V29-HW04.pdf (7 pages, 228369 bytes).
+<c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbsy10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmbsy7.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
+Output written on MECH6V29-HW04.pdf (15 pages, 370529 bytes).
 PDF statistics:
- 219 PDF objects out of 1000 (max. 8388607)
- 168 compressed objects within 2 object streams
- 51 named destinations out of 1000 (max. 500000)
- 53 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 364 PDF objects out of 1000 (max. 8388607)
+ 280 compressed objects within 3 object streams
+ 77 named destinations out of 1000 (max. 500000)
+ 152 words of extra memory for PDF output out of 10000 (max. 10000000)
 

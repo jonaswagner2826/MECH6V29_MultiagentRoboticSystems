@@ -1,0 +1,1 @@
+{"rule":"COMPLAINT_COMPLAINED","sentence":"^\\QProblem: We studied a way to assign edge directions in a minimally rigid graph to make them constraint consistent, and hence, minimally persistent.\\E$"}
