@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.9.1)  5 APR 2022 20:10
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.9.1)  6 APR 2022 09:52
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -345,45 +345,114 @@ File: pppdftex.def 2021/03/06 v0.5t Pdfpages driver for pdfTeX (AM)
 \ULC@box=\box60
 Package: ulem 2019/11/18
 \ULdepth=\dimen189
+) (c:/texlive/2021/texmf-dist/tex/latex/tools/multicol.sty
+Package: multicol 2019/12/09 v1.8y multicolumn formatting (FMi)
+\c@tracingmulticols=\count294
+\mult@box=\box61
+\multicol@leftmargin=\dimen190
+\c@unbalance=\count295
+\c@collectmore=\count296
+\doublecol@number=\count297
+\multicoltolerance=\count298
+\multicolpretolerance=\count299
+\full@width=\dimen191
+\page@free=\dimen192
+\premulticols=\dimen193
+\postmulticols=\dimen194
+\multicolsep=\skip61
+\multicolbaselineskip=\skip62
+\partial@page=\box62
+\last@line=\box63
+\maxbalancingoverflow=\dimen195
+\mult@rightbox=\box64
+\mult@grightbox=\box65
+\mult@gfirstbox=\box66
+\mult@firstbox=\box67
+\@tempa=\box68
+\@tempa=\box69
+\@tempa=\box70
+\@tempa=\box71
+\@tempa=\box72
+\@tempa=\box73
+\@tempa=\box74
+\@tempa=\box75
+\@tempa=\box76
+\@tempa=\box77
+\@tempa=\box78
+\@tempa=\box79
+\@tempa=\box80
+\@tempa=\box81
+\@tempa=\box82
+\@tempa=\box83
+\@tempa=\box84
+\@tempa=\box85
+\@tempa=\box86
+\@tempa=\box87
+\@tempa=\box88
+\@tempa=\box89
+\@tempa=\box90
+\@tempa=\box91
+\@tempa=\box92
+\@tempa=\box93
+\@tempa=\box94
+\@tempa=\box95
+\@tempa=\box96
+\@tempa=\box97
+\@tempa=\box98
+\@tempa=\box99
+\@tempa=\box100
+\@tempa=\box101
+\@tempa=\box102
+\@tempa=\box103
+\@tempa=\box104
+\c@minrows=\count300
+\c@columnbadness=\count301
+\c@finalcolumnbadness=\count302
+\last@try=\dimen196
+\multicolovershoot=\dimen197
+\multicolundershoot=\dimen198
+\mult@nat@firstbox=\box105
+\colbreak@box=\box106
+\mc@col@check@num=\count303
 ) (c:/texlive/2021/texmf-dist/tex/latex/matlab-prettifier/matlab-prettifier.sty
 Package: matlab-prettifier 2014/06/19 v0.3 A package for prettyprinting Matlab source code
  (c:/texlive/2021/texmf-dist/tex/latex/base/textcomp.sty
 Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
 ) (c:/texlive/2021/texmf-dist/tex/latex/listings/listings.sty
-\lst@mode=\count294
-\lst@gtempboxa=\box61
+\lst@mode=\count304
+\lst@gtempboxa=\box107
 \lst@token=\toks32
-\lst@length=\count295
-\lst@currlwidth=\dimen190
-\lst@column=\count296
-\lst@pos=\count297
-\lst@lostspace=\dimen191
-\lst@width=\dimen192
-\lst@newlines=\count298
-\lst@lineno=\count299
-\lst@maxwidth=\dimen193
+\lst@length=\count305
+\lst@currlwidth=\dimen199
+\lst@column=\count306
+\lst@pos=\count307
+\lst@lostspace=\dimen256
+\lst@width=\dimen257
+\lst@newlines=\count308
+\lst@lineno=\count309
+\lst@maxwidth=\dimen258
  (c:/texlive/2021/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
-\c@lstnumber=\count300
-\lst@skipnumbers=\count301
-\lst@framebox=\box62
+\c@lstnumber=\count310
+\lst@skipnumbers=\count311
+\lst@framebox=\box108
 ) (c:/texlive/2021/texmf-dist/tex/latex/listings/listings.cfg
 File: listings.cfg 2020/03/24 1.8d listings configuration
 ))
 Package: listings 2020/03/24 1.8d (Carsten Heinz)
-\netBracketCount@mlpr=\count302
-\blkLvl@mlpr=\count303
-\blkLvlAtClassdef@mlpr=\count304
-\emHeight@mlpr=\skip61
-\jayDepth@mlpr=\skip62
-\sectionRuleOffset@mlpr=\skip63
+\netBracketCount@mlpr=\count312
+\blkLvl@mlpr=\count313
+\blkLvlAtClassdef@mlpr=\count314
+\emHeight@mlpr=\skip63
+\jayDepth@mlpr=\skip64
+\sectionRuleOffset@mlpr=\skip65
 \toks@mlpr=\toks33
 ) (c:/texlive/2021/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty (c:/texlive/2021/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty (c:/texlive/2021/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty (c:/texlive/2021/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
 \pgfutil@everybye=\toks34
-\pgfutil@tempdima=\dimen194
-\pgfutil@tempdimb=\dimen195
+\pgfutil@tempdima=\dimen259
+\pgfutil@tempdimb=\dimen260
  (c:/texlive/2021/texmf-dist/tex/generic/pgf/utilities/pgfutil-common-lists.tex)) (c:/texlive/2021/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
-\pgfutil@abb=\box63
+\pgfutil@abb=\box109
 ) (c:/texlive/2021/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex (c:/texlive/2021/texmf-dist/tex/generic/pgf/pgf.revision.tex)
 Package: pgfrcs 2021/05/15 v3.1.9a (3.1.9a)
 ))
@@ -396,26 +465,26 @@ Package: pgfsys 2021/05/15 v3.1.9a (3.1.9a)
  (c:/texlive/2021/texmf-dist/tex/generic/pgf/utilities/pgfkeysfiltered.code.tex
 \pgfkeys@tmptoks=\toks37
 ))
-\pgf@x=\dimen196
-\pgf@y=\dimen197
-\pgf@xa=\dimen198
-\pgf@ya=\dimen199
-\pgf@xb=\dimen256
-\pgf@yb=\dimen257
-\pgf@xc=\dimen258
-\pgf@yc=\dimen259
-\pgf@xd=\dimen260
-\pgf@yd=\dimen261
+\pgf@x=\dimen261
+\pgf@y=\dimen262
+\pgf@xa=\dimen263
+\pgf@ya=\dimen264
+\pgf@xb=\dimen265
+\pgf@yb=\dimen266
+\pgf@xc=\dimen267
+\pgf@yc=\dimen268
+\pgf@xd=\dimen269
+\pgf@yd=\dimen270
 \w@pgf@writea=\write3
 \r@pgf@reada=\read2
-\c@pgf@counta=\count305
-\c@pgf@countb=\count306
-\c@pgf@countc=\count307
-\c@pgf@countd=\count308
+\c@pgf@counta=\count315
+\c@pgf@countb=\count316
+\c@pgf@countc=\count317
+\c@pgf@countd=\count318
 \t@pgf@toka=\toks38
 \t@pgf@tokb=\toks39
 \t@pgf@tokc=\toks40
-\pgf@sys@id@count=\count309
+\pgf@sys@id@count=\count319
  (c:/texlive/2021/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
 File: pgf.cfg 2021/05/15 v3.1.9a (3.1.9a)
 )
@@ -426,59 +495,59 @@ File: pgfsys-pdftex.def 2021/05/15 v3.1.9a (3.1.9a)
 File: pgfsys-common-pdf.def 2021/05/15 v3.1.9a (3.1.9a)
 ))) (c:/texlive/2021/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.tex
 File: pgfsyssoftpath.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgfsyssoftpath@smallbuffer@items=\count310
-\pgfsyssoftpath@bigbuffer@items=\count311
+\pgfsyssoftpath@smallbuffer@items=\count320
+\pgfsyssoftpath@bigbuffer@items=\count321
 ) (c:/texlive/2021/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.tex
 File: pgfsysprotocol.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 )) (c:/texlive/2021/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
 Package: pgfcore 2021/05/15 v3.1.9a (3.1.9a)
  (c:/texlive/2021/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex (c:/texlive/2021/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex (c:/texlive/2021/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex) (c:/texlive/2021/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
-\pgfmath@dimen=\dimen262
-\pgfmath@count=\count312
-\pgfmath@box=\box64
+\pgfmath@dimen=\dimen271
+\pgfmath@count=\count322
+\pgfmath@box=\box110
 \pgfmath@toks=\toks41
 \pgfmath@stack@operand=\toks42
 \pgfmath@stack@operation=\toks43
 ) (c:/texlive/2021/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex (c:/texlive/2021/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code.tex) (c:/texlive/2021/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigonometric.code.tex) (c:/texlive/2021/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.random.code.tex) (c:/texlive/2021/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.comparison.code.tex) (c:/texlive/2021/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code.tex) (c:/texlive/2021/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round.code.tex) (c:/texlive/2021/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code.tex) (c:/texlive/2021/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerarithmetics.code.tex))) (c:/texlive/2021/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
-\c@pgfmathroundto@lastzeros=\count313
+\c@pgfmathroundto@lastzeros=\count323
 )) (c:/texlive/2021/texmf-dist/tex/generic/pgf/math/pgfint.code.tex) (c:/texlive/2021/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.tex
 File: pgfcorepoints.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgf@picminx=\dimen263
-\pgf@picmaxx=\dimen264
-\pgf@picminy=\dimen265
-\pgf@picmaxy=\dimen266
-\pgf@pathminx=\dimen267
-\pgf@pathmaxx=\dimen268
-\pgf@pathminy=\dimen269
-\pgf@pathmaxy=\dimen270
-\pgf@xx=\dimen271
-\pgf@xy=\dimen272
-\pgf@yx=\dimen273
-\pgf@yy=\dimen274
-\pgf@zx=\dimen275
-\pgf@zy=\dimen276
+\pgf@picminx=\dimen272
+\pgf@picmaxx=\dimen273
+\pgf@picminy=\dimen274
+\pgf@picmaxy=\dimen275
+\pgf@pathminx=\dimen276
+\pgf@pathmaxx=\dimen277
+\pgf@pathminy=\dimen278
+\pgf@pathmaxy=\dimen279
+\pgf@xx=\dimen280
+\pgf@xy=\dimen281
+\pgf@yx=\dimen282
+\pgf@yy=\dimen283
+\pgf@zx=\dimen284
+\pgf@zy=\dimen285
 ) (c:/texlive/2021/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconstruct.code.tex
 File: pgfcorepathconstruct.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgf@path@lastx=\dimen277
-\pgf@path@lasty=\dimen278
+\pgf@path@lastx=\dimen286
+\pgf@path@lasty=\dimen287
 ) (c:/texlive/2021/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage.code.tex
 File: pgfcorepathusage.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgf@shorten@end@additional=\dimen279
-\pgf@shorten@start@additional=\dimen280
+\pgf@shorten@end@additional=\dimen288
+\pgf@shorten@start@additional=\dimen289
 ) (c:/texlive/2021/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.tex
 File: pgfcorescopes.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgfpic=\box65
-\pgf@hbox=\box66
-\pgf@layerbox@main=\box67
-\pgf@picture@serial@count=\count314
+\pgfpic=\box111
+\pgf@hbox=\box112
+\pgf@layerbox@main=\box113
+\pgf@picture@serial@count=\count324
 ) (c:/texlive/2021/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.code.tex
 File: pgfcoregraphicstate.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgflinewidth=\dimen281
+\pgflinewidth=\dimen290
 ) (c:/texlive/2021/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransformations.code.tex
 File: pgfcoretransformations.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgf@pt@x=\dimen282
-\pgf@pt@y=\dimen283
-\pgf@pt@temp=\dimen284
+\pgf@pt@x=\dimen291
+\pgf@pt@y=\dimen292
+\pgf@pt@temp=\dimen293
 ) (c:/texlive/2021/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
 File: pgfcorequick.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 ) (c:/texlive/2021/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.code.tex
@@ -487,17 +556,17 @@ File: pgfcoreobjects.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 File: pgfcorepathprocessing.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 ) (c:/texlive/2021/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.code.tex
 File: pgfcorearrows.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgfarrowsep=\dimen285
+\pgfarrowsep=\dimen294
 ) (c:/texlive/2021/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
 File: pgfcoreshade.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgf@max=\dimen286
-\pgf@sys@shading@range@num=\count315
-\pgf@shadingcount=\count316
+\pgf@max=\dimen295
+\pgf@sys@shading@range@num=\count325
+\pgf@shadingcount=\count326
 ) (c:/texlive/2021/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
 File: pgfcoreimage.code.tex 2021/05/15 v3.1.9a (3.1.9a)
  (c:/texlive/2021/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.tex
 File: pgfcoreexternal.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgfexternal@startupbox=\box68
+\pgfexternal@startupbox=\box114
 )) (c:/texlive/2021/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.code.tex
 File: pgfcorelayers.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 ) (c:/texlive/2021/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransparency.code.tex
@@ -508,52 +577,52 @@ File: pgfcorepatterns.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 File: pgfcorerdf.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 ))) (c:/texlive/2021/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
 File: pgfmoduleshapes.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgfnodeparttextbox=\box69
+\pgfnodeparttextbox=\box115
 ) (c:/texlive/2021/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.tex
 File: pgfmoduleplot.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 ) (c:/texlive/2021/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65.sty
 Package: pgfcomp-version-0-65 2021/05/15 v3.1.9a (3.1.9a)
-\pgf@nodesepstart=\dimen287
-\pgf@nodesepend=\dimen288
+\pgf@nodesepstart=\dimen296
+\pgf@nodesepend=\dimen297
 ) (c:/texlive/2021/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18.sty
 Package: pgfcomp-version-1-18 2021/05/15 v3.1.9a (3.1.9a)
 )) (c:/texlive/2021/texmf-dist/tex/latex/pgf/utilities/pgffor.sty (c:/texlive/2021/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty (c:/texlive/2021/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex)) (c:/texlive/2021/texmf-dist/tex/latex/pgf/math/pgfmath.sty (c:/texlive/2021/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)) (c:/texlive/2021/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
 Package: pgffor 2021/05/15 v3.1.9a (3.1.9a)
  (c:/texlive/2021/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)
-\pgffor@iter=\dimen289
-\pgffor@skip=\dimen290
+\pgffor@iter=\dimen298
+\pgffor@skip=\dimen299
 \pgffor@stack=\toks44
 \pgffor@toks=\toks45
 )) (c:/texlive/2021/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
 Package: tikz 2021/05/15 v3.1.9a (3.1.9a)
  (c:/texlive/2021/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers.code.tex
 File: pgflibraryplothandlers.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgf@plot@mark@count=\count317
-\pgfplotmarksize=\dimen291
+\pgf@plot@mark@count=\count327
+\pgfplotmarksize=\dimen300
 )
-\tikz@lastx=\dimen292
-\tikz@lasty=\dimen293
-\tikz@lastxsaved=\dimen294
-\tikz@lastysaved=\dimen295
-\tikz@lastmovetox=\dimen296
-\tikz@lastmovetoy=\dimen297
-\tikzleveldistance=\dimen298
-\tikzsiblingdistance=\dimen299
-\tikz@figbox=\box70
-\tikz@figbox@bg=\box71
-\tikz@tempbox=\box72
-\tikz@tempbox@bg=\box73
-\tikztreelevel=\count318
-\tikznumberofchildren=\count319
-\tikznumberofcurrentchild=\count320
-\tikz@fig@count=\count321
+\tikz@lastx=\dimen301
+\tikz@lasty=\dimen302
+\tikz@lastxsaved=\dimen303
+\tikz@lastysaved=\dimen304
+\tikz@lastmovetox=\dimen305
+\tikz@lastmovetoy=\dimen306
+\tikzleveldistance=\dimen307
+\tikzsiblingdistance=\dimen308
+\tikz@figbox=\box116
+\tikz@figbox@bg=\box117
+\tikz@tempbox=\box118
+\tikz@tempbox@bg=\box119
+\tikztreelevel=\count328
+\tikznumberofchildren=\count329
+\tikznumberofcurrentchild=\count330
+\tikz@fig@count=\count331
  (c:/texlive/2021/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
 File: pgfmodulematrix.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgfmatrixcurrentrow=\count322
-\pgfmatrixcurrentcolumn=\count323
-\pgf@matrix@numberofcolumns=\count324
+\pgfmatrixcurrentrow=\count332
+\pgfmatrixcurrentcolumn=\count333
+\pgf@matrix@numberofcolumns=\count334
 )
-\tikz@expandcount=\count325
+\tikz@expandcount=\count335
  (c:/texlive/2021/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarytopaths.code.tex
 File: tikzlibrarytopaths.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 ))) (c:/texlive/2021/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarypositioning.code.tex
@@ -580,67 +649,67 @@ File: pgflibraryshapes.arrows.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 File: tikzlibraryshapes.multipart.code.tex 2021/05/15 v3.1.9a (3.1.9a)
  (c:/texlive/2021/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshapes.multipart.code.tex
 File: pgflibraryshapes.multipart.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgfnodepartlowerbox=\box74
-\pgfnodeparttwobox=\box75
-\pgfnodepartthreebox=\box76
-\pgfnodepartfourbox=\box77
-\pgfnodeparttwentybox=\box78
-\pgfnodepartnineteenbox=\box79
-\pgfnodeparteighteenbox=\box80
-\pgfnodepartseventeenbox=\box81
-\pgfnodepartsixteenbox=\box82
-\pgfnodepartfifteenbox=\box83
-\pgfnodepartfourteenbox=\box84
-\pgfnodepartthirteenbox=\box85
-\pgfnodeparttwelvebox=\box86
-\pgfnodepartelevenbox=\box87
-\pgfnodeparttenbox=\box88
-\pgfnodepartninebox=\box89
-\pgfnodeparteightbox=\box90
-\pgfnodepartsevenbox=\box91
-\pgfnodepartsixbox=\box92
-\pgfnodepartfivebox=\box93
+\pgfnodepartlowerbox=\box120
+\pgfnodeparttwobox=\box121
+\pgfnodepartthreebox=\box122
+\pgfnodepartfourbox=\box123
+\pgfnodeparttwentybox=\box124
+\pgfnodepartnineteenbox=\box125
+\pgfnodeparteighteenbox=\box126
+\pgfnodepartseventeenbox=\box127
+\pgfnodepartsixteenbox=\box128
+\pgfnodepartfifteenbox=\box129
+\pgfnodepartfourteenbox=\box130
+\pgfnodepartthirteenbox=\box131
+\pgfnodeparttwelvebox=\box132
+\pgfnodepartelevenbox=\box133
+\pgfnodeparttenbox=\box134
+\pgfnodepartninebox=\box135
+\pgfnodeparteightbox=\box136
+\pgfnodepartsevenbox=\box137
+\pgfnodepartsixbox=\box138
+\pgfnodepartfivebox=\box139
 ))) (c:/texlive/2021/texmf-dist/tex/latex/parskip/parskip.sty
 Package: parskip 2021-03-14 v2.0h non-zero parskip adjustments
  (c:/texlive/2021/texmf-dist/tex/latex/etoolbox/etoolbox.sty
 Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count326
+\etb@tempcnta=\count336
 )) (c:/texlive/2021/texmf-dist/tex/latex/enumitem/enumitem.sty
 Package: enumitem 2019/06/20 v3.9 Customized lists
-\labelindent=\skip64
-\enit@outerparindent=\dimen300
+\labelindent=\skip66
+\enit@outerparindent=\dimen309
 \enit@toks=\toks46
-\enit@inbox=\box94
-\enit@count@id=\count327
-\enitdp@description=\count328
+\enit@inbox=\box140
+\enit@count@id=\count337
+\enitdp@description=\count338
 )
-\c@definition=\count329
-\c@assumption=\count330
-\c@theorem=\count331
-\c@lemma=\count332
-\c@proposition=\count333
-\c@example=\count334
+\c@definition=\count339
+\c@assumption=\count340
+\c@theorem=\count341
+\c@lemma=\count342
+\c@proposition=\count343
+\c@example=\count344
  (./MECH6V29-HW04.aux)
 \openout1 = `MECH6V29-HW04.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 70.
-LaTeX Font Info:    ... okay on input line 70.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 70.
-LaTeX Font Info:    ... okay on input line 70.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 70.
-LaTeX Font Info:    ... okay on input line 70.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 70.
-LaTeX Font Info:    ... okay on input line 70.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 70.
-LaTeX Font Info:    ... okay on input line 70.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 70.
-LaTeX Font Info:    ... okay on input line 70.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 70.
-LaTeX Font Info:    ... okay on input line 70.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 70.
-LaTeX Font Info:    ... okay on input line 70.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 70.
-LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -678,16 +747,16 @@ LaTeX Font Info:    ... okay on input line 70.
 
 (c:/texlive/2021/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count335
-\scratchdimen=\dimen301
-\scratchbox=\box95
-\nofMPsegments=\count336
-\nofMParguments=\count337
+\scratchcounter=\count345
+\scratchdimen=\dimen310
+\scratchbox=\box141
+\nofMPsegments=\count346
+\nofMParguments=\count347
 \everyMPshowfont=\toks47
-\MPscratchCnt=\count338
-\MPscratchDim=\dimen302
-\MPnumerator=\count339
-\makeMPintoPDFobject=\count340
+\MPscratchCnt=\count348
+\MPscratchDim=\dimen311
+\MPnumerator=\count349
+\makeMPintoPDFobject=\count350
 \everyMPtoPDFconversion=\toks48
 ) (c:/texlive/2021/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -695,7 +764,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
  (c:/texlive/2021/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-Package hyperref Info: Link coloring OFF on input line 70.
+Package hyperref Info: Link coloring OFF on input line 71.
  (c:/texlive/2021/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
  (c:/texlive/2021/texmf-dist/tex/latex/refcount/refcount.sty
@@ -703,11 +772,11 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 ) (c:/texlive/2021/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count341
+\c@section@level=\count351
 )
-LaTeX Info: Redefining \ref on input line 70.
-LaTeX Info: Redefining \pageref on input line 70.
-LaTeX Info: Redefining \nameref on input line 70.
+LaTeX Info: Redefining \ref on input line 71.
+LaTeX Info: Redefining \pageref on input line 71.
+LaTeX Info: Redefining \nameref on input line 71.
  (./MECH6V29-HW04.out) (./MECH6V29-HW04.out)
 \@outlinefile=\write4
 \openout4 = `MECH6V29-HW04.out'.
@@ -719,12 +788,12 @@ Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
 )
 Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 )
-\c@lstlisting=\count342
-LaTeX Font Info:    Trying to load font information for U+msa on input line 73.
+\c@lstlisting=\count352
+LaTeX Font Info:    Trying to load font information for U+msa on input line 74.
  (c:/texlive/2021/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 73.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 74.
  (c:/texlive/2021/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) (./MECH6V29-HW04.toc
@@ -738,27 +807,27 @@ Overfull \hbox (36.09001pt too wide) detected at line 4
  []
 
 
-Overfull \hbox (36.09001pt too wide) detected at line 6
+Overfull \hbox (36.09001pt too wide) detected at line 7
 \OT1/cmr/bx/n/10 Problem 3 
  []
 
 
-Overfull \hbox (36.09001pt too wide) detected at line 7
+Overfull \hbox (36.09001pt too wide) detected at line 8
 \OT1/cmr/bx/n/10 Problem 4 
  []
 
 
-Overfull \hbox (36.09001pt too wide) detected at line 8
+Overfull \hbox (36.09001pt too wide) detected at line 9
 \OT1/cmr/bx/n/10 Problem 5 
  []
 
 
-Overfull \hbox (36.09001pt too wide) detected at line 11
+Overfull \hbox (36.09001pt too wide) detected at line 12
 \OT1/cmr/bx/n/10 Problem 6 
  []
 
 
-Overfull \hbox (36.09001pt too wide) detected at line 12
+Overfull \hbox (36.09001pt too wide) detected at line 13
 \OT1/cmr/bx/n/10 Problem 7 
  []
 
@@ -773,107 +842,391 @@ Overfull \hbox (36.09001pt too wide) detected at line 12
  [2] [3] [4] [5]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 523.
+(hyperref)                removing `math shift' on input line 514.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 523.
+(hyperref)                removing `subscript' on input line 514.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 523.
+(hyperref)                removing `math shift' on input line 514.
 
-[6] [7] [8] [9] [10]
-<MECH6V29_HW04.pdf, id=185, 614.295pt x 794.97pt>
+<figs/pblm2_G1.png, id=170, 358.84062pt x 209.28188pt>
+File: figs/pblm2_G1.png Graphic file (type png)
+<use figs/pblm2_G1.png>
+Package pdftex.def Info: figs/pblm2_G1.png  used on input line 517.
+(pdftex.def)             Requested size: 140.92793pt x 82.19121pt.
+<figs/pblm2_G1_soln.png, id=172, 416.05438pt x 803.0pt>
+File: figs/pblm2_G1_soln.png Graphic file (type png)
+<use figs/pblm2_G1_soln.png>
+Package pdftex.def Info: figs/pblm2_G1_soln.png  used on input line 518.
+(pdftex.def)             Requested size: 140.92793pt x 271.9994pt.
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 522.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 522.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 522.
+
+<figs/pblm2_G2.png, id=173, 515.42563pt x 461.22313pt>
+File: figs/pblm2_G2.png Graphic file (type png)
+<use figs/pblm2_G2.png>
+Package pdftex.def Info: figs/pblm2_G2.png  used on input line 525.
+(pdftex.def)             Requested size: 140.92793pt x 126.10835pt.
+<figs/pblm2_G2_soln.png, id=174, 352.81813pt x 653.94313pt>
+File: figs/pblm2_G2_soln.png Graphic file (type png)
+<use figs/pblm2_G2_soln.png>
+Package pdftex.def Info: figs/pblm2_G2_soln.png  used on input line 526.
+(pdftex.def)             Requested size: 187.89914pt x 348.26457pt.
+[6 <./figs/pblm2_G1.png> <./figs/pblm2_G1_soln.png>] [7 <./figs/pblm2_G2.png> <./figs/pblm2_G2_soln.png>]
+<figs/pblm3_general.png, id=195, 596.2275pt x 551.56062pt>
+File: figs/pblm3_general.png Graphic file (type png)
+<use figs/pblm3_general.png>
+Package pdftex.def Info: figs/pblm3_general.png  used on input line 559.
+(pdftex.def)             Requested size: 281.85587pt x 260.74pt.
+<figs/pblm3_examples.png, id=196, 360.34625pt x 619.31375pt>
+File: figs/pblm3_examples.png Graphic file (type png)
+<use figs/pblm3_examples.png>
+Package pdftex.def Info: figs/pblm3_examples.png  used on input line 562.
+(pdftex.def)             Requested size: 328.82707pt x 565.1451pt.
+ [8 <./figs/pblm3_general.png>] [9 <./figs/pblm3_examples.png>] [10]
+<figs/pblm6_rules.png, id=221, 564.60938pt x 115.93312pt>
+File: figs/pblm6_rules.png Graphic file (type png)
+<use figs/pblm6_rules.png>
+Package pdftex.def Info: figs/pblm6_rules.png  used on input line 645.
+(pdftex.def)             Requested size: 234.8775pt x 48.22809pt.
+<figs/pblm6_1.png, id=222, 422.07687pt x 358.33875pt>
+File: figs/pblm6_1.png Graphic file (type png)
+<use figs/pblm6_1.png>
+Package pdftex.def Info: figs/pblm6_1.png  used on input line 669.
+(pdftex.def)             Requested size: 149.91833pt x 127.2795pt.
+<figs/pblm6_2.png, id=223, 453.695pt x 1004.25188pt>
+File: figs/pblm6_2.png Graphic file (type png)
+<use figs/pblm6_2.png>
+Package pdftex.def Info: figs/pblm6_2.png  used on input line 670.
+(pdftex.def)             Requested size: 149.91833pt x 331.8332pt.
+<figs/pblm6_3.png, id=224, 479.29062pt x 1096.095pt>
+File: figs/pblm6_3.png Graphic file (type png)
+<use figs/pblm6_3.png>
+Package pdftex.def Info: figs/pblm6_3.png  used on input line 671.
+(pdftex.def)             Requested size: 149.91833pt x 342.84662pt.
+<figs/pblm6_4a.png, id=225, 313.67188pt x 624.83438pt>
+File: figs/pblm6_4a.png Graphic file (type png)
+<use figs/pblm6_4a.png>
+Package pdftex.def Info: figs/pblm6_4a.png  used on input line 672.
+(pdftex.def)             Requested size: 149.91833pt x 298.64905pt.
+<figs/pblm6_4b.png, id=226, 218.8175pt x 820.56563pt>
+File: figs/pblm6_4b.png Graphic file (type png)
+<use figs/pblm6_4b.png>
+Package pdftex.def Info: figs/pblm6_4b.png  used on input line 673.
+(pdftex.def)             Requested size: 149.91833pt x 562.19676pt.
+
+Overfull \vbox (28.43669pt too high) has occurred while \output is active []
+
+
+Overfull \vbox (28.43669pt too high) has occurred while \output is active []
+
+
+Overfull \vbox (39.4501pt too high) has occurred while \output is active []
+
+
+Overfull \vbox (39.4501pt too high) has occurred while \output is active []
+
+ [11 <./figs/pblm6_rules.png> <./figs/pblm6_1.png> <./figs/pblm6_2.png> <./figs/pblm6_3.png>] [12 <./figs/pblm6_4a.png> <./figs/pblm6_4b.png>]
+<figs/pblm7a_rules.png, id=244, 364.36125pt x 110.4125pt>
+File: figs/pblm7a_rules.png Graphic file (type png)
+<use figs/pblm7a_rules.png>
+Package pdftex.def Info: figs/pblm7a_rules.png  used on input line 686.
+(pdftex.def)             Requested size: 164.41711pt x 49.8233pt.
+<figs/pblm7b_rules.png, id=245, 369.38pt x 104.39pt>
+File: figs/pblm7b_rules.png Graphic file (type png)
+<use figs/pblm7b_rules.png>
+Package pdftex.def Info: figs/pblm7b_rules.png  used on input line 698.
+(pdftex.def)             Requested size: 164.41711pt x 46.46533pt.
+<figs/pblm7c_rules.png, id=246, 381.425pt x 193.22188pt>
+File: figs/pblm7c_rules.png Graphic file (type png)
+<use figs/pblm7c_rules.png>
+Package pdftex.def Info: figs/pblm7c_rules.png  used on input line 713.
+(pdftex.def)             Requested size: 164.41711pt x 83.29016pt.
+ [13 <./figs/pblm7a_rules.png> <./figs/pblm7b_rules.png> <./figs/pblm7c_rules.png>]
+<MECH6V29_HW04.pdf, id=256, 614.295pt x 794.97pt>
 File: MECH6V29_HW04.pdf Graphic file (type pdf)
 <use MECH6V29_HW04.pdf>
-Package pdftex.def Info: MECH6V29_HW04.pdf  used on input line 677.
+Package pdftex.def Info: MECH6V29_HW04.pdf  used on input line 742.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
 File: MECH6V29_HW04.pdf Graphic file (type pdf)
 <use MECH6V29_HW04.pdf>
-Package pdftex.def Info: MECH6V29_HW04.pdf  used on input line 677.
+Package pdftex.def Info: MECH6V29_HW04.pdf  used on input line 742.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
-<MECH6V29_HW04.pdf, id=188, page=1, 614.295pt x 794.97pt>
+<MECH6V29_HW04.pdf, id=259, page=1, 614.295pt x 794.97pt>
 File: MECH6V29_HW04.pdf Graphic file (type pdf)
 <use MECH6V29_HW04.pdf, page 1>
-Package pdftex.def Info: MECH6V29_HW04.pdf , page1 used on input line 677.
+Package pdftex.def Info: MECH6V29_HW04.pdf , page1 used on input line 742.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
 File: MECH6V29_HW04.pdf Graphic file (type pdf)
 <use MECH6V29_HW04.pdf, page 1>
-Package pdftex.def Info: MECH6V29_HW04.pdf , page1 used on input line 677.
+Package pdftex.def Info: MECH6V29_HW04.pdf , page1 used on input line 742.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
- [11]
+ [14]
 File: MECH6V29_HW04.pdf Graphic file (type pdf)
 <use MECH6V29_HW04.pdf, page 1>
-Package pdftex.def Info: MECH6V29_HW04.pdf , page1 used on input line 677.
-(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
-File: MECH6V29_HW04.pdf Graphic file (type pdf)
-<use MECH6V29_HW04.pdf, page 1>
-Package pdftex.def Info: MECH6V29_HW04.pdf , page1 used on input line 677.
+Package pdftex.def Info: MECH6V29_HW04.pdf , page1 used on input line 742.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
 File: MECH6V29_HW04.pdf Graphic file (type pdf)
 <use MECH6V29_HW04.pdf, page 1>
-Package pdftex.def Info: MECH6V29_HW04.pdf , page1 used on input line 677.
+Package pdftex.def Info: MECH6V29_HW04.pdf , page1 used on input line 742.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
- [12 <./MECH6V29_HW04.pdf>]
-<MECH6V29_HW04.pdf, id=226, page=2, 614.295pt x 794.97pt>
+File: MECH6V29_HW04.pdf Graphic file (type pdf)
+<use MECH6V29_HW04.pdf, page 1>
+Package pdftex.def Info: MECH6V29_HW04.pdf , page1 used on input line 742.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+ [15 <./MECH6V29_HW04.pdf>]
+<MECH6V29_HW04.pdf, id=297, page=2, 614.295pt x 794.97pt>
 File: MECH6V29_HW04.pdf Graphic file (type pdf)
 <use MECH6V29_HW04.pdf, page 2>
-Package pdftex.def Info: MECH6V29_HW04.pdf , page2 used on input line 677.
+Package pdftex.def Info: MECH6V29_HW04.pdf , page2 used on input line 742.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
 File: MECH6V29_HW04.pdf Graphic file (type pdf)
 <use MECH6V29_HW04.pdf, page 2>
-Package pdftex.def Info: MECH6V29_HW04.pdf , page2 used on input line 677.
+Package pdftex.def Info: MECH6V29_HW04.pdf , page2 used on input line 742.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
 File: MECH6V29_HW04.pdf Graphic file (type pdf)
 <use MECH6V29_HW04.pdf, page 2>
-Package pdftex.def Info: MECH6V29_HW04.pdf , page2 used on input line 677.
+Package pdftex.def Info: MECH6V29_HW04.pdf , page2 used on input line 742.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
- [13 <./MECH6V29_HW04.pdf>]
-<MECH6V29_HW04.pdf, id=237, page=3, 614.295pt x 794.97pt>
+ [16 <./MECH6V29_HW04.pdf>]
+<MECH6V29_HW04.pdf, id=307, page=3, 614.295pt x 794.97pt>
 File: MECH6V29_HW04.pdf Graphic file (type pdf)
 <use MECH6V29_HW04.pdf, page 3>
-Package pdftex.def Info: MECH6V29_HW04.pdf , page3 used on input line 677.
-(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
-File: MECH6V29_HW04.pdf Graphic file (type pdf)
-<use MECH6V29_HW04.pdf, page 3>
-Package pdftex.def Info: MECH6V29_HW04.pdf , page3 used on input line 677.
+Package pdftex.def Info: MECH6V29_HW04.pdf , page3 used on input line 742.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
 File: MECH6V29_HW04.pdf Graphic file (type pdf)
 <use MECH6V29_HW04.pdf, page 3>
-Package pdftex.def Info: MECH6V29_HW04.pdf , page3 used on input line 677.
-(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
- [14 <./MECH6V29_HW04.pdf>]
-<MECH6V29_HW04.pdf, id=243, page=4, 614.295pt x 794.97pt>
-File: MECH6V29_HW04.pdf Graphic file (type pdf)
-<use MECH6V29_HW04.pdf, page 4>
-Package pdftex.def Info: MECH6V29_HW04.pdf , page4 used on input line 677.
+Package pdftex.def Info: MECH6V29_HW04.pdf , page3 used on input line 742.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
 File: MECH6V29_HW04.pdf Graphic file (type pdf)
+<use MECH6V29_HW04.pdf, page 3>
+Package pdftex.def Info: MECH6V29_HW04.pdf , page3 used on input line 742.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+ [17 <./MECH6V29_HW04.pdf>]
+<MECH6V29_HW04.pdf, id=314, page=4, 614.295pt x 794.97pt>
+File: MECH6V29_HW04.pdf Graphic file (type pdf)
 <use MECH6V29_HW04.pdf, page 4>
-Package pdftex.def Info: MECH6V29_HW04.pdf , page4 used on input line 677.
+Package pdftex.def Info: MECH6V29_HW04.pdf , page4 used on input line 742.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
 File: MECH6V29_HW04.pdf Graphic file (type pdf)
 <use MECH6V29_HW04.pdf, page 4>
-Package pdftex.def Info: MECH6V29_HW04.pdf , page4 used on input line 677.
+Package pdftex.def Info: MECH6V29_HW04.pdf , page4 used on input line 742.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
- [15 <./MECH6V29_HW04.pdf>] (./MECH6V29-HW04.aux)
+File: MECH6V29_HW04.pdf Graphic file (type pdf)
+<use MECH6V29_HW04.pdf, page 4>
+Package pdftex.def Info: MECH6V29_HW04.pdf , page4 used on input line 742.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+ [18 <./MECH6V29_HW04.pdf>]
+
+pdfTeX warning: pdflatex.exe (file ./MECH6V29-HW04_handcalc_pblm7a.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<MECH6V29-HW04_handcalc_pblm7a.pdf, id=328, 614.295pt x 794.97pt>
+File: MECH6V29-HW04_handcalc_pblm7a.pdf Graphic file (type pdf)
+<use MECH6V29-HW04_handcalc_pblm7a.pdf>
+Package pdftex.def Info: MECH6V29-HW04_handcalc_pblm7a.pdf  used on input line 749.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+
+
+pdfTeX warning: pdflatex.exe (file ./MECH6V29-HW04_handcalc_pblm7a.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+File: MECH6V29-HW04_handcalc_pblm7a.pdf Graphic file (type pdf)
+<use MECH6V29-HW04_handcalc_pblm7a.pdf>
+Package pdftex.def Info: MECH6V29-HW04_handcalc_pblm7a.pdf  used on input line 749.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+
+
+pdfTeX warning: pdflatex.exe (file ./MECH6V29-HW04_handcalc_pblm7a.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+
+
+pdfTeX warning: pdflatex.exe (file ./MECH6V29-HW04_handcalc_pblm7b.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<MECH6V29-HW04_handcalc_pblm7b.pdf, id=331, 614.295pt x 794.97pt>
+File: MECH6V29-HW04_handcalc_pblm7b.pdf Graphic file (type pdf)
+<use MECH6V29-HW04_handcalc_pblm7b.pdf>
+Package pdftex.def Info: MECH6V29-HW04_handcalc_pblm7b.pdf  used on input line 749.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+
+
+pdfTeX warning: pdflatex.exe (file ./MECH6V29-HW04_handcalc_pblm7b.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+File: MECH6V29-HW04_handcalc_pblm7b.pdf Graphic file (type pdf)
+<use MECH6V29-HW04_handcalc_pblm7b.pdf>
+Package pdftex.def Info: MECH6V29-HW04_handcalc_pblm7b.pdf  used on input line 749.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+
+
+pdfTeX warning: pdflatex.exe (file ./MECH6V29-HW04_handcalc_pblm7b.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+
+
+pdfTeX warning: pdflatex.exe (file ./MECH6V29-HW04_handcalc_pblm7c.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<MECH6V29-HW04_handcalc_pblm7c.pdf, id=334, 614.295pt x 794.97pt>
+File: MECH6V29-HW04_handcalc_pblm7c.pdf Graphic file (type pdf)
+<use MECH6V29-HW04_handcalc_pblm7c.pdf>
+Package pdftex.def Info: MECH6V29-HW04_handcalc_pblm7c.pdf  used on input line 749.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+
+
+pdfTeX warning: pdflatex.exe (file ./MECH6V29-HW04_handcalc_pblm7c.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+File: MECH6V29-HW04_handcalc_pblm7c.pdf Graphic file (type pdf)
+<use MECH6V29-HW04_handcalc_pblm7c.pdf>
+Package pdftex.def Info: MECH6V29-HW04_handcalc_pblm7c.pdf  used on input line 749.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+
+
+pdfTeX warning: pdflatex.exe (file ./MECH6V29-HW04_handcalc_pblm7c.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+
+
+pdfTeX warning: pdflatex.exe (file ./MECH6V29-HW04_handcalc_pblm7a.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<MECH6V29-HW04_handcalc_pblm7a.pdf, id=337, page=1, 614.295pt x 794.97pt>
+File: MECH6V29-HW04_handcalc_pblm7a.pdf Graphic file (type pdf)
+<use MECH6V29-HW04_handcalc_pblm7a.pdf, page 1>
+Package pdftex.def Info: MECH6V29-HW04_handcalc_pblm7a.pdf , page1 used on input line 749.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: MECH6V29-HW04_handcalc_pblm7a.pdf Graphic file (type pdf)
+<use MECH6V29-HW04_handcalc_pblm7a.pdf, page 1>
+Package pdftex.def Info: MECH6V29-HW04_handcalc_pblm7a.pdf , page1 used on input line 749.
+(pdftex.def)             Requested size: 307.28734pt x 397.66599pt.
+File: MECH6V29-HW04_handcalc_pblm7a.pdf Graphic file (type pdf)
+<use MECH6V29-HW04_handcalc_pblm7a.pdf, page 1>
+Package pdftex.def Info: MECH6V29-HW04_handcalc_pblm7a.pdf , page1 used on input line 749.
+(pdftex.def)             Requested size: 307.28734pt x 397.66599pt.
+File: MECH6V29-HW04_handcalc_pblm7a.pdf Graphic file (type pdf)
+<use MECH6V29-HW04_handcalc_pblm7a.pdf, page 1>
+Package pdftex.def Info: MECH6V29-HW04_handcalc_pblm7a.pdf , page1 used on input line 749.
+(pdftex.def)             Requested size: 307.28734pt x 397.66599pt.
+
+
+pdfTeX warning: pdflatex.exe (file ./MECH6V29-HW04_handcalc_pblm7a.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<MECH6V29-HW04_handcalc_pblm7a.pdf, id=338, page=2, 614.295pt x 794.97pt>
+File: MECH6V29-HW04_handcalc_pblm7a.pdf Graphic file (type pdf)
+<use MECH6V29-HW04_handcalc_pblm7a.pdf, page 2>
+Package pdftex.def Info: MECH6V29-HW04_handcalc_pblm7a.pdf , page2 used on input line 749.
+(pdftex.def)             Requested size: 307.28734pt x 397.66599pt.
+File: MECH6V29-HW04_handcalc_pblm7a.pdf Graphic file (type pdf)
+<use MECH6V29-HW04_handcalc_pblm7a.pdf, page 2>
+Package pdftex.def Info: MECH6V29-HW04_handcalc_pblm7a.pdf , page2 used on input line 749.
+(pdftex.def)             Requested size: 307.28734pt x 397.66599pt.
+
+
+pdfTeX warning: pdflatex.exe (file ./MECH6V29-HW04_handcalc_pblm7a.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<MECH6V29-HW04_handcalc_pblm7a.pdf, id=339, page=3, 614.295pt x 794.97pt>
+File: MECH6V29-HW04_handcalc_pblm7a.pdf Graphic file (type pdf)
+<use MECH6V29-HW04_handcalc_pblm7a.pdf, page 3>
+Package pdftex.def Info: MECH6V29-HW04_handcalc_pblm7a.pdf , page3 used on input line 749.
+(pdftex.def)             Requested size: 307.28734pt x 397.66599pt.
+File: MECH6V29-HW04_handcalc_pblm7a.pdf Graphic file (type pdf)
+<use MECH6V29-HW04_handcalc_pblm7a.pdf, page 3>
+Package pdftex.def Info: MECH6V29-HW04_handcalc_pblm7a.pdf , page3 used on input line 749.
+(pdftex.def)             Requested size: 307.28734pt x 397.66599pt.
+
+
+pdfTeX warning: pdflatex.exe (file ./MECH6V29-HW04_handcalc_pblm7b.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<MECH6V29-HW04_handcalc_pblm7b.pdf, id=340, page=1, 614.295pt x 794.97pt>
+File: MECH6V29-HW04_handcalc_pblm7b.pdf Graphic file (type pdf)
+<use MECH6V29-HW04_handcalc_pblm7b.pdf, page 1>
+Package pdftex.def Info: MECH6V29-HW04_handcalc_pblm7b.pdf , page1 used on input line 749.
+(pdftex.def)             Requested size: 307.28734pt x 397.66599pt.
+File: MECH6V29-HW04_handcalc_pblm7b.pdf Graphic file (type pdf)
+<use MECH6V29-HW04_handcalc_pblm7b.pdf, page 1>
+Package pdftex.def Info: MECH6V29-HW04_handcalc_pblm7b.pdf , page1 used on input line 749.
+(pdftex.def)             Requested size: 307.28734pt x 397.66599pt.
+File: MECH6V29-HW04_handcalc_pblm7a.pdf Graphic file (type pdf)
+<use MECH6V29-HW04_handcalc_pblm7a.pdf, page 1>
+Package pdftex.def Info: MECH6V29-HW04_handcalc_pblm7a.pdf , page1 used on input line 749.
+(pdftex.def)             Requested size: 307.28734pt x 397.66599pt.
+File: MECH6V29-HW04_handcalc_pblm7a.pdf Graphic file (type pdf)
+<use MECH6V29-HW04_handcalc_pblm7a.pdf, page 2>
+Package pdftex.def Info: MECH6V29-HW04_handcalc_pblm7a.pdf , page2 used on input line 749.
+(pdftex.def)             Requested size: 307.28734pt x 397.66599pt.
+File: MECH6V29-HW04_handcalc_pblm7a.pdf Graphic file (type pdf)
+<use MECH6V29-HW04_handcalc_pblm7a.pdf, page 3>
+Package pdftex.def Info: MECH6V29-HW04_handcalc_pblm7a.pdf , page3 used on input line 749.
+(pdftex.def)             Requested size: 307.28734pt x 397.66599pt.
+File: MECH6V29-HW04_handcalc_pblm7b.pdf Graphic file (type pdf)
+<use MECH6V29-HW04_handcalc_pblm7b.pdf, page 1>
+Package pdftex.def Info: MECH6V29-HW04_handcalc_pblm7b.pdf , page1 used on input line 749.
+(pdftex.def)             Requested size: 307.28734pt x 397.66599pt.
+[19 <./MECH6V29-HW04_handcalc_pblm7a.pdf> <./MECH6V29-HW04_handcalc_pblm7a.pdf> <./MECH6V29-HW04_handcalc_pblm7a.pdf> <./MECH6V29-HW04_handcalc_pblm7b.pdf>]
+
+pdfTeX warning: pdflatex.exe (file ./MECH6V29-HW04_handcalc_pblm7b.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<MECH6V29-HW04_handcalc_pblm7b.pdf, id=382, page=2, 614.295pt x 794.97pt>
+File: MECH6V29-HW04_handcalc_pblm7b.pdf Graphic file (type pdf)
+<use MECH6V29-HW04_handcalc_pblm7b.pdf, page 2>
+Package pdftex.def Info: MECH6V29-HW04_handcalc_pblm7b.pdf , page2 used on input line 749.
+(pdftex.def)             Requested size: 307.28734pt x 397.66599pt.
+File: MECH6V29-HW04_handcalc_pblm7b.pdf Graphic file (type pdf)
+<use MECH6V29-HW04_handcalc_pblm7b.pdf, page 2>
+Package pdftex.def Info: MECH6V29-HW04_handcalc_pblm7b.pdf , page2 used on input line 749.
+(pdftex.def)             Requested size: 307.28734pt x 397.66599pt.
+
+
+pdfTeX warning: pdflatex.exe (file ./MECH6V29-HW04_handcalc_pblm7c.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<MECH6V29-HW04_handcalc_pblm7c.pdf, id=383, page=1, 614.295pt x 794.97pt>
+File: MECH6V29-HW04_handcalc_pblm7c.pdf Graphic file (type pdf)
+<use MECH6V29-HW04_handcalc_pblm7c.pdf, page 1>
+Package pdftex.def Info: MECH6V29-HW04_handcalc_pblm7c.pdf , page1 used on input line 749.
+(pdftex.def)             Requested size: 307.28734pt x 397.66599pt.
+File: MECH6V29-HW04_handcalc_pblm7c.pdf Graphic file (type pdf)
+<use MECH6V29-HW04_handcalc_pblm7c.pdf, page 1>
+Package pdftex.def Info: MECH6V29-HW04_handcalc_pblm7c.pdf , page1 used on input line 749.
+(pdftex.def)             Requested size: 307.28734pt x 397.66599pt.
+
+
+pdfTeX warning: pdflatex.exe (file ./MECH6V29-HW04_handcalc_pblm7c.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<MECH6V29-HW04_handcalc_pblm7c.pdf, id=384, page=2, 614.295pt x 794.97pt>
+File: MECH6V29-HW04_handcalc_pblm7c.pdf Graphic file (type pdf)
+<use MECH6V29-HW04_handcalc_pblm7c.pdf, page 2>
+Package pdftex.def Info: MECH6V29-HW04_handcalc_pblm7c.pdf , page2 used on input line 749.
+(pdftex.def)             Requested size: 307.28734pt x 397.66599pt.
+File: MECH6V29-HW04_handcalc_pblm7c.pdf Graphic file (type pdf)
+<use MECH6V29-HW04_handcalc_pblm7c.pdf, page 2>
+Package pdftex.def Info: MECH6V29-HW04_handcalc_pblm7c.pdf , page2 used on input line 749.
+(pdftex.def)             Requested size: 307.28734pt x 397.66599pt.
+File: MECH6V29-HW04_handcalc_pblm7a.pdf Graphic file (type pdf)
+<use MECH6V29-HW04_handcalc_pblm7a.pdf, page 1>
+Package pdftex.def Info: MECH6V29-HW04_handcalc_pblm7a.pdf , page1 used on input line 749.
+(pdftex.def)             Requested size: 307.28734pt x 397.66599pt.
+File: MECH6V29-HW04_handcalc_pblm7a.pdf Graphic file (type pdf)
+<use MECH6V29-HW04_handcalc_pblm7a.pdf, page 1>
+Package pdftex.def Info: MECH6V29-HW04_handcalc_pblm7a.pdf , page1 used on input line 749.
+(pdftex.def)             Requested size: 307.28734pt x 397.66599pt.
+File: MECH6V29-HW04_handcalc_pblm7b.pdf Graphic file (type pdf)
+<use MECH6V29-HW04_handcalc_pblm7b.pdf, page 2>
+Package pdftex.def Info: MECH6V29-HW04_handcalc_pblm7b.pdf , page2 used on input line 749.
+(pdftex.def)             Requested size: 307.28734pt x 397.66599pt.
+File: MECH6V29-HW04_handcalc_pblm7c.pdf Graphic file (type pdf)
+<use MECH6V29-HW04_handcalc_pblm7c.pdf, page 1>
+Package pdftex.def Info: MECH6V29-HW04_handcalc_pblm7c.pdf , page1 used on input line 749.
+(pdftex.def)             Requested size: 307.28734pt x 397.66599pt.
+File: MECH6V29-HW04_handcalc_pblm7c.pdf Graphic file (type pdf)
+<use MECH6V29-HW04_handcalc_pblm7c.pdf, page 2>
+Package pdftex.def Info: MECH6V29-HW04_handcalc_pblm7c.pdf , page2 used on input line 749.
+(pdftex.def)             Requested size: 307.28734pt x 397.66599pt.
+[20 <./MECH6V29-HW04_handcalc_pblm7b.pdf> <./MECH6V29-HW04_handcalc_pblm7c.pdf> <./MECH6V29-HW04_handcalc_pblm7c.pdf>] (./MECH6V29-HW04.aux)
 Package rerunfilecheck Info: File `MECH6V29-HW04.out' has not changed.
-(rerunfilecheck)             Checksum: CA22D8517C48379BF0AFBE5908B27BFD;1183.
+(rerunfilecheck)             Checksum: 5FF1892A82B9F98519A132BAB0D06A70;1539.
  ) 
 Here is how much of TeX's memory you used:
- 26347 strings out of 478599
- 482572 string characters out of 5858102
- 827796 words of memory out of 5000000
- 43677 multiletter control sequences out of 15000+600000
+ 26647 strings out of 478599
+ 489392 string characters out of 5858102
+ 832630 words of memory out of 5000000
+ 43939 multiletter control sequences out of 15000+600000
  415251 words of font info for 71 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  84i,18n,83p,660b,539s stack positions out of 5000i,500n,10000p,200000b,80000s
 <c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbsy10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmbsy7.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
-Output written on MECH6V29-HW04.pdf (15 pages, 370529 bytes).
+Output written on MECH6V29-HW04.pdf (20 pages, 4940429 bytes).
 PDF statistics:
- 364 PDF objects out of 1000 (max. 8388607)
- 280 compressed objects within 3 object streams
- 77 named destinations out of 1000 (max. 500000)
- 152 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 516 PDF objects out of 1000 (max. 8388607)
+ 365 compressed objects within 4 object streams
+ 89 named destinations out of 1000 (max. 500000)
+ 347 words of extra memory for PDF output out of 10000 (max. 10000000)
 

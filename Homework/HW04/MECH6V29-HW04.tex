@@ -11,6 +11,7 @@
 \usepackage{pdfpages}
 \usepackage{xcolor}
 \usepackage{ulem}
+\usepackage{multicol}
 
 % MATLAB Formatting Code
 \usepackage[numbered,framed]{matlab-prettifier}
@@ -497,17 +498,9 @@ We studied a way to assign edge directions in a minimally rigid graph to make th
 Assign orientations to edges in the following graphs to make them persistent. 
 Show all the steps of the Henneberg construction.
 
-
-% Do the figures....
-
-
-
 % Preliminaries
 \subsection*{Preliminaries}
 % Persistance ------------------------
-\begin{definition}
-    
-\end{definition}
 \begin{definition} \label{def:persistent}
     Consider directed graph $G_F$. 
     \begin{enumerate}
@@ -517,30 +510,56 @@ Show all the steps of the Henneberg construction.
     \end{enumerate}
 \end{definition}
 
-% Solutions
-\subsection*{Solution}
 % G_1 -------------------------------------------------
 \subsection{$G_1$}
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.3\textwidth]{figs/pblm2_G1.png}\\
+    \includegraphics[width=0.3\textwidth]{figs/pblm2_G1_soln.png}
+\end{figure}
 
-
-
-
-
-
-
-
-
+% G_2 -------------------------------------------------
+\subsection{$G_2$}
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.3\textwidth]{figs/pblm2_G2.png}\\
+    \includegraphics[width=0.4\textwidth]{figs/pblm2_G2_soln.png}
+\end{figure}
 
 % Problem 3 -------------------------------------------------
 \newpage
 \section{}
-% Preliminaries
-\subsection*{Preliminaries}
+We have discussed that for a directed graph $G_d$ to be minimally persistent, it must satisfy the following two conditions: 
+(a) The corresponding undirected graph $G$ must be minimally rigid, and 
+(b) the direction of edges must make Gd constraint consistent. 
+Moreover, We have seen how to achieve minimally rigid (undirected) graphs using Henneberg construction rules and then assign them directions to make them constraint consistent. 
+Now, your job is to solve the following problem (for the $d = 2$-dimensional case).
 
+For any odd integer $N$, provide an algorithm/method to construct directed graphs that are \begin{enumerate}
+    \item minimally persistent, and 
+    \item balanced at the same time.
+\end{enumerate}
+Please also illustrate your method through example(s).
+%Note: (Recall that balanced graph is the one where in-degree = out-degree for every node.)
 
+\subsection*{Proposed Solution}
+For any minimally persistent and balanced graph with an odd $N > 5$, there will exist adjacent vertices with an additional directed path in the same direction with a single midpoint.
+Knowing this, we can perform each of the two Henneberg construction techniques to construct a minimally persistent and balanced graph of size $N + 2$.
 
+\textbf{Step 1:} 
+Add a vertex that will ``Split'' the adjacent directed edge. 
+This is done  with edge splitting where the adjacent directed edge is removed. 
+Of the newly generated edges, two are directed to maintain the original path that was removed while the other edge points away from the new vertex to the midpoint vertex.
 
+\textbf{Step 2:}
+Add a vertex the will ``complete the cycle''. 
+Perform vertex addition connected to the newly added vertex and the midpoint. 
+Add directions so to maintain degree balances which is achieved by completing the cycle subgraph.
 
+\includegraphics[width=0.6\textwidth]{figs/pblm3_general.png}
+
+\subsection*{Examples}
+\includegraphics[width=0.7\textwidth]{figs/pblm3_examples.png}
 
 
 
@@ -620,46 +639,87 @@ Refering back to Definitions \ref*{def:graph_properties} and \ref*{def:Gabriel_g
 \section{}
 Graph grammars are a good tool for generating networks with some specific structure.
 Assume that we have a total of $2^n$ nodes for some positive integer n. 
-Consider the following rules:\begin{align*}
-    &R_0 : a \quad a \rightarrow l_1 \_\_ c\\
-    &R_1 : l_i \quad l_i \rightarrow l_{i+1} \_\_ c \quad 1\leq i \leq n-1
-\end{align*}
+Consider the following rules:
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.5\textwidth]{figs/pblm6_rules.png}
+\end{figure}
 
 What structure do we get in the end?
 
 % Preliminaries -----------
 \subsection*{Preliminaries}
 
+\begin{definition}
+    Let $G(V,E, l, \Sigma)$ be a labeled graph with vertices $V$, edges $E$, $\Sigma = \qty{\sigma_1, \dots, \sigma_p}$ be a set of labels, and $l : V \to \Sigma$ be a function relating each vertices to labels.
 
+    A \emph{\underline{graph grammar}} is a set of rules for changing $l$ and $E$. 
+    Each rule, $r_i$, takes labeled subgraph $L_i$ and changes that subgraph in $R_i$. 
+    i.e. \[
+        r_i : L_i \longrightarrow R_i
+    \]
+\end{definition}
 
 
 % Solution -----------
 \subsection*{Solution}
-
-
-
-
-
-
-
-
-
+The result of these two rules will be a tree graph with a single $l_n$ base with branches of only $c$ nodes. 
+The examples for $n=1,2,3,\&4$ are as follows:
+\begin{multicols}{3}
+    \includegraphics[width=\columnwidth]{figs/pblm6_1.png}
+    \includegraphics[width=\columnwidth]{figs/pblm6_2.png}
+    \includegraphics[width=\columnwidth]{figs/pblm6_3.png}
+    \includegraphics[width=\columnwidth]{figs/pblm6_4a.png}
+    \includegraphics[width=\columnwidth]{figs/pblm6_4b.png}
+\end{multicols}
 
 % Problem 7 -------------------------------------------------
 \newpage
 \section{}
+Assume that initially all agents are labelled $\alpha$. 
+What is the final product expected after applying these graph grammars?
+
+% Part a ----------
+\subsection{}
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.35\textwidth]{figs/pblm7a_rules.png}
+\end{figure}
+
+The result of this graph grammar will be a single long chain of $\gamma$ vertices with a $beta$ vertex on each end. 
+i.e.\[\mqty{
+        \beta &- & \gamma &- &\cdots &- &\gamma &- &\beta
+}\]
+
+% Part b ----------
+\subsection{}
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.35\textwidth]{figs/pblm7b_rules.png}
+\end{figure}
+
+The result of this graph grammar will be a star graph with one $\gamma$ veterx connected to every other vertex that are labeled $\beta$.
+i.e.\[\mqty{
+        \beta   &-  &\gamma &-  &\beta\\
+                &/  &|      &\backslash &\\
+        &\beta   &\cdots &\beta&
+}\]
 
 
+% Part c ----------
+\subsection{}
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.35\textwidth]{figs/pblm7c_rules.png}
+\end{figure}
 
+The result of this graph grammar will be a collection of disconnected subgraphs. 
+Assuming that the original graph has at least 3 $\alpha$ vertices, then they will form into a connected triangle of $\beta$ vertices according to rule 1.
+If another collection of 3 $\alpha$ vertices exist, rule 1 could also be applied; however, an $\alpha$ and a pair of $\beta$ from within one of the connected triangles of $\beta$ according to rule 2. 
+In this case, a subgraph of 2 $\gamma$ and 2 $\beta$ vertices are formed that neither of the rules can be applied to, resulting in it remaining disconnected from any other subgraph.
 
-
-
-
-
-
-
-
-
+\textbf{Note:} 
+See the attached hand calculations for more specific details.
 
 
 
@@ -670,12 +730,22 @@ What structure do we get in the end?
 All code I write in this course can be found on my GitHub repository:\\
 \href{https://github.com/jonaswagner2826/MECH6V29_MultiagentRoboticSystems}{https://github.com/jonaswagner2826/MECH6V29\_MultiagentRoboticSystems}
 
+
+See attached for Problem 4 .mlx printout.
+
+
+\section{Hand Calculations:}\label{apx:hand_calc}
 % \bibliographystyle{ieeetran}
 % % \bibliography{refs.bib}
 % \cite{*}
 
 \includepdf[pages=-]{MECH6V29_HW04.pdf}
-% \includepdf[pages=-, nup = 2x2]{MECH6V29_HW03.pdf}
 
+% \includepdf[pages=-, nup = 2x2]{MECH6V29-HW04_handcalc.pdf}
+
+\includepdfmerge[nup = 2x2]{
+    MECH6V29-HW04_handcalc_pblm7a.pdf, -,
+    MECH6V29-HW04_handcalc_pblm7b.pdf, -,
+    MECH6V29-HW04_handcalc_pblm7c.pdf, -}
 
 \end{document}
