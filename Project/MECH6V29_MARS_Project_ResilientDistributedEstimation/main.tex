@@ -1,0 +1,86 @@
+\documentclass[aspectratio=169]{beamer}
+\usepackage[english]{babel}
+\setbeamertemplate{theorems}[numbered]
+\setbeamertemplate{caption}[numbered]
+\usefonttheme[onlymath]{serif}
+\usetheme{Dallas}
+\mode<presentation>
+%\setlength{\textwidth}{4.25in}
+\parindent=0pt
+\setlength{\parskip}{8pt}
+\renewcommand{\baselinestretch}{1.0}
+
+%% Import graphics packages, set the graphics path
+\usepackage{graphicx}
+% \graphicspath{{images/}}
+%\usepackage{subfig}
+%\usepackage{changepage}
+%
+%% Get rid of the navigation buttons
+%\setbeamertemplate{navigation symbols}{}
+%
+%% % Add extra space under footnotes to make room for navigation buttons
+%% \addtobeamertemplate{footnote}{}{\vspace{2ex}}
+%
+% Import math packages
+\usepackage{physics}
+\usepackage{amssymb}
+\usepackage{amsmath}
+%\usepackage{dsfont}
+%\usepackage[algo2e,ruled,vlined]{algorithm2e}
+%
+%% Define theorem-like environments
+\newtheorem{remark}{Remark}
+\newtheorem{examp}{Example}
+%\newcommand{\propnumber}{} % initialize
+\newtheorem{prop}{Proposition \propnumber}
+%\newenvironment{propc}[1]
+%  {\renewcommand{\propnumber}{#1}%
+%   \begin{prop}}
+%  {\end{prop}}
+%\newtheorem{exercise}{Exercise}
+%
+%\SetKw{Return}{Return}
+%\SetKw{Find}{Find}
+%\SetKw{Define}{Define}
+%%
+% Place the UTD logo in the frame titles
+%\usepackage{textpos}
+%\addtobeamertemplate{frametitle}{}{%
+%\begin{textblock*}{30mm}(.90\textwidth,-0.78cm)
+%\includegraphics[height=0.7cm]{UT_Dallas_White.eps}
+%\end{textblock*}}
+
+% Set the block styles
+% Green
+\setbeamercolor{block title}{use=structure,fg=white,bg=structure.fg}
+\setbeamercolor{block body}{use=structure,fg=black,bg=structure.fg!3}
+% Orange
+% \setbeamercolor{block title}{use=structure,fg=white,bg=structure.bg}
+% \setbeamercolor{block body}{use=structure,fg=black,bg=structure.bg!3}
+
+
+% Set the itemize-like environment styles
+\setbeamercolor{item}{fg=structure.fg,bg=structure.bg}
+%\setbeamertemplate{bibliography item}{\insertbiblabel}
+\setbeamertemplate{itemize items}[square]
+\setbeamertemplate{enumerate items}[square]
+
+% Change the itemize-like environment spacings
+\makeatletter
+\def\@listI{\leftmargin\leftmargini
+            \parsep 1pt
+            \topsep 1pt
+            \itemsep 1pt
+            \parskip 2pt}
+\makeatother
+
+% Import definitions of command character sequences
+\input{commands.tex}
+
+% The whole document
+\begin{document}
+\input{title.tex}
+\input{slides.tex}
+\input{bibliography.tex}
+\end{document}

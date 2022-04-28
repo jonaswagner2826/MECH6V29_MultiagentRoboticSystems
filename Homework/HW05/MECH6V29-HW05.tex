@@ -87,20 +87,20 @@
 	\] consisting of $m$ edges $e_{k=(i,j)} = (v_i,v_j) \forall_{k=1,\dots,m}$ connecting vertices $v_i$ and $v_j$.
 \end{definition}
 
-\begin{definition}\label{def:Delta-disk_graph}
-	Let $V = \qty{v_1,v_2,\dots,v_n}$ be vertices.
-	\emph{\underline{$\Delta$-Disk Graphs}} are constructed for a particular $\Delta$ such that \[
-		(v_i,v_j) \in E \iff \norm{v_i,v_j} \leq \Delta
-	\]
-\end{definition}
+% \begin{definition}\label{def:Delta-disk_graph}
+% 	Let $V = \qty{v_1,v_2,\dots,v_n}$ be vertices.
+% 	\emph{\underline{$\Delta$-Disk Graphs}} are constructed for a particular $\Delta$ such that \[
+% 		(v_i,v_j) \in E \iff \norm{v_i,v_j} \leq \Delta
+% 	\]
+% \end{definition}
 
-\begin{definition}\label{def:Gabriel_graph}
-	Let $V = \qty{v_1,v_2,\dots,v_n}$ be vertices.
-	A \emph{\underline{Gabriel Graph}} is defined as $G(V,E)$ in which \[
-        \forall_{v_i, v_j \in V} (v_i,v_j) \in E \iff \forall_{v_k \in V} v_k \notin D(v_i,v_j)
-    \] where $D(a,b)$ is the closed disc with diameter between $(a,b)$.
-    In other words, a disk constructed from two adjacent vertices should not contain any other vertices.
-\end{definition}
+% \begin{definition}\label{def:Gabriel_graph}
+% 	Let $V = \qty{v_1,v_2,\dots,v_n}$ be vertices.
+% 	A \emph{\underline{Gabriel Graph}} is defined as $G(V,E)$ in which \[
+%         \forall_{v_i, v_j \in V} (v_i,v_j) \in E \iff \forall_{v_k \in V} v_k \notin D(v_i,v_j)
+%     \] where $D(a,b)$ is the closed disc with diameter between $(a,b)$.
+%     In other words, a disk constructed from two adjacent vertices should not contain any other vertices.
+% \end{definition}
 
 \begin{definition} \label{def:graph_properties}
 	Let graph $G(V,E)$ with $V = \qty{v_1,\dots,v_n}$ and $E \subseteq V \cross V$.
@@ -110,46 +110,46 @@
 		\] otherwise, $G(V,E)$ is considered \emph{directed}.
 		\item An undirected graph $G(V,E)$ is considered \underline{\emph{connected}} if there exists a path between any two vertices.
 		\item An undirected graph $G(V,E)$ is considered \underline{\emph{planer}} if the graph can be drawn on a plane without any edges crossing.
-		% \item A directed graph $G(V,E)$ is considered \underline{\emph{strongly connected}} if there exists a directed path between any two vertices.
-		% \item A directed graph $G(V,E)$ is considered \underline{\emph{weakly connected}} if the corresponding undirected graph is connected.
+		\item A directed graph $G(V,E)$ is considered \underline{\emph{strongly connected}} if there exists a directed path between any two vertices.
+		\item A directed graph $G(V,E)$ is considered \underline{\emph{weakly connected}} if the corresponding undirected graph is connected.
 	\end{enumerate}
 \end{definition}
 
-\begin{definition} \label{def:graph_matrices}
-	Let graph $G(V,E)$ with $V = \qty{v_1,\dots,v_n}$ and $E \subseteq V \cross V$.
-	\begin{enumerate}
-		\item The \underline{\emph{degree matrix}} $\Delta \in \R^{n\cross n}$ is a diagonal matrix defined as \[
-			\Delta := \mqty[\dmat{\deg(v_1), \deg(v_2), \ddots, \deg(v_n)}]
-		\]
-		\item The \emph{\underline{adjacency matrix}} $A \in \R^{n\cross n}$ is a symmetric matrix $(A = A^T)$ defined s.t. \[
-			A = [a_{ij}] \st a_{ij} \begin{cases}
-				1 &(v_i,v_j) \in V\\
-				0 &(v_i,v_j) \notin V
-			\end{cases}
-		\]
-		\item The \emph{\underline{incidence matrix}} $D \in \R^{n \cross m}$ is defined as\[
-			D = [d_{ij}] \st d_{ij} \begin{cases}
-				1 	&(v_i,-) \in e_{j}\\
-				-1	&(-,v_i) \in e_{j}\\
-				0	&\text{otherwise}
-			\end{cases}
-		\]
-		\item The \emph{\underline{Laplacian matrix}} $L \in \R^{n \cross n}$ is a symmetric $(L = L^T)$ and strictly semi-positive definite $(L \succeq 0)$ is defined as\[
-			L := \Delta - A = D D^T
-		\]and\[
-			L = \mqty[
-				\deg(v_1)	&-a_{12}	&-a_{13}	&\cdots	&-a_{1n}\\
-				-a_{21}		&\deg(v_2)	&-a_{23}	&\cdots	&-a_{2n}\\
-				\vdots		&\vdots		&\vdots		&\ddots	&\vdots\\
-				-a_{n1}		&-a_{n2}	&-a_{n3}	&\cdots	&\deg(v_n)
-			]
-		\]
-		\item For a weighted graph $G(V,E,W)$, the diagonal weighted matrix $W\in \R^{m\cross m}$ is defined as\[
-			W = [w_{ij}] \forall_{ij \in E}
-		\]
-		were $w_{ij}$ are the corresponding weights for $e_{ij} = (v_i,v_j)$.
-	\end{enumerate}
-\end{definition}
+% \begin{definition} \label{def:graph_matrices}
+% 	Let graph $G(V,E)$ with $V = \qty{v_1,\dots,v_n}$ and $E \subseteq V \cross V$.
+% 	\begin{enumerate}
+% 		\item The \underline{\emph{degree matrix}} $\Delta \in \R^{n\cross n}$ is a diagonal matrix defined as \[
+% 			\Delta := \mqty[\dmat{\deg(v_1), \deg(v_2), \ddots, \deg(v_n)}]
+% 		\]
+% 		\item The \emph{\underline{adjacency matrix}} $A \in \R^{n\cross n}$ is a symmetric matrix $(A = A^T)$ defined s.t. \[
+% 			A = [a_{ij}] \st a_{ij} \begin{cases}
+% 				1 &(v_i,v_j) \in V\\
+% 				0 &(v_i,v_j) \notin V
+% 			\end{cases}
+% 		\]
+% 		\item The \emph{\underline{incidence matrix}} $D \in \R^{n \cross m}$ is defined as\[
+% 			D = [d_{ij}] \st d_{ij} \begin{cases}
+% 				1 	&(v_i,-) \in e_{j}\\
+% 				-1	&(-,v_i) \in e_{j}\\
+% 				0	&\text{otherwise}
+% 			\end{cases}
+% 		\]
+% 		\item The \emph{\underline{Laplacian matrix}} $L \in \R^{n \cross n}$ is a symmetric $(L = L^T)$ and strictly semi-positive definite $(L \succeq 0)$ is defined as\[
+% 			L := \Delta - A = D D^T
+% 		\]and\[
+% 			L = \mqty[
+% 				\deg(v_1)	&-a_{12}	&-a_{13}	&\cdots	&-a_{1n}\\
+% 				-a_{21}		&\deg(v_2)	&-a_{23}	&\cdots	&-a_{2n}\\
+% 				\vdots		&\vdots		&\vdots		&\ddots	&\vdots\\
+% 				-a_{n1}		&-a_{n2}	&-a_{n3}	&\cdots	&\deg(v_n)
+% 			]
+% 		\]
+% 		\item For a weighted graph $G(V,E,W)$, the diagonal weighted matrix $W\in \R^{m\cross m}$ is defined as\[
+% 			W = [w_{ij}] \forall_{ij \in E}
+% 		\]
+% 		were $w_{ij}$ are the corresponding weights for $e_{ij} = (v_i,v_j)$.
+% 	\end{enumerate}
+% \end{definition}
 
 
 
@@ -168,46 +168,46 @@
 % \end{definition}
 
 
-% \begin{definition}\label{def:path_diam_radius_etc}
-% 	Let $G(V,E)$ be a undirected graph with $V = \qty{v_1,v_2,\dots,v_n}$ 
-% 	and $E = \qty{e_1, \dots, e_m} \subseteq V \cross V$ 
-% 	with $e_k = e_{ij} = (v_i, v_j)$.
-% 	\begin{enumerate}
-% 		\item A \emph{\underline{path}} between two vertices $v_i$ and $v_j$ is a sequence of edges $[e_{i, *}, \dots, e_{*, j}]$ that joins a sequence of vertices $[v_i, \dots, v_j]$.
-% 		\item A \emph{\underline{path length}} is the number of edges in the path. 
-% 		\item The \emph{\underline{shortest path length}} $l_{i,j}$ is the minimum length of all paths between vertices $v_i$ and $v_j$. 
-% 		This quantity is also known as the \emph{\underline{distance}} between $v_i$ and $v_j$, $\text{dist}\qty(v_i,v_j)$.
-% 		\item The \emph{\underline{diameter}} of graph $G(V,E)$ is the maximum distance between any two vertices in the graph. 
-% 		(i.e.)\[
-% 			\diam(G(V,E)) := \max_{v_i,v_j \in V} l_{i,j}
-% 		\]
-% 		\item The \emph{\underline{eccentricity}} of vertex $v_i$, $l_{i}^{*}$, is the largest distance from $v_i$ to any other vertex in the graph. 
-% 		(i.e)\[
-% 			l_{i}^{*} := \max_{v_j \in V} l_{i,j}
-% 		\]
-% 		\item The \emph{\underline{radius}} of graph $G(V,E)$ is the minimum eccentricity of the vertices of the graph.
-% 		(i.e)\[
-% 			\radius(G(V,E)) := \min_{v_i \in V} l_{i}^{*} = \min_{v_i \in V} \max_{v_j \in V} l_{i,j}
-% 		\]
-% 	\end{enumerate}
-% \end{definition}
+\begin{definition}\label{def:path_diam_radius_etc}
+	Let $G(V,E)$ be a undirected graph with $V = \qty{v_1,v_2,\dots,v_n}$ 
+	and $E = \qty{e_1, \dots, e_m} \subseteq V \cross V$ 
+	with $e_k = e_{ij} = (v_i, v_j)$.
+	\begin{enumerate}
+		\item A \emph{\underline{path}} between two vertices $v_i$ and $v_j$ is a sequence of edges $[e_{i, *}, \dots, e_{*, j}]$ that joins a sequence of vertices $[v_i, \dots, v_j]$.
+		\item A \emph{\underline{path length}} is the number of edges in the path. 
+		\item The \emph{\underline{shortest path length}} $l_{i,j}$ is the minimum length of all paths between vertices $v_i$ and $v_j$. 
+		This quantity is also known as the \emph{\underline{distance}} between $v_i$ and $v_j$, $\text{dist}\qty(v_i,v_j)$.
+		\item The \emph{\underline{diameter}} of graph $G(V,E)$ is the maximum distance between any two vertices in the graph. 
+		(i.e.)\[
+			\diam(G(V,E)) := \max_{v_i,v_j \in V} l_{i,j}
+		\]
+		\item The \emph{\underline{eccentricity}} of vertex $v_i$, $l_{i}^{*}$, is the largest distance from $v_i$ to any other vertex in the graph. 
+		(i.e)\[
+			l_{i}^{*} := \max_{v_j \in V} l_{i,j}
+		\]
+		\item The \emph{\underline{radius}} of graph $G(V,E)$ is the minimum eccentricity of the vertices of the graph.
+		(i.e)\[
+			\radius(G(V,E)) := \min_{v_i \in V} l_{i}^{*} = \min_{v_i \in V} \max_{v_j \in V} l_{i,j}
+		\]
+	\end{enumerate}
+\end{definition}
 
 
 
-% \begin{definition}\label{def:leader_follower_dynamics}
-%     Let undirected and unweighted graph $G(V,E)$ with $V = \qty{v_1,\dots,v_n}$ and $E \subseteq V \cross V$.
-%     Vertices in $V$ are classified as either \emph{leaders} ($v_i \in V_l$) or \emph{followers} ($v_i \in V_f)$. 
-% 	The \emph{\underline{leader-follower}} dynamics of the states within network $G(V,E)$ are defined by\[\begin{cases}
-%         \dot{x}_i = - \sum_{j \neq N_i} (x_i - x_j) &\forall_{i \st v_i \in V_{f}}\\
-%         \dot{x}_i =  0 &\forall_{i \st v_i \in V_{l}}
-%     \end{cases}
-% 	\] or equivalently when $V_{l} = \{v_n\}$ (single leader node) \[
-%         \dot{x} = \mqty[
-%             -L_f & - l\\
-%             0 & 0
-%         ]
-%     \]
-% \end{definition}
+\begin{definition}\label{def:leader_follower_dynamics}
+    Let undirected and unweighted graph $G(V,E)$ with $V = \qty{v_1,\dots,v_n}$ and $E \subseteq V \cross V$.
+    Vertices in $V$ are classified as either \emph{leaders} ($v_i \in V_l$) or \emph{followers} ($v_i \in V_f)$. 
+	The \emph{\underline{leader-follower}} dynamics of the states within network $G(V,E)$ are defined by\[\begin{cases}
+        \dot{x}_i = - \sum_{j \neq N_i} (x_i - x_j) &\forall_{i \st v_i \in V_{f}}\\
+        \dot{x}_i =  0 &\forall_{i \st v_i \in V_{l}}
+    \end{cases}
+	\] or equivalently when $V_{l} = \{v_n\}$ (single leader node) \[
+        \dot{x} = \mqty[
+            -L_f & - l\\
+            0 & 0
+        ]
+    \]
+\end{definition}
 
 
 % --------------- Directed consensus....
@@ -354,26 +354,26 @@
 %     \]
 % \end{definition}
 
-% Persistance ------------------------
-\begin{definition} \label{def:persistent}
-    Consider directed graph $G_F$. 
-    \begin{enumerate}
-        \item $G_F$ is \emph{\underline{Rigid}} if certain interagent distances are maintained then all interagent distances are maintained when the formation moves smoothly.
-        \item $G_F$ is \emph{\underline{Constraint Consistent}} if the directed graph is able to maintain the specified interagent distances.
-        \item $G_F$ is considered \emph{\underline{persistent}} if and only if $G_F$ is Rigid and Constraint Consistent.
-    \end{enumerate}
-\end{definition}
+% % Persistance ------------------------
+% \begin{definition} \label{def:persistent}
+%     Consider directed graph $G_F$. 
+%     \begin{enumerate}
+%         \item $G_F$ is \emph{\underline{Rigid}} if certain interagent distances are maintained then all interagent distances are maintained when the formation moves smoothly.
+%         \item $G_F$ is \emph{\underline{Constraint Consistent}} if the directed graph is able to maintain the specified interagent distances.
+%         \item $G_F$ is considered \emph{\underline{persistent}} if and only if $G_F$ is Rigid and Constraint Consistent.
+%     \end{enumerate}
+% \end{definition}
 
-% Graph Grammar -----------------
-\begin{definition}
-    Let $G(V,E, l, \Sigma)$ be a labeled graph with vertices $V$, edges $E$, $\Sigma = \qty{\sigma_1, \dots, \sigma_p}$ be a set of labels, and $l : V \to \Sigma$ be a function relating each vertices to labels.
+% % Graph Grammar -----------------
+% \begin{definition}
+%     Let $G(V,E, l, \Sigma)$ be a labeled graph with vertices $V$, edges $E$, $\Sigma = \qty{\sigma_1, \dots, \sigma_p}$ be a set of labels, and $l : V \to \Sigma$ be a function relating each vertices to labels.
 
-    A \emph{\underline{graph grammar}} is a set of rules for changing $l$ and $E$. 
-    Each rule, $r_i$, takes labeled subgraph $L_i$ and changes that subgraph in $R_i$. 
-    i.e. \[
-        r_i : L_i \longrightarrow R_i
-    \]
-\end{definition}
+%     A \emph{\underline{graph grammar}} is a set of rules for changing $l$ and $E$. 
+%     Each rule, $r_i$, takes labeled subgraph $L_i$ and changes that subgraph in $R_i$. 
+%     i.e. \[
+%         r_i : L_i \longrightarrow R_i
+%     \]
+% \end{definition}
 
 
 
@@ -515,18 +515,293 @@ Draw graph
 
 % Problem 2 -------------------------------------------------
 \newpage
+\section{} 
+% Preliminaries
+\subsection*{Preliminaries}
+\begin{definition}
+    The \emph{\underline{zero forcing method}} is used to find a graph-theoretic lower bound on the controllability of a network undergoing consensus (i.e. the Laplacian dynamics)
+
+    Let $G = (V,E)$ with each $v \in V$ is either colored \emph{black} or \emph{white}.
+
+    \begin{enumerate}
+        \item The \emph{\underline{Zero Forcing (ZF Process)}} updates the colors of vertices from an initial $V'$ according to the following rule: 
+        
+        If $v \in V$ is black and has exactly one white neighbor $u$, then change $u$ to black.
+        
+        \item The \emph{\underline{Derived Set}}, $D(G,V')$, is the set of \emph{black} vertices after undergoing the \emph{\underline{ZF}} Process. 
+        
+        \item For $G = (V,E)$, $V' \subseteq V$ is a \emph{\underline{Zero Forcing Set (ZFS)}}, $Z(G)$, if and only if $D(G,V') = V$.
+        The size of the minimum ZFS is known as the \emph{\underline{zero forcing number}}, $\zeta(G)$.
+    \end{enumerate}
+\end{definition}
+
+\begin{definition}
+    Let $G(V,E)$ with $n$ agents, where $V = \{v_1,v_2,\dots,v_n\}$ with $m$ agents denoted as leaders with $V_L = \{\mathcal{l}_1, \mathcal{l}_2, \dots, \mathcal{l}_m\} \subseteq V$.
+    We say $G$ is undergoing the \underline{\emph{controlled Laplacian (consensus) dynamics}} of \[
+        \dot{x} = -L x + B u
+    \] with $L$ the Laplacian matrix and input matrix $B$ defined as \[
+        [B]_{ij} = \begin{cases}
+            1 & \text{if} v_i = l_j\\
+            0 & \text{otherwise}
+        \end{cases}
+    \]
+    \begin{theorem}
+        If a leader set $V_L$ is ZFS then the system is completely controllable with $V_L$.
+    \end{theorem}
+    Define the following set of matrices \[
+        Q_{ss}(G) 
+            = \qty{
+                X \in \R^{\abs{V} \cross \abs{V}} 
+                \st X = X^T \
+                \land \ \forall_{i \neq j} \qty(X_{ij} \neq 0 \iff (i,j) \in E)
+                \land \ \forall_{i \neq j} \qty(X_{ij} \geq 0 \lor X_{ij} \leq 0)
+            }
+    \]
+    \begin{theorem}
+        The leader set $V_L$ completely controls the dynamics of $\dot{x} = Mx + Bu$, where $M \in Q_{ss}(G)$, if and only if $V_L$ is a ZFS.
+    \end{theorem}
+    \begin{theorem}
+        The rank of the controllability matrix, $\Gamma(G,V_L)$, is at least the size of the derived set for $V_L$, $D(G,V_L)$. 
+        (i.e.)\[
+            \abs{\Gamma(G,V_L)} \geq \abs{D(G,V_L)}
+        \]
+    \end{theorem}
+\end{definition}
+
+\newpage
+% Problem
+\subsection*{Problem}
+Consider the graph in Figure 1, and the following statement:
+
+\emph{``Three leader nodes are sufficient to make the graph completely
+controllable.''}
+
+Using the \emph{zero forcing method} (Notes 17.3), discuss if the
+statement is true or false? If it is true, find a set of three leader
+nodes making the network completely controllable and justify your
+choice. If the statement is false, discuss why?
+
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.5\textwidth]{figs/image1.png}
+    \caption{Caption}
+\end{figure}
+
+% Solution
+\subsection*{Solution}
+It is possible since if you select the 3 on one end it would be able to progress throug the entire `chain' and therefore $V'$ of the three on either end would be ZFS which implies they can completely control the system.
+
+% Problem 2 -------------------------------------------------
+\newpage
+\section{}
+(Each part has 5 pints.)
+
+% \textbf{(A)} 
+\subsection{}
+\subsubsection*{Problem:}
+Consider the graph in Figure 2. 
+Let $V_L = \{v_4,v_5\}$ be a leader set. 
+Using \emph{zero forcing} method, what is the minimum rank of the controllability matrix?
+\subsubsection*{Solution:}
+We know that $\abs{\Gamma(G,V_L)} \geq \abs{D(G,V_L)}$, so following the ZF process we get \[
+    D(G,V_L) = \qty{
+        v_1, v_4, v_5, v_6, v_8
+    }
+\] hence \[
+    \abs{D(G,V_L)} = 5
+\] therefore the minimum rank of the controllability matrix is 5.
+
+% \textbf{(B)}
+\subsection{}
+\subsubsection*{Problem:}
+Consider a graph with unity edge weights and $V_l \subset V$ be a zero forcing set of the graph. 
+If we change the edge weights from unity to arbitrary positive values, what would be the rank of the controllability matrix with the same set of leaders $V_L$? 
+Please explain your answer.
+\subsubsection*{Solution:}
+Well, since changing the dynamics does not change the topology of the graph, $D(G,V_L)$ will not change and the same conclusion can be drawn: \[
+    \abs{\Gamma(G,V_L) \geq 5}
+\]
+
+% \textbf{(C)} 
+\subsection{}
+\subsubsection*{Problem:}
+Can you find a set of three leaders through which the graph in Figure 2 becomes completely controllable? 
+If yes, which three nodes can be leaders?
+\subsubsection*{Solution:}
+Well, I haven't proven it by checking all $_9 C_3 = 84$ selections, but upon guessing a few intuitively selected ones I was unable to find 3 nodes to achieve complete controllability.
+
+% \textbf{(D)} 
+\subsection{}
+\subsubsection*{Problem:}
+This part is about finding the \emph{worst} leaders from the perspective of zero forcing method. 
+Can you identify two different sets of leader nodes, each of which containing four nodes, such that the zero forcing based bound on the rank of the controllability matrix is four with each of those leader sets. 
+\subsubsection*{Solution:}
+
+\[
+    V_L = \qty{
+        v_3, v_5, v_8, v_9
+    } \to D(G,V_L) = V_L
+\]
+
+\[
+    V_L = \qty{
+        v_1, v_4, v_6, v_9
+    } \to D(G,V_L) = V_L
+\]
+
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width = 0.5\textwidth]{figs/image2.png}
+    \caption{Graph for Problem 3}
+\end{figure}
+
+
+% Problem 4 -------------------------------------------------
+\newpage
+\section{}
+% Preliminaries
+\subsection*{Preliminaries}
+Recall the definition of distance between $v_i$ and $v_j$, $\text{dist}\qty(v_i,v_j)$, as seen in Definition \ref{def:path_diam_radius_etc}, which will be renotated as $d(u,v) = \text{dist}(v_i = u, v_j = v)$.
+
+\begin{definition}
+    Let $G = (V,E)$ be a leader-follower network with leader set $V_L \subseteq V$ containing $m$ nodes:\[
+        V_L = \{\mathcal{l}_1, \mathcal{l}_2, \dots, \mathcal{l}_m\}
+    \]
+    \begin{enumerate}
+        \item We define the \emph{\underline{distance-to-leader vector}}, $D_i \in \R^{m}$, as the distance of node $v_i$ to each of the leader nodes. 
+            (i.e.) \[
+                D_i = \mqty[
+                    d(v_i, \mathcal{l}_1)\\
+                    d(v_i, \mathcal{l}_2)\\
+                    \vdots\\
+                    d(v_i, \mathcal{l}_m)
+                ]
+            \]
+        \item The \emph{\underline{Sweeping Bar Game}} is the game that you play to maximize the final score. 
+        \textbf{To Do:} 
+        Explain the principle of the Sweeping Bar Game
+        \item \begin{theorem}
+            A lower bound of the controllability matrix can be found from solving the Sweeping Bar Game. 
+
+            For $m=1$, the rank of $\Gamma(G,V_L= \{l\}) \geq \max_{v \in V} d(v,l)$
+
+
+        \end{theorem}
+    \end{enumerate}
+\end{definition}
+
+
+% Problem
+\subsection*{Problem}
+In Problem 3(A), you computed the zero forcing based controllability bound for $V_L = \{v_4,v_5\}$. 
+Now compute the \emph{\underline{distance-based}} bound on the rank of the controllability matrix (as we discussed in the class and also explained in Notes 17.4). 
+Which one is a better bound here?
+
+% Solution
+\subsection*{Solution}
+
+$D = \mqty[
+    2 & 4 & 3 & 0 & 1 & 2 & 3 & 1 & 3\\
+    1 & 3 & 2 & 1 & 0 & 3 & 4 & 2 & 2
+]$
+which will end up with a bound of 3 which is not as great of a bound as the ZPK method.
+
+% Problem 5 -------------------------------------------------
+\newpage
+\section{}
+% Preliminaries
+\subsection*{Preliminaries}
+\begin{definition}
+    \textbf{To Do:}
+    Definitions for the partitions and things.
+\end{definition}
+
+% \textbf{Part - A} 
+\subsection{}
+\subsubsection*{Problem}
+(Each part has 5 points.)
+
+Consider the graph in Figure 3, in which \textbf{only black} node is a leader node.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width = 0.5\textwidth]{figs/image3.png}
+    \caption{A Leader-follower network in Problem 2}
+\end{figure}
+
+How many \emph{external equitable partitions (EEP)} does the graph have? 
+Which of these EEPs is the maximal leader-invariant (LIEEP), and based on that comment if the system is completely controllable or not.
+
+\subsubsection*{Solution}
+I'm seeing 3 EEP's. 
+The 2 trivial ones and then splitting groupings of 3 vertically:
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.5\textwidth]{figs/pblm5a_1.png}\\
+    \includegraphics[width=0.5\textwidth]{figs/pblm5a_2.png}\\
+    \includegraphics[width=0.5\textwidth]{figs/pblm5a_3.png}
+\end{figure}
+
+The LIEEP is then the non-trivial one with a total of 4 partitions.
+The leads to the having the number of cells not including the leaders to be $3$, so the rank of $\Gamma$ is upper bounded by 3.
+(i.e.)\[
+    \text{rank}(\Gamma) \leq 3
+\]
+From this we know that it is actually not completely controllable as you would only ever be able to control the centroids of the cells but not each node individually.
+
+\textbf{Part - B} 
+Now consider that \textbf{both black and gray nodes} are leaders, and repeat the same as in Part A.
+
+Well since the only one of the possible EEP's found in the last part that had the leaders as singleton cells was the trivial one, then that is the only LIEEP.
+This then correlates to it being completely controllable (or that $\alpha = 6$ which implies it can be completely controlled by just those two leaders).
+
+
+
+
+
+% Problem 6 -------------------------------------------------
+\newpage
 \section{}
 % Problem
 \subsection*{Problem}
+Let $G$ be a leader-follower network with a single leader $\mathcal{l}_G$. 
+Similarly, $H$ is another leader follower network with a single leader $\mathcal{l}_H$ and $n$ follower nodes. 
+Now we obtain a new graph $M$ by connecting $H$ and $n$ copies of $G$ as follows: 
+Connect a copy of $G$ to $H$ by replacing a follower node $i$ in $H$ by the leader node $\mathcal{l}_G$ in $G$. 
+See Figure 4 for the example.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width = 0.7\textwidth]{figs/image4.png}
+    \caption{A Leader-follower network in Problem 3}
+\end{figure} 
+
+Either prove or disprove (by giving a counter example) the following statement: 
+
+\emph{``If $G$ and $H$ has trivial maximal LIEEPs, then $M$ also has a trivial maximal $LIEEP$''}
+
+(recall that trivial maximal LIEEP means that each node in the graph is in a singleton cell)
+
+% Solution
+\subsection*{Solution}
+\textbf{Note:} 
+Assuming that the statement of ``trival maximal LIEEPs'' means that the maximal LIEEP is the trival maximum and that no others exist.
+
+Well this statement is true. 
+One way I would prove this would be through a transitive property type of step. 
+(i.e.) Use the fact that $M$ is created by essentially convolving the two graphs transfer functions from one node to another (if you look at it that way, I got into that habit sometimes of seeing the linking from a node to another as being able to be described by some TF...) and then applying a transitive property.
 
 
 
 
-\newpage
-\appendix
-\section{MATLAB Code:}\label{apx:matlab}
-All code I write in this course can be found on my GitHub repository:\\
-\href{https://github.com/jonaswagner2826/MECH6V29_MultiagentRoboticSystems}{https://github.com/jonaswagner2826/MECH6V29\_MultiagentRoboticSystems}
+
+% \newpage
+% \appendix
+% \section{MATLAB Code:}\label{apx:matlab}
+% All code I write in this course can be found on my GitHub repository:\\
+% \href{https://github.com/jonaswagner2826/MECH6V29_MultiagentRoboticSystems}{https://github.com/jonaswagner2826/MECH6V29\_MultiagentRoboticSystems}
 
 
 % See attached for Problem 4 .mlx printout.

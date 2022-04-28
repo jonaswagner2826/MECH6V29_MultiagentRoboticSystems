@@ -1,0 +1,862 @@
+\begin{frame}
+\frametitle{UTD Beamer Template Hints}
+Currently the logo in the upper right corner will ``follow'' the bottom of the top color ribbon i.e. on this slide it looks centered since there is no subtitle, but on the other slides it looks offset because there is a subtitle. I like to not use subtitles so I positioned it this way.
+
+I turned off navigation buttons because they are essentially useless and take up valuable space, but you can turn them on by (un)commenting the relevant commands in \texttt{main.tex}. Be sure to add extra space under footnotes to make room for navigation buttons if you do this (there is a command there to do this).
+
+If you prefer to have orange-colored bold text, just change the ``bold rich color'' definition in \texttt{commands.tex}.
+
+Likewise if you prefer to have orange-colored block title bars/background, just change the ``set the block styles'' commands in \texttt{main.tex}.
+
+When you cite a paper \cite{kalman1960contributions}, it will be referenced in the bibliography on the last slides.
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Review of Linear Algebra}
+\framesubtitle{Vectors}
+
+We will next give a brief review of some concepts from {\bor Linear Algebra}
+that will help in the understanding of {\bor Matrix Representations of Graphs}
+and also in the discussion of {\bor Dynamical Systems} later in the course.
+
+\begin{definition}
+An {$n$-dimensional vector} is a column array of real numbers
+$$
+v = \left[ \begin{array}{c} v_1 \\ v_2 \\ \vdots \\ v_n \end{array}\right] \quad v_i\in R, \quad i=1,\dots,n
+$$
+To save space we often write this as a row vector
+$$
+v = [ v_1, v_2, \dots, v_n]^T
+$$
+where the superscript $T$ denotes {\bor Transpose} - which means interchanging rows and columns.
+\end{definition}
+\end{frame}
+\begin{frame}
+\frametitle{Review of Linear Algebra}
+\framesubtitle{Matrices}
+\begin{definition}
+An {\bor $n\times n$ matrix} $A$ is an array with {\bor $n$ rows} and {\bor $m$ columns}
+$$
+A = \left[\begin{array}{cccc}
+a_{11} & a_{12} & \dots & a_{1m} \\
+a_{21} & a_{22} & \dots & a_{2m} \\
+\vdots & \vdots & \vdots & \vdots \\
+a_{n1} & a_{n2} & \dots & a_{nm}
+\end{array}\right]
+$$
+We write $A = (a_{ij})$ with $a_{ij}$ meaning the element in {\bor row $i$} and {\bor column $j$}
+
+{\bor $[a_{i1}, a_{i2},\dots,a_{im}]$ is the $i$-th row vector}
+
+{\bor $[a_{1j}, a_{2j},\dots,a_{nj}]^T = \left[\begin{array}{c} a_{1j} \\ a_{2j} \\ \vdots \\ a_{nj} \end{array}\right]$ is the $j$-th column vector}
+\end{definition}
+\end{frame}
+\begin{frame}
+\frametitle{Review of Linear Algebra}
+\framesubtitle{Matrices}
+\begin{examp}
+$$
+A = \left[\begin{array}{cccc}
+1 & 2 & 3 & 4 \\
+5 & 6 & 7 & 8 \\
+9 & 10 & 11 & 12
+\end{array}\right]
+$$
+is a $3\times 4$ matrix.
+
+$[5,6,7,8]$ is the second row vector or {\bor row two}
+
+$[1,5,9]^T = \left[\begin{array}{c} 1 \\ 5 \\ 9 \end{array}\right]$
+is {\bor column one}.
+
+The {\bor transpose matrix $A^T$} is the $4\times 3$ matrix
+$$
+A^T = \left[\begin{array}{ccc}
+1 & 5 & 9 \\
+2 & 6 & 10 \\
+3 & 7 & 11\\
+4 & 8 & 12
+\end{array}\right]
+$$
+\end{examp}
+\end{frame}
+
+\begin{frame}
+\frametitle{Review of Linear Algebra}
+\framesubtitle{Matrices}
+\begin{definition}
+Given vectors $x=[x_1,\dots,x_n]^T$ and $y=[y_1,\dots,y_n]^T$, the {\bor inner product} or
+{\bor dot product}, or {\bor scalar product} denoted by
+$$
+<x,y> \ \mbox{\rm or }\ x\cdot y \ \mbox{\rm or }\ x^Ty
+$$
+is a {\bor scalar (number)}
+$$
+x^Ty = x_1y_1 + x_2y_2 + \dots + x_ny_n = [x_1,x_2,\dots x_n] \left[\begin{array}{c} y_1 \\ y_2\\ \vdots\\ y_n \end{array}\right]
+$$
+\end{definition}
+\begin{examp}
+Let $x= [1,2,3]^T$ and $y=[4,5,6]^T$ be two vectors in $R^3$.  Then
+$$
+x^Ty = 1\cdot 4 + 2\cdot 5 + 3\cdot 6 = 32
+$$
+\end{examp}
+\end{frame}
+\begin{frame}
+\frametitle{Review of Linear Algebra}
+\framesubtitle{Inner Product}
+\begin{definition}
+The {\bor norm} or {\bor length} of a vector $x = [x_1,x_2,\dots,x_n]^T$ is given by
+$$
+||x|| = \sqrt{ x^Tx} = (x_1^2 + x_2^2 + \dots x_n^2)^{\frac{1}{2}} = (\sum_{i=1}^n x_i^2)^{\frac{1}{2}}
+$$
+\end{definition}
+The norm, as defined above, is the $n$-dimensional version of the {\bor Pythagorian Theorem}.
+
+Some facts you may recall from basic vector calculus
+\begin{itemize}
+\item
+$x\cdot y = ||x||\cdot ||y||\cos(\theta)$ where $\theta$ is the angle between the vectors $x$ and $y$.
+\item
+Consequently, $|x^Ty| \le ||x||\cdot ||y||$ \ {\bor Cauchy-Schwartz Inequality}
+\item
+Also, $x\cdot y = 0$ if and only if $x$ and $y$ are {\bor mutually perpendicular (orthogonal)}.
+\end{itemize}
+\end{frame}
+\begin{frame}
+\frametitle{Review of Linear Algebra}
+\framesubtitle{Matrix Multiplication}
+If $A$ is an $n\times m$ matrix and $B$ is a $p\times q$ matrix, then the {\bor Matrix Product $AB$}
+exists provided $m=p$.
+
+The result is an $n\times q$ matrix $C = (c_{ij})$ where $c_{ij} = A_i^TB_j$ where $A_i$ is the $i$-th row
+of $A$ and $B_j$ is the $j$-th column of $B$.
+\begin{examp}
+Suppose
+$$
+A = \left[\begin{array}{rrr}
+1 & -1 & 1 \\
+2 & 1 & 3 \\
+-2 & 1 & 4
+\end{array}\right] \ ; \qquad
+B = \left[\begin{array}{rrr}
+3 & 0 & 1 \\
+0 & 1 & 2 \\
+-2 & 2 & -1
+\end{array}\right]
+$$
+then
+$$
+C = \left[\begin{array}{rrr}
+1 & 1 & -2 \\
+0 & 7 & 1 \\
+-14 & 5 & -4
+\end{array}\right]
+$$
+\end{examp}
+\end{frame}
+\begin{frame}
+\frametitle{Review of Linear Algebra}
+\framesubtitle{Matrix Multiplication}
+Some additional definitions and properties of matrix algebra:
+\begin{itemize}
+\item
+A matrix  $A$ is {\bor Symmetric} if $a_{ij} = a_{ji}$.  In other words, $A^T=A$, i.e,
+the $i$-th row and $j$-th column of $A$ are the same.
+\end{itemize}
+\begin{examp}
+Consider the matrix
+$$
+A = \left[\begin{array}{cccc}
+0 & 1 & 0 & 1 \\
+1 & 0 & 1 & 0 \\
+0 & 1 & 1 & 1 \\
+1 & 0 & 1 & 0
+\end{array}\right]
+$$
+Then it is easy to see that $A^T = A$, so $A$ is a symmetric matrix.
+\end{examp}
+\end{frame}
+\begin{frame}
+\frametitle{Review of Linear Algebra}
+\framesubtitle{Matrix Algebra}
+Some additional properties of matrices are:
+
+\begin{itemize}
+\item
+If $A$ and $B$ have the same dimensions $n\times m$, then $C=A+B$ is defined by
+$c_{ij} = a_{ij}+b_{ij}$.
+\item
+$(AB)C = A(BC)$ provided the matrix products are defined.
+\item
+$A(B+C) = AB + AC$ provided the matrix products are defined.
+\item
+$(A+B)C = AC + BC$ provided the matrix products are defined.
+\item
+$(A^T)^T = A$
+\item
+$(A+B)^T = A^T + B^T$
+\item
+$(AB)^T = B^TA^T$
+\end{itemize}
+If $A$ and $B$ are $n\times n$ {\bor (square matrices)}, then in general $AB$ is
+not equal to $BA$.
+
+If $AB =  BA$ then $A$ and $B$ are said to {\bor commute}.
+\end{frame}
+\begin{frame}
+\frametitle{Review of Linear Algebra}
+\framesubtitle{Matrix Inverse}
+\begin{definition}
+The matrix
+$$
+I = \left[\begin{array}{cccc}
+1 & 0 & \dots & 0 \\
+0 & 1 & \dots & 0 \\
+\vdots &  & \ddots & \vdots \\
+0 & 0 & \dots & 1
+\end{array}\right]
+$$
+is the $n\times n$ {\bor Identity Matrix}
+\end{definition}
+
+\begin{definition}
+The {\bor Inverse} of an $n\times n$ matrix $A$ is an $n\times n$ matrix $B$ satisfying
+$$
+AB=BA = I
+$$
+where $I$ is the $n\times n$ identity matrix.
+
+We denote the inverse $B$ of $A$ as $A^{-1}$.
+\end{definition}
+\end{frame}
+\begin{frame}
+\frametitle{Review of Linear Algebra}
+\framesubtitle{Systems of Linear Equations}
+Matrices are used to represent {\bor Systems of Linear Equations}
+\begin{examp}
+The system of $m$ equations in $n$ unknowns
+\begin{eqnarray*}
+a_{11}x_1 + a_{12}x_2 + \dots  + a_{1m}x_n &=& b_1 \\
+a_{21}x_1 + a_{22}x_2 + \dots  + a_{2m}x_n &=& b_2 \\
+\vdots &\vdots& \vdots \\
+a_{m1}x_1 + a_{m2}x_2 + \dots  + a_{mn}x_n &=& b_n
+\end{eqnarray*}
+can be written as
+$$
+Ax = b
+$$
+\end{examp}
+\end{frame}
+\begin{frame}
+\frametitle{Review of Linear Algebra}
+\framesubtitle{Systems of Linear Equations}
+with
+$$
+A = \left[\begin{array}{cccc}
+a_{11} &  a_{12} & \dots  & a_{1m} \\
+a_{21} &  a_{22} & \dots  & a_{2m} \\
+\vdots & \vdots & \vdots & \vdots \\
+a_{n1} &  a_{n2} & \dots  & a_{nm}
+\end{array}\right]
+\ ; \quad
+x = \left[\begin{array}{c} x_1 \\ x_2 \\ \vdots \\ x_m \end{array}\right] \ ; \quad
+b = \left[\begin{array}{c} b_1 \\ b_2 \\ \vdots \\ b_m \end{array}\right]
+$$
+
+
+%\begin{example}
+Consider the homogeneous linear equations
+\begin{eqnarray*}
+ax + by &=& 0 \\
+cx + dy &=& 0
+\end{eqnarray*}
+Eliminating $x$ and $y$ from these equations gives
+$$
+ad-bc = 0
+$$
+%\end{example}
+This quantity is called the {\bor Determinant} of the matrix $\left[\begin{array}{cc}
+a & b \\ c & d \end{array}\right]$.
+\end{frame}
+\begin{frame}
+\frametitle{Review of Linear Algebra}
+\framesubtitle{Determinant and Inverse}
+We denote the determinant of a matrix $A$ by $det(A)$ or $|A|$.
+
+The determinant of a $3\times 3$ matrix can be computed as
+\begin{eqnarray*}
+\left|\begin{array}{ccc}
+a & b & c \\
+d & e & f \\
+g & h & i
+\end{array}\right|
+&=& a \left| \begin{array}{cc} e & f \\ h & i \end{array}\right|
+-b \left| \begin{array}{cc} d & f \\ g & i \end{array}\right|
++ c \left| \begin{array}{cc} d & e \\ g & h \end{array}\right| \\
+&=& a(ei-fh)-b(di-fg)+c(dh-ge) \\
+&=& aei +bfg +cdh - ceg - bdi - afh
+\end{eqnarray*}
+The $2\times 2$ determinants $\left| \begin{array}{cc} e & f \\ h & i \end{array}\right|$,
+$-\left| \begin{array}{cc} d & f \\ g & i \end{array}\right|$,
+$\left| \begin{array}{cc} d & e \\ g & h \end{array}\right|$
+are called {\bor Cofactors} of the elements $a,b,c$, respectively.
+\end{frame}
+\begin{frame}
+\frametitle{Review of Linear Algebra}
+\framesubtitle{Cofactors}
+\begin{definition}
+The {\bor Cofactor} $c_{ij}$ of an element $a_{ij}$ in an $n\times n$ matrix $A$
+is $\pm 1$ times
+the determinant of the $(n-1)\times (n-1)$ matrix formed by deleting the $i$-th rown and $j$-th column of $A$.
+
+The {\bor sign} in front of each cofactor alternates according to the pattern
+$$
+\left[\begin{array}{cccc}
++ & - & + & - \\
+- & + & - & + \\
++ & - & + & - \\
+- & + & - & +
+\end{array}\right] \quad \mbox{\rm sign pattern for the }\ 4\times 4 \ \mbox{\rm case.}
+$$
+
+The {\bor Determinant} of any $n\times n$ matrix $A$ can then be calculated by taking
+{\bor any row} or {\bor column} and multiplying each element of the row or column by its
+respective cofactor.  The determinant is then the {\bor sum} of these {\bor products}.
+\end{definition}
+\end{frame}
+\begin{frame}
+\frametitle{Review of Linear Algebra}
+\framesubtitle{Determinant}
+\begin{examp}
+Back to the previous $3\times 3$ matrix
+\begin{eqnarray*}
+\left|\begin{array}{ccc}
+a & b & c \\
+d & e & f \\
+g & h & i
+\end{array}\right|
+\end{eqnarray*}
+we can take any row or column, for example, column two, and compute the determinant as
+\begin{eqnarray*}
+&=& -b \left| \begin{array}{cc} d & f \\ g & i \end{array}\right|
++e \left| \begin{array}{cc} a & c \\ g & i \end{array}\right|
+-h \left| \begin{array}{cc} a & c \\ d & f \end{array}\right| \\
+&=& -b(di-fg)+e(ai-gc) -h(af-dc)\\
+&=& -bdi +bfg +eai -egc -haf +hdc
+\end{eqnarray*}
+\end{examp}
+One can check that this is the same expression as computed previously.
+\end{frame}
+\begin{frame}
+\frametitle{Review of Linear Algebra}
+\framesubtitle{Determinant and Inverse}
+The determinant is a scalar function defined for square matrices and satisfies
+the following properties.
+\begin{itemize}
+\item $|AB| = |A|\cdot|B|$
+\item $|A^{-1}| = {\frac{1}{|A|}} = |A|^{-1}$
+\item $|A^T| = |A|$
+\end{itemize}
+Note that it is generally {\bor not true} that $|A+B| = |A| + |B|$.
+\begin{definition}
+A matrix $A$ is {\bor Singular} if $det(A)=0$.  Otherwise, $A$ is said to be
+{\bor Nonsingular} or {\bor Invertible}.
+\end{definition}
+\begin{theorem}
+The inverse of an $n\times n$ matrix exists if and only if the {\bor Determinant}, $det(A)$,
+is not equal to zero.
+
+If $A$ and $B$ are invertible, then the product $AB$ is invertible and $(AB)^{-1} = B^{-1}A^{-1}$.
+\end{theorem}
+\end{frame}
+\begin{frame}
+\frametitle{Review of Linear Algebra}
+\framesubtitle{Determinant and Inverse}
+If the $n \times n$ matrix $A$ is nonsingular, the linear system
+$$
+Ax=b
+$$
+has the unique solution
+$$
+x = A^{-1}b
+$$
+Otherwise, there may be no solution or infinitely many solutions.
+\begin{examp}
+Consider the linear system
+\begin{eqnarray*}
+3x - y &=& 4 \\
+6x -2y &=& 8
+\end{eqnarray*}
+The coefficient matrix $A$ is singular in this case and any point on the line $y=3x-4$ is
+a solution.
+\end{examp}
+\end{frame}
+\begin{frame}
+\frametitle{Review of Linear Algebra}
+\framesubtitle{Determinant and Inverse}
+\begin{examp}
+On the other hand, the linear system
+\begin{eqnarray*}
+3x - y &=& 4 \\
+6x -2y &=& 2
+\end{eqnarray*}
+has no solution.
+\end{examp}
+\begin{examp}
+The linear system
+\begin{eqnarray*}
+3x - y &=& 4 \\
+6x +2y &=& 2
+\end{eqnarray*}
+has the unique solution $x=5/6$, $y=-3/2$.
+\end{examp}
+\end{frame}
+\begin{frame}
+\frametitle{Review of Linear Algebra}
+\framesubtitle{Matrix Inverse}
+
+Let $A=\left[\begin{array}{cc} a & b \\ c & d \end{array}\right]$ and $B = \left[\begin{array}{rr} d & -b \\ -c & a\end{array}\right]$
+
+Then a direct calculation shows
+$$
+AB =\left[\begin{array}{cc} a & b \\ c & d \end{array}\right] \left[\begin{array}{rr} d & -b \\ -c & a\end{array}\right]
+= \left[\begin{array}{cc} ad-bc & 0 \\ 0 & ad-bc \end{array}\right]
+$$
+A similar calculation shows that $BA = AB$.
+
+Therefore, it follows that
+$$
+A^{-1} = \frac{1}{ad-bc} \left[\begin{array}{rr} d & -b \\ -c & a\end{array}\right] = \frac{1}{|A|}A^+
+$$
+which is well defined provided $|A|\ne 0$.
+
+The matrix $A^+ = \left[\begin{array}{rr} d & -b \\ -c & a\end{array}\right]$ is called the {\bor Adjoint of $A$}.
+\end{frame}
+\begin{frame}
+\frametitle{Review of Linear Algebra}
+\framesubtitle{Matrix Inverse}
+The inverse of a nonsingular $n\times n$ matrix $A$ is $A^{-1} = \frac{1}{|A|}A^+$.
+
+The {\bor Adjoint} of a general $n\times n$ matrix $A$ is given as $A^+ = C^T$ where $C$ is the {\bor Cofactor Matrix}, consisting of elements that are cofactors of the elements of $A$ as
+defined previously.
+\begin{examp}
+Find the adjoint of the matrix
+$$
+A = \left[\begin{array}{ccc}
+1 & 2 & 3 \\ 0 & 4 & 5 \\ 1 & 0 & 6 \end{array}\right]
+$$
+First, compute the cofactor of each element of $A$
+\end{examp}
+\end{frame}
+\begin{frame}
+\frametitle{Review of Linear Algebra}
+\framesubtitle{Matrix Inverse}
+\begin{examp}
+The cofactors of the given matrix are
+\begin{eqnarray*}
+\begin{array}{lcr}
+c_{11} = \left| \begin{array}{cc} 4 & 5 \\ 0 & 6 \end{array}\right| = 24 &
+c_{12} = -\left| \begin{array}{cc} 0 & 5 \\ 1 & 6 \end{array}\right| = 5 &
+c_{13} = \left| \begin{array}{cc} 0 & 4 \\ 1 & 0 \end{array}\right| = -4
+\end{array}
+&& \\
+&& \\
+\begin{array}{lcr}
+c_{21} = -\left| \begin{array}{cc} 2 & 3 \\ 0 & 6 \end{array}\right| = -12 &
+c_{22} = \left| \begin{array}{cc} 1 & 3 \\ 1 & 6 \end{array}\right| = 3 &
+c_{23} = -\left| \begin{array}{cc} 1 & 2 \\ 1 & 0 \end{array}\right| = 2
+\end{array}
+&& \\
+&& \\
+\begin{array}{lcr}
+c_{31} = \left| \begin{array}{cc} 2 & 3 \\ 4 & 5 \end{array}\right| = -2 &
+c_{32} = -\left| \begin{array}{cc} 1 & 3 \\ 0 & 5 \end{array}\right| = -5 &
+c_{33} = \left| \begin{array}{cc} 1 & 2 \\ 0 & 4 \end{array}\right| = 4
+\end{array}
+\end{eqnarray*}
+\end{examp}
+\end{frame}
+\begin{frame}
+\frametitle{Review of Linear Algebra}
+\framesubtitle{Example}
+\begin{examp}
+Therefore, the {\bor Cofactor Matrix} is
+$$
+C = \left[\begin{array}{rrr}
+24 & 5 & -4 \\ -12 & 3 & 2 \\ -2 & -5 & 4 \end{array}\right]
+$$
+Finally, the {\bor Adjoint of A} is the transpose of the Cofactor Matrix
+$$
+A^+ = \left[\begin{array}{rrr}
+24 & -12 & -2 \\ 5 & 3 & -5 \\ -4 & 2 & 4 \end{array}\right]
+$$
+\end{examp}
+Since the determinant of $A$ is $|A| = 22$, it follows that
+$$
+A^{-1} = \frac{1}{22} \left[\begin{array}{rrr}
+24 & -12 & -2 \\ 5 & 3 & -5 \\ -4 & 2 & 4 \end{array}\right]
+$$
+\end{frame}
+\begin{frame}
+\frametitle{Review of Linear Algebra}
+\framesubtitle{Trace of a Matrix}
+\begin{definition}
+Given an $n\times n$ matrix $A$, the {\bor Trace} of the matrix is
+$$
+Tr(A) = a_{11} + a_{22} + \dots + a_{nn} = \sum_1^n a_{ii}
+$$
+In other words, the Trace is the {\bor sum of the diagonal entries of the matrix}.
+\end{definition}
+The Trace operation satisfies the following:
+\begin{itemize}
+\item
+$Tr(A+B) = Tr(A) + Tr(B)$
+\item
+$Tr(cA) = cTr(A)$ where $c$ is a constant.
+\item
+$Tr(AB) = Tr(BA)$
+\item
+$Tr(A^T)=Tr(A)$
+\end{itemize}
+\end{frame}
+\begin{frame}
+\frametitle{Review of Linear Algebra}
+\framesubtitle{Eigenvalues and Eigenvectors}
+\begin{definition}
+Suppose we find a scalar $\lambda$ and a vector $x$ satisfying the equation
+$$
+Ax = \lambda x
+$$
+Then $\lambda$ is called an {\bor Eigenvalue} of the matrix $A$ and $x$ is called
+an {\bor Eigenvector} for $\lambda$.
+\end{definition}
+\begin{examp}
+$$
+\left[\begin{array}{rr}
+3 & -1 \\ -1 & 3
+\end{array}\right]
+\left[\begin{array}{r}
+1 \\ -1
+\end{array}\right]
+= \left[\begin{array}{r}
+4 \\ -4
+\end{array}\right]
+=
+4\left[\begin{array}{r}
+1 \\ -1
+\end{array}\right]
+$$
+Therefore $\lambda=4$ is an eigenvalue for the matrix $A = \left[\begin{array}{rr}
+3 & -1 \\ -1 & 3
+\end{array}\right]$ and $x=\left[\begin{array}{r}
+1 \\ -1
+\end{array}\right]$ is an eigenvector for $\lambda$.
+\end{examp}
+\end{frame}
+\begin{frame}
+\frametitle{Review of Linear Algebra}
+\framesubtitle{Finding Eigenvalues and Eigenvectors}
+Note that the equation $Ax=\lambda x$ can be written as
+$$
+(A-\lambda I)x = 0
+$$
+where $I$ is the {\bor identity matrix} defined previously.
+
+Therefore, there will be a nonzero vector $x$ satisfying this equation provided that
+$$
+det(A-\lambda I)=0
+$$
+
+Computing $det(A-\lambda I)$ results in a polynomial of degree $n$ for an $n\times n$
+matrix, called the {\bor Characteristic Polynomial of $A$}.
+
+The $n$ roots of the characteristic polynomial, which may be {\bor real} or {\bor complex},
+are therefore the $n$ eigenvalues of $A$.
+\end{frame}
+\begin{frame}
+\frametitle{Review of Linear Algebra}
+\framesubtitle{Eigenvalues and Eigenvectors}
+\begin{theorem}
+If $A$ is a real, symmetric matrix then the eigenvalues of $A$ are real.
+\end{theorem}
+\begin{examp}
+Back to the previous matrix
+$$
+A = \left[\begin{array}{rr}
+3 & -1 \\ -1 & 3
+\end{array}\right]
+$$
+Then
+$$
+det(A-\lambda I) = det( \left[\begin{array}{rr}
+3 -\lambda & -1 \\ -1 & 3-\lambda
+\end{array}\right] ) = \lambda^2 -6\lambda +8 = (\lambda-4)(\lambda-2)
+$$
+Therefore the eigenvalues are $\lambda=4$ and $\lambda=2$.
+
+To find eigenvectors for each $\lambda$ we need to solve the equation
+$$
+\left[\begin{array}{rr}
+3 -\lambda & -1 \\ -1 & 3-\lambda
+\end{array}\right] \left[\begin{array}{c}
+x_1 \\ x_2
+\end{array}\right] = \left[\begin{array}{c}
+0 \\ 0
+\end{array}\right]
+$$
+\end{examp}
+\end{frame}
+\begin{frame}
+\frametitle{Review of Linear Algebra}
+\framesubtitle{Eigenvalues and Eigenvectors}
+\begin{examp}
+For $\lambda = 4$, the system of equations become
+$$
+\left[\begin{array}{rr}
+-1 & -1 \\ -1 & -1
+\end{array}\right] \left[\begin{array}{c}
+x_1 \\ x_2
+\end{array}\right] = \left[\begin{array}{c}
+0 \\ 0
+\end{array}\right]
+$$
+Thus, $x_2 = -x_1$ and so $\left[\begin{array}{c}
+x_1 \\ x_2
+\end{array}\right] = \left[\begin{array}{r}
+1 \\ -1
+\end{array}\right]$ is an eigenvector for $\lambda = 4$.
+
+For $\lambda = 2$, the system of equations become
+$$
+\left[\begin{array}{rr}
+1 & -1 \\ 1 & -1
+\end{array}\right] \left[\begin{array}{c}
+x_1 \\ x_2
+\end{array}\right] = \left[\begin{array}{c}
+0 \\ 0
+\end{array}\right]
+$$
+Thus, $x_2 = +x_1$ and so $\left[\begin{array}{c}
+x_1 \\ x_2
+\end{array}\right] = \left[\begin{array}{c}
+1 \\ 1
+\end{array}\right]$ is an eigenvector for $\lambda = 2$.
+\end{examp}
+\end{frame}
+\begin{frame}
+\frametitle{Review of Linear Algebra}
+\framesubtitle{Eigenvalues and Eigenvectors}
+\begin{definition}
+Vectors $v_1$ and $v_2$ are said to be {\bor Linearly Dependent} if and only if there
+are constants $\alpha_1$ and $\alpha_2$ such that
+$$
+\alpha_1 v_1 + \alpha_2 v_2 = 0
+$$
+Otherwise, $v_1$ and $v_2$ are {\bor Linearly Independent}.
+\end{definition}
+If $v_1$ and $v_2$ are linearly independent, then the matrix $T = [v_1 \ v_2]$ is
+invertible, where $v_1$ and $v_2$ are the column vectors of $T$.
+\end{frame}
+\begin{frame}
+\frametitle{Review of Linear Algebra}
+\framesubtitle{Eigenvalues and Eigenvectors}
+Suppose $v_1$ and $v_2$ are two linearly independent eigenvectors for eigenvalues
+$\lambda_1$ and $\lambda_2$, respectively.
+
+Then, since $Av_i = \lambda_i v_i$ for $i=1,2$ we can write
+$$
+A[v_1 \ v_2 ] = [\lambda_1v_1 \ \lambda_2v_2 ]
+$$
+which can be written
+$$
+AT = \left[ \begin{array}{cc} \lambda_1 & 0 \\ 0 & \lambda_2 \end{array}\right] T
+$$
+and so
+$$
+T^{-1}AT = \left[ \begin{array}{cc} \lambda_1 & 0 \\ 0 & \lambda_2 \end{array}\right] = \bar A
+$$
+a diagonal matrix with the eigenvalues on the diagonal.
+
+The above transformation $T^{-1}AT$ is called a {\bor Similarity Transformation} and the matrices $A$ and $\bar A$ are said to be {\bor Similar}.
+\end{frame}
+\begin{frame}
+\frametitle{Review of Linear Algebra}
+\framesubtitle{Eigenvalues and Eigenvectors}
+\begin{examp}
+In the previous example, with
+$$
+A = \left[\begin{array}{rr}
+3 & -1 \\ -1 & 3
+\end{array}\right] \ ; \qquad \mbox{\rm and }\
+T = \left[\begin{array}{rr}
+1 & 1 \\ 1 & -1
+\end{array}\right]
+$$
+a straightforward calculation shows that
+$$
+T^{-1} = \frac{1}{2}\left[\begin{array}{rr}
+1 & 1 \\ 1 & -1
+\end{array}\right]
+$$
+and
+$$
+T^{-1}AT = \frac{1}{2}\left[\begin{array}{rr}
+1 & 1 \\ 1 & -1
+\end{array}\right]
+\left[\begin{array}{rr}
+3 & -1 \\ -1 & 3
+\end{array}\right]
+\left[\begin{array}{rr}
+1 & 1 \\ 1 & -1
+\end{array}\right]
+=
+\left[\begin{array}{rr}
+2 & 0 \\ 0 & 4
+\end{array}\right]
+$$
+\end{examp}
+\end{frame}
+\begin{frame}
+\frametitle{Review of Linear Algebra}
+\framesubtitle{Eigenvalues and Eigenvectors}
+\begin{remark}
+1) The {\bor determinant} of a square matrix $A$ is the {\bor product} of the eigenvalues, i.e.,
+$$
+|A| = \lambda_1\lambda_2\cdot\cdot\cdot\lambda_n = \Pi_{i=1}^n\lambda_i
+$$
+
+2) The {\bor trace} of a square matrix $A$ is the {\bor sum} of the eigenvalues, i.e.,
+$$
+Tr(A) = \lambda_1 + \lambda_2 + \dots + \lambda_n = \sum_{i=1}^n \lambda_i
+$$
+\end{remark}
+These properties are {\bor invariant} under {\bor similarity transformation}.
+
+This is because the determinant and trace satisfy
+\begin{eqnarray*}
+|T^{-1}AT| &=& |A| \\
+Tr(T^{-1}AT) &=& Tr(A)
+\end{eqnarray*}
+\end{frame}
+\begin{frame}
+\frametitle{Review of Linear Algebra}
+\framesubtitle{Quadratic Forms}
+We will have occasion to consider so-called {\bor Quadratic Forms}.
+\begin{definition}
+A {\bor Quadratic Form $V$} is a function from $R^n\rightarrow R$ of the form
+$$
+V(x) = \sum_{i=i}^n\sum_{j=1}^n p_{ij}x_ix_j = p_{11}x_2^2 + p_{12}x_1x_2 + \dots + p_{nn}x_n^2
+$$
+We assume $p_{ij}=p_{ji}$.
+\end{definition}
+Such a quadratic form can be represented as
+$$
+V(x) = x^T P x
+$$
+where $P = (p_{ij})$ is a symmetric $n\times n$ matrix and $x^T = [x_1,\dots,x_n]$.
+\end{frame}
+\begin{frame}
+\frametitle{Review of Linear Algebra}
+\framesubtitle{Quadratic Forms}
+\begin{examp}
+The quadratic form
+$$
+V(x) = p_{11}x_1^2 + p_{12}x_1x_2 + p_{21}x_2x_1 + p_{22}x_2^2
+$$
+can be written as
+$$
+V(x) = x^TPx
+$$
+where
+$$
+P = \left[\begin{array}{cc} p_{11} & p_{12} \\ p_{21} & p_{22} \end{array}\right]
+$$
+\end{examp}
+The simplest example of such a quadratic form is the {\bor norm}
+$$
+V(x) = x_1^2 + x_2^2 = x^T I x
+$$
+where $I$ is the identity matrix.
+\end{frame}
+\begin{frame}
+\frametitle{Review of Linear Algebra}
+\framesubtitle{Quadratic Forms}
+Note that the equation
+$$
+V(x) = x_1^2 + x_2^2 = r^2
+$$
+defines a {\bor circle of radius $r$}.
+
+In general, the equation
+$$
+V(x) = x^T P x = c
+$$
+defines an {\bor ellipse} provided the matrix $P$ is {\bor Positive Definite}.
+\begin{definition}
+An $n\times n$ matrix $P = (p_{ij})$ is {\bor Positive Definite} if
+$$
+x^T Px > 0 \quad \mbox{\rm for all } \ x \ne 0
+$$
+$P$ is {\bor Positive Semi-Definite} or {\bor Nonnegative Definite} if
+$$
+x^T Px \ge 0 \quad \mbox{\rm for all } \ x \ne 0
+$$
+$P$ is {\bor Negative (Semi) Definite} if $-P$ {\bor Positive (Semi) Definite}
+\end{definition}
+\end{frame}
+\begin{frame}
+\frametitle{Review of Linear Algebra}
+\framesubtitle{Quadratic Forms}
+\begin{theorem}
+A matrix $P$ is {\bor Positive Definite} if and only if all eigenvalues of $P$ are positive.
+
+A matrix $P$ is {\bor Positive Semi-Definite} if and only if all eigenvalues of $P$ are non-negative.
+\end{theorem}
+Another characterization of a positive definite matrix is
+\begin{theorem}
+A matrix $P$ is {\bor Positive Definite} if and only if all {\bor Principal Minors} or
+{\bor Principal Minor Determinants} of $P$ are positive.
+\end{theorem}
+\end{frame}
+\begin{frame}
+\frametitle{Review of Linear Algebra}
+\framesubtitle{Principal Minors}
+\begin{definition}
+Let
+$$
+P = \left[\begin{array}{cccc}
+p_{11} & p_{12} & \dots & p_{1n} \\
+p_{21} & p_{22} & \dots & p_{2n} \\
+\vdots & \vdots & \vdots & \vdots \\
+p_{n1} & p_{n2} & \dots & p_{nn}
+\end{array}\right]
+$$
+be an $n\times n$ matrix.
+
+The {\bor Principal Minors of $P$} are
+\begin{eqnarray*}
+&& M_1 = p_{11} \ ; \quad M_2 = \left|\begin{array}{cc} p_{11} & p_{12} \\ p_{21} & p_{22} \end{array}\right| \ ; \quad
+M_3 = \left|\begin{array}{ccc} p_{11} & p_{12} & p_{13} \\ p_{21} & p_{22} & p_{23} \\
+p_{31} & p_{23} & P_{33} \end{array}\right| \\
+&& \ \dots \ ; \ M_n = |P|
+\end{eqnarray*}
+\end{definition}
+\end{frame}
+\begin{frame}
+\frametitle{Review of Linear Algebra}
+\framesubtitle{Positive Definite Matrices}
+\begin{remark}
+If the matrix $P$ can be written as $P= C^TC$ for some matrix $C$, then $P$ is {\bor Positive
+Semi-Definite}.
+\end{remark}
+To see this, note that a simple calculation shows that
+$$
+x^TPx = x^TC^TCx = y^Ty \ge 0 \qquad \mbox{\rm  with }\ y=Cx
+$$
+
+$y$ is not strictly positive since there will generally be {\bor nonzero vectors $x$} such
+that $Cx = 0$.
+\end{frame}
+
